@@ -1,0 +1,4 @@
+C:\Lập trình windows\ĐỒ ÁN\452_417_CDTH19E_SHOESSHOP\borderradius\obj\Debug\borderradius.Form1.resources
+C:\Lập trình windows\ĐỒ ÁN\452_417_CDTH19E_SHOESSHOP\borderradius\obj\Debug\borderradius.Properties.Resources.resources
+C:\Lập trình windows\ĐỒ ÁN\452_417_CDTH19E_SHOESSHOP\borderradius\obj\Debug\borderradius.csproj.GenerateResource.cache
+C:\Lập trình windows\ĐỒ ÁN\452_417_CDTH19E_SHOESSHOP\borderradius\obj\Debug\borderradius.csproj.CoreCompileInputs.cache
