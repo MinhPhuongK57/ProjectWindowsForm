@@ -134,7 +134,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
         //Button cập nhật chi tiết hoá đơn
         private void btnCapNhatCTHD_Click(object sender, EventArgs e)
         {
-            string query = "update CHITIETHOADON set[ID_SanPham] = N'" + txtIDSanPham.Text + "',[DonGia]= '" + txtDonGia.Text + "',[SoLuong] = '" + numSoLuongSP.Value + "' , [GiamGia] = '" + txtGiamGia.Text + "', [ThanhTien] = '" + txtThanhTien.Text + "' where ID_HoaDOn = '" + txtIDHoaDon.Text + "'";
+            string query = "update CHITIETHOADON set[DonGia]= '" + txtDonGia.Text + "',[SoLuong] = '" + numSoLuongSP.Value + "' , [GiamGia] = '" + txtGiamGia.Text + "', [ThanhTien] = '" + txtThanhTien.Text + "' where ID_HoaDon = '" + txtIDHoaDon.Text + "'and ID_SanPham = N'" + txtIDSanPham.Text + "'";
             CapNhatDLCTHD(query);
         }
 

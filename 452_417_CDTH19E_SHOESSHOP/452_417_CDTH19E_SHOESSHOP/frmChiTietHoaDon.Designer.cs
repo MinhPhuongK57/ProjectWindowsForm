@@ -818,7 +818,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.dataGridViewTextBoxColumn9,
             this.dataGridViewTextBoxColumn11,
             this.dataGridViewTextBoxColumn12});
-            this.dgvHoaDon.Location = new System.Drawing.Point(3, 44);
+            this.dgvHoaDon.Location = new System.Drawing.Point(3, 42);
             this.dgvHoaDon.Name = "dgvHoaDon";
             this.dgvHoaDon.ReadOnly = true;
             this.dgvHoaDon.RowHeadersVisible = false;
