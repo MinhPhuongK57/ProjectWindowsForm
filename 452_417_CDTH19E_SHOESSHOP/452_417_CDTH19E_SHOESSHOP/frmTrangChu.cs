@@ -376,8 +376,16 @@ namespace _452_417_CDTH19E_SHOESSHOP
         //Button thêm Sản Phẩm
         private void btnThemSP_Click(object sender, EventArgs e)
         {
-            ThemDLSP();
+            try
+            {
+                ThemDLSP();
             KetNoiSP();
+            }
+            catch
+            {
+                MessageBox.Show("Vui lòng kiểm tra lại!!!", "Thông báo");
+            }
+
         }
 
         //Hàm xoá dữ liệu Sản Phẩm
@@ -401,10 +409,17 @@ namespace _452_417_CDTH19E_SHOESSHOP
         //Button Xoá Sản Phẩm
         private void btnXoaSP_Click(object sender, EventArgs e)
         {
-            string query = "Delete from SANPHAM where ID_SanPham = '" + txtIDSanPham.Text + "'";
+            try
+            {
+                string query = "Delete from SANPHAM where ID_SanPham = '" + txtIDSanPham.Text + "'";
             DialogResult Thoat = MessageBox.Show("Bạn có muốn xoá không..!", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1);
             if (Thoat == DialogResult.Yes)
                 XoaDLSP(query);
+            }
+            catch
+            {
+                MessageBox.Show("Vui lòng kiểm tra lại!!!", "Thông báo");
+            }
         }
 
         //Hàm cập nhật dữ liệu Sản Phẩm
@@ -426,8 +441,15 @@ namespace _452_417_CDTH19E_SHOESSHOP
         //Button cập nhậtSản Phẩm
         private void btnCapNhatSP_Click(object sender, EventArgs e)
         {
-            string query = "update SANPHAM set[ID_LoaiSanPham] = '" + cboLoaiSanPham.Text + "',[TenSanPham] = N'" + txtTenSanPham.Text + "',[TrangThai] ='" + numTrangThaiSP.Value + "' where ID_SanPham = '" + txtIDSanPham.Text + "'";
-            CapNhatDLSP(query);
+            try
+            {
+                string query = "update SANPHAM set[ID_LoaiSanPham] = '" + cboLoaiSanPham.Text + "',[TenSanPham] = N'" + txtTenSanPham.Text + "',[TrangThai] ='" + numTrangThaiSP.Value + "' where ID_SanPham = '" + txtIDSanPham.Text + "'";
+                CapNhatDLSP(query);
+            }
+            catch
+            {
+                MessageBox.Show("Vui lòng kiểm tra lại!!!", "Thông báo");
+            }
         }
 
 
@@ -500,8 +522,15 @@ namespace _452_417_CDTH19E_SHOESSHOP
         //Button thêm dữ liệu hoá đơn
         private void btnThemHD_Click(object sender, EventArgs e)
         {
-            ThemDLHD();
+            try
+            {
+                ThemDLHD();
             KetNoiHD();
+            }
+            catch
+            {
+                MessageBox.Show("Vui lòng kiểm tra lại!!!", "Thông báo");
+            }
         }
         //Hàm xoá dữ liệu hoá đơn
         void XoaDLHD(string query)
@@ -523,10 +552,17 @@ namespace _452_417_CDTH19E_SHOESSHOP
         //Button xoá dữ liệu hoá đơn
         private void btnXoaHD_Click(object sender, EventArgs e)
         {
-            string query = "Delete from HOADON where ID_HoaDon = '" + txtIDHoaDon.Text + "'";
+            try
+            {
+                string query = "Delete from HOADON where ID_HoaDon = '" + txtIDHoaDon.Text + "'";
             DialogResult Thoat = MessageBox.Show("Bạn có muốn xoá không..!", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1);
             if (Thoat == DialogResult.Yes)
                 XoaDLHD(query);
+            }
+            catch
+            {
+                MessageBox.Show("Vui lòng kiểm tra lại!!!", "Thông báo");
+            }
         }
         //Hàm cập nhật dữ liệu hoá đơn
         void CapNhatDLHD()
@@ -547,7 +583,14 @@ namespace _452_417_CDTH19E_SHOESSHOP
         //Button cập nhật dữ liệu hoá đơn
         private void btnCapNhatHD_Click(object sender, EventArgs e)
         {
-            CapNhatDLHD();
+            try
+            {
+                CapNhatDLHD();
+            }
+            catch
+            {
+                MessageBox.Show("Vui lòng kiểm tra lại!!!", "Thông báo");
+            }
         }
         /*-----------------------HOÁ ĐƠN----------------------*/
 
@@ -602,8 +645,15 @@ namespace _452_417_CDTH19E_SHOESSHOP
         //Button thêm dữ liệu Khách hàng
         private void btnThemKH_Click(object sender, EventArgs e)
         {
-            ThemDLKH();
-            KetNoiKH();
+            try
+            {
+                ThemDLKH();
+                KetNoiKH();
+            }
+            catch
+            {
+                MessageBox.Show("Vui lòng kiểm tra lại!!!", "Thông báo");
+            }
         }
 
         //Hàm xoá dữ liệu Khách hàng
@@ -626,10 +676,17 @@ namespace _452_417_CDTH19E_SHOESSHOP
         //Button xoá dữ liệu Khách hàng
         private void btnXoaKH_Click(object sender, EventArgs e)
         {
-            string query = "Delete from KHACHHANG where ID_KhachHang = '" + txtIDKhachHang.Text + "'";
-            DialogResult Thoat = MessageBox.Show("Bạn có muốn xoá không..!", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1);
-            if (Thoat == DialogResult.Yes)
-                XoaDLKH(query);
+            try
+            {
+                string query = "Delete from KHACHHANG where ID_KhachHang = '" + txtIDKhachHang.Text + "'";
+                DialogResult Thoat = MessageBox.Show("Bạn có muốn xoá không..!", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1);
+                if (Thoat == DialogResult.Yes)
+                    XoaDLKH(query);
+            }
+            catch
+            {
+                MessageBox.Show("Vui lòng kiểm tra lại!!!", "Thông báo");
+            }
         }
         //Hàm cập nhật dữ liệu Khách hàng
         void CapNhatDLKH()
@@ -650,7 +707,14 @@ namespace _452_417_CDTH19E_SHOESSHOP
         //Button cập nhật dữ liệu Khách hàng
         private void btnCapNhatKH_Click(object sender, EventArgs e)
         {
-            CapNhatDLKH();
+            try
+            {
+                CapNhatDLKH();
+            }
+            catch
+            {
+                MessageBox.Show("Vui lòng kiểm tra lại!!!", "Thông báo");
+            }
         }
 
         /*-----------------------KHÁCH HÀNG----------------------*/
@@ -705,8 +769,15 @@ namespace _452_417_CDTH19E_SHOESSHOP
         //Button thêm dữ liệu Nhà cung cấp
         private void btnThemNCC_Click(object sender, EventArgs e)
         {
-            ThemDLNCC();
-            KetNoiNCC();
+            try
+            {
+                ThemDLNCC();
+                KetNoiNCC();
+            }
+            catch
+            {
+                MessageBox.Show("Vui lòng kiểm tra lại!!!", "Thông báo");
+            }
         }
         //Hàm cập nhật dữ liệu Nhà cung cấp
         void CapNhatDLNCC()
@@ -727,7 +798,14 @@ namespace _452_417_CDTH19E_SHOESSHOP
         //Button cập nhật dữ liệu Nhà cung cấp
         private void btnCapNhatNCC_Click(object sender, EventArgs e)
         {
-            CapNhatDLNCC();
+            try
+            {
+                CapNhatDLNCC();
+            }
+            catch
+            {
+                MessageBox.Show("Vui lòng kiểm tra lại!!!", "Thông báo");
+            }
         }
         //Hàm xoá dữ liệu Nhà cung cấp
         void XoaDLNCC(string query)
@@ -749,10 +827,17 @@ namespace _452_417_CDTH19E_SHOESSHOP
         //Button xoá dữ liệu Nhà cung cấp
         private void btnXoaNCC_Click(object sender, EventArgs e)
         {
-            string query = "Delete from NHACUNGCAP where ID_NCC = '" + txtIDNCC.Text + "'";
-            DialogResult Thoat = MessageBox.Show("Bạn có muốn xoá không..!", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1);
-            if (Thoat == DialogResult.Yes)
-                XoaDLNCC(query);
+            try
+            {
+                string query = "Delete from NHACUNGCAP where ID_NCC = '" + txtIDNCC.Text + "'";
+                DialogResult Thoat = MessageBox.Show("Bạn có muốn xoá không..!", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1);
+                if (Thoat == DialogResult.Yes)
+                    XoaDLNCC(query);
+            }
+            catch
+            {
+                MessageBox.Show("Vui lòng kiểm tra lại!!!", "Thông báo");
+            }
         }
         /*-----------------------NHÀ CUNG CẤP----------------------*/
 
@@ -808,8 +893,15 @@ namespace _452_417_CDTH19E_SHOESSHOP
         //Button thêm Nhân viên
         private void btnThemNV_Click(object sender, EventArgs e)
         {
-            ThemDLNV();
-            KetNoiNV();
+            try
+            {
+                ThemDLNV();
+                KetNoiNV();
+            }
+            catch
+            {
+                MessageBox.Show("Vui lòng kiểm tra lại!!!", "Thông báo");
+            }
         }
         //Kiểm tra Email
         int KiemTraEmail()
@@ -866,7 +958,14 @@ namespace _452_417_CDTH19E_SHOESSHOP
         //Button cập nhật Nhân viên
         private void btnCapNhatNV_Click(object sender, EventArgs e)
         {
-            CapNhatDLNV();
+            try
+            {
+                CapNhatDLNV();
+            }
+            catch
+            {
+                MessageBox.Show("Vui lòng kiểm tra lại!!!", "Thông báo");
+            }
         }
         //Hàm xoá dữ liệu Nhân viên
         void XoaDLNV(string query)
@@ -888,10 +987,17 @@ namespace _452_417_CDTH19E_SHOESSHOP
         //Button xoá Nhân viên
         private void btnXoaNV_Click(object sender, EventArgs e)
         {
-            string query = "Delete from NHANVIEN where ID_NhanVien = '" + txtIDNhanVien.Text + "'";
-            DialogResult Thoat = MessageBox.Show("Bạn có muốn xoá không..!", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1);
-            if (Thoat == DialogResult.Yes)
-                XoaDLNV(query);
+            try
+            {
+                string query = "Delete from NHANVIEN where ID_NhanVien = '" + txtIDNhanVien.Text + "'";
+                DialogResult Thoat = MessageBox.Show("Bạn có muốn xoá không..!", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1);
+                if (Thoat == DialogResult.Yes)
+                    XoaDLNV(query);
+            }
+            catch
+            {
+                MessageBox.Show("Vui lòng kiểm tra lại!!!", "Thông báo");
+            }
         }
 
         /*-----------------------NHÂN VIÊN----------------------*/
@@ -973,7 +1079,9 @@ namespace _452_417_CDTH19E_SHOESSHOP
         //Button xuất dữ liệu bảng sản phẩm , khách hàng , nhà cung cấp , nhân viên
         private void btnXuatExcelSP_Click(object sender, EventArgs e)
         {
-            SaveFile.InitialDirectory = @"C:\Lập trình windows\ĐỒ ÁN\Excel";
+            try
+            {
+                SaveFile.InitialDirectory = @"C:\Lập trình windows\ĐỒ ÁN\Excel";
             //SaveFileSanPham.Title = "Lưu file ảnh";
             SaveFile.DefaultExt = "xlsx";
             //SaveFileSanPham.Filter = "(.jpg);(.png)|.jpg;.png";
@@ -981,23 +1089,37 @@ namespace _452_417_CDTH19E_SHOESSHOP
             {
                 ToExcel(dgvSanPham, SaveFile.FileName, SanPham);
             }
+            }
+            catch
+            {
+                MessageBox.Show("Vui lòng kiểm tra lại!!!", "Thông báo");
+            }
         }
 
         private void btnXuatExcelKH_Click(object sender, EventArgs e)
         {
-            SaveFile.InitialDirectory = @"C:\Lập trình windows\ĐỒ ÁN\Excel";
-            //SaveFileSanPham.Title = "Lưu file ảnh";
-            SaveFile.DefaultExt = "xlsx";
-            //SaveFileSanPham.Filter = "(.jpg);(.png)|.jpg;.png";
-            if (SaveFile.ShowDialog() == DialogResult.OK)
+            try
             {
-                ToExcel(dgvKhachHang, SaveFile.FileName, KhachHang);
+                SaveFile.InitialDirectory = @"C:\Lập trình windows\ĐỒ ÁN\Excel";
+                //SaveFileSanPham.Title = "Lưu file ảnh";
+                SaveFile.DefaultExt = "xlsx";
+                //SaveFileSanPham.Filter = "(.jpg);(.png)|.jpg;.png";
+                if (SaveFile.ShowDialog() == DialogResult.OK)
+                {
+                    ToExcel(dgvKhachHang, SaveFile.FileName, KhachHang);
+                }
+            }
+            catch
+            {
+                MessageBox.Show("Vui lòng kiểm tra lại!!!", "Thông báo");
             }
         }
 
         private void btnXuatExcelNCC_Click(object sender, EventArgs e)
         {
-            SaveFile.InitialDirectory = @"C:\Lập trình windows\ĐỒ ÁN\Excel";
+            try
+            {
+                SaveFile.InitialDirectory = @"C:\Lập trình windows\ĐỒ ÁN\Excel";
             //SaveFileSanPham.Title = "Lưu file ảnh";
             SaveFile.DefaultExt = "xlsx";
             //SaveFileSanPham.Filter = "(.jpg);(.png)|.jpg;.png";
@@ -1005,17 +1127,29 @@ namespace _452_417_CDTH19E_SHOESSHOP
             {
                 ToExcel(dgvNhaCungCap, SaveFile.FileName, NhaCungCap);
             }
+            }
+            catch
+            {
+                MessageBox.Show("Vui lòng kiểm tra lại!!!", "Thông báo");
+            }
         }
 
         private void btnXuatExcelNV_Click(object sender, EventArgs e)
         {
-            SaveFile.InitialDirectory = @"C:\Lập trình windows\ĐỒ ÁN\Excel";
-            //SaveFileSanPham.Title = "Lưu file ảnh";
-            SaveFile.DefaultExt = "xlsx";
-            //SaveFileSanPham.Filter = "(.jpg);(.png)|.jpg;.png";
-            if (SaveFile.ShowDialog() == DialogResult.OK)
+            try
             {
-                ToExcel(dgvNhanVien, SaveFile.FileName, NhanVien);
+                SaveFile.InitialDirectory = @"C:\Lập trình windows\ĐỒ ÁN\Excel";
+                //SaveFileSanPham.Title = "Lưu file ảnh";
+                SaveFile.DefaultExt = "xlsx";
+                //SaveFileSanPham.Filter = "(.jpg);(.png)|.jpg;.png";
+                if (SaveFile.ShowDialog() == DialogResult.OK)
+                {
+                    ToExcel(dgvNhanVien, SaveFile.FileName, NhanVien);
+                }
+            }
+            catch
+            {
+                MessageBox.Show("Vui lòng kiểm tra lại!!!", "Thông báo");
             }
         }
 

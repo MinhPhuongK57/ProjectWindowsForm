@@ -87,8 +87,15 @@ namespace _452_417_CDTH19E_SHOESSHOP
         //Button thêm Loại Sản Phẩm
         private void btnThemLoaiSP_Click_1(object sender, EventArgs e)
         {
-            ThemDLLSP();
-            KetNoiLSP();
+            try
+            {
+                ThemDLLSP();
+                KetNoiLSP();
+            }
+            catch
+            {
+                MessageBox.Show("Vui lòng kiểm tra lại!!!", "Thông báo");
+            }
         }
         //Hàm cập nhật DL Loại Sản Phẩm
         void CapNhatDLLSP(string query)
@@ -108,8 +115,15 @@ namespace _452_417_CDTH19E_SHOESSHOP
         //Button cập nhật Loại Sản Phẩm
         private void btnCapNhatLoaiSP_Click(object sender, EventArgs e)
         {
-            string query = "update LOAISANPHAM set[ID_LoaiSanPham] = '" + txtIDLoaiSanPham.Text + "',[TenLoai] = N'" + txtTenLoaiSP.Text + "',[TrangThai]= '" + numTrangThaiLSP.Value + "' where ID_LoaiSanPham = '" + txtIDLoaiSanPham.Text + "'";
-            CapNhatDLLSP(query);
+            try
+            {
+                string query = "update LOAISANPHAM set[ID_LoaiSanPham] = '" + txtIDLoaiSanPham.Text + "',[TenLoai] = N'" + txtTenLoaiSP.Text + "',[TrangThai]= '" + numTrangThaiLSP.Value + "' where ID_LoaiSanPham = '" + txtIDLoaiSanPham.Text + "'";
+                CapNhatDLLSP(query);
+            }
+            catch
+            {
+                MessageBox.Show("Vui lòng kiểm tra lại!!!", "Thông báo");
+            }
         }
         //Hàm xoá SL Loại Sản Phẩm
         void XoaDLLSP(string query)
@@ -131,7 +145,9 @@ namespace _452_417_CDTH19E_SHOESSHOP
         //Button xoá Loại Sản Phẩm
         private void btnXoaLoaiLSP_Click(object sender, EventArgs e)
         {
-            if (KiemTraIDLSP())
+            try
+            {
+                if (KiemTraIDLSP())
             {
                 MessageBox.Show("Còn sản phẩm loại này", "Thông báo");
             }
@@ -139,6 +155,11 @@ namespace _452_417_CDTH19E_SHOESSHOP
             {
                 string query = "Delete from LOAISANPHAM where ID_LoaiSanPham = '" + txtIDLoaiSanPham.Text + "'";
                 XoaDLLSP(query);
+            }
+            }
+            catch
+            {
+                MessageBox.Show("Vui lòng kiểm tra lại!!!", "Thông báo");
             }
         }
 

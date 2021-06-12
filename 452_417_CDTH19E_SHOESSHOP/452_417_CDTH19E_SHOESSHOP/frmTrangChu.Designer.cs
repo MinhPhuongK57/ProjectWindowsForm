@@ -215,7 +215,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             // 
             this.menuStrip1.AutoSize = false;
             this.menuStrip1.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.menuStrip1.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.menuStrip1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menuStrip1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Visible;
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -236,7 +236,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             // 
             this.mnuttTrangChu.Image = global::_452_417_CDTH19E_SHOESSHOP.Properties.Resources.icons8_home_64;
             this.mnuttTrangChu.Name = "mnuttTrangChu";
-            this.mnuttTrangChu.Size = new System.Drawing.Size(119, 42);
+            this.mnuttTrangChu.Size = new System.Drawing.Size(121, 42);
             this.mnuttTrangChu.Text = "Trang Chủ";
             // 
             // mnuttQuanLySanPham
@@ -246,20 +246,20 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.chiTiếtSảnPhẩmToolStripMenuItem});
             this.mnuttQuanLySanPham.Image = global::_452_417_CDTH19E_SHOESSHOP.Properties.Resources.icons8_product_management_64;
             this.mnuttQuanLySanPham.Name = "mnuttQuanLySanPham";
-            this.mnuttQuanLySanPham.Size = new System.Drawing.Size(182, 42);
+            this.mnuttQuanLySanPham.Size = new System.Drawing.Size(188, 42);
             this.mnuttQuanLySanPham.Text = "Quản Lý Sản Phẩm";
             // 
             // loạiSảnPhẩmToolStripMenuItem
             // 
             this.loạiSảnPhẩmToolStripMenuItem.Name = "loạiSảnPhẩmToolStripMenuItem";
-            this.loạiSảnPhẩmToolStripMenuItem.Size = new System.Drawing.Size(229, 26);
+            this.loạiSảnPhẩmToolStripMenuItem.Size = new System.Drawing.Size(232, 26);
             this.loạiSảnPhẩmToolStripMenuItem.Text = "Loại Sản Phẩm";
             this.loạiSảnPhẩmToolStripMenuItem.Click += new System.EventHandler(this.loạiSảnPhẩmToolStripMenuItem_Click);
             // 
             // chiTiếtSảnPhẩmToolStripMenuItem
             // 
             this.chiTiếtSảnPhẩmToolStripMenuItem.Name = "chiTiếtSảnPhẩmToolStripMenuItem";
-            this.chiTiếtSảnPhẩmToolStripMenuItem.Size = new System.Drawing.Size(229, 26);
+            this.chiTiếtSảnPhẩmToolStripMenuItem.Size = new System.Drawing.Size(232, 26);
             this.chiTiếtSảnPhẩmToolStripMenuItem.Text = "Chi Tiết Sản Phẩm";
             this.chiTiếtSảnPhẩmToolStripMenuItem.Click += new System.EventHandler(this.chiTiếtSảnPhẩmToolStripMenuItem_Click);
             // 
@@ -273,41 +273,41 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.TimKiemTheoNV});
             this.mnuttTimKiem.Image = global::_452_417_CDTH19E_SHOESSHOP.Properties.Resources.search;
             this.mnuttTimKiem.Name = "mnuttTimKiem";
-            this.mnuttTimKiem.Size = new System.Drawing.Size(115, 42);
+            this.mnuttTimKiem.Size = new System.Drawing.Size(114, 42);
             this.mnuttTimKiem.Text = "Tìm Kiếm";
             // 
             // TimKiemTheoSP
             // 
             this.TimKiemTheoSP.Name = "TimKiemTheoSP";
-            this.TimKiemTheoSP.Size = new System.Drawing.Size(317, 26);
+            this.TimKiemTheoSP.Size = new System.Drawing.Size(319, 26);
             this.TimKiemTheoSP.Text = "Tìm Kiếm Theo Sản Phẩm";
             this.TimKiemTheoSP.Click += new System.EventHandler(this.tìmKiếmTheToolStripMenuItem_Click);
             // 
             // TimKiemTheoHD
             // 
             this.TimKiemTheoHD.Name = "TimKiemTheoHD";
-            this.TimKiemTheoHD.Size = new System.Drawing.Size(317, 26);
+            this.TimKiemTheoHD.Size = new System.Drawing.Size(319, 26);
             this.TimKiemTheoHD.Text = "Tìm Kiếm Theo Hoá Đơn";
             this.TimKiemTheoHD.Click += new System.EventHandler(this.TimKiemTheoHD_Click);
             // 
             // TimKiemTheoKH
             // 
             this.TimKiemTheoKH.Name = "TimKiemTheoKH";
-            this.TimKiemTheoKH.Size = new System.Drawing.Size(317, 26);
+            this.TimKiemTheoKH.Size = new System.Drawing.Size(319, 26);
             this.TimKiemTheoKH.Text = "Tìm Kiếm Theo Khách Hàng";
             this.TimKiemTheoKH.Click += new System.EventHandler(this.TimKiemTheoKH_Click);
             // 
             // TimKiemTheoNCC
             // 
             this.TimKiemTheoNCC.Name = "TimKiemTheoNCC";
-            this.TimKiemTheoNCC.Size = new System.Drawing.Size(317, 26);
+            this.TimKiemTheoNCC.Size = new System.Drawing.Size(319, 26);
             this.TimKiemTheoNCC.Text = "Tìm Kiếm Theo Nhà Cung Cấp";
             this.TimKiemTheoNCC.Click += new System.EventHandler(this.TimKiemTheoNCC_Click);
             // 
             // TimKiemTheoNV
             // 
             this.TimKiemTheoNV.Name = "TimKiemTheoNV";
-            this.TimKiemTheoNV.Size = new System.Drawing.Size(317, 26);
+            this.TimKiemTheoNV.Size = new System.Drawing.Size(319, 26);
             this.TimKiemTheoNV.Text = "Tìm Kiếm Theo Nhân Viên";
             this.TimKiemTheoNV.Click += new System.EventHandler(this.TimKiemTheoNV_Click);
             // 
@@ -315,7 +315,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             // 
             this.mnuttQuanLyHoaDon.Image = global::_452_417_CDTH19E_SHOESSHOP.Properties.Resources.bill;
             this.mnuttQuanLyHoaDon.Name = "mnuttQuanLyHoaDon";
-            this.mnuttQuanLyHoaDon.Size = new System.Drawing.Size(171, 42);
+            this.mnuttQuanLyHoaDon.Size = new System.Drawing.Size(177, 42);
             this.mnuttQuanLyHoaDon.Text = "Quản Lý Hoá Đơn";
             this.mnuttQuanLyHoaDon.Click += new System.EventHandler(this.mnuttQuanLyHoaDon_Click);
             // 
@@ -323,7 +323,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             // 
             this.mnuttThongKe.Image = global::_452_417_CDTH19E_SHOESSHOP.Properties.Resources.total;
             this.mnuttThongKe.Name = "mnuttThongKe";
-            this.mnuttThongKe.Size = new System.Drawing.Size(115, 42);
+            this.mnuttThongKe.Size = new System.Drawing.Size(114, 42);
             this.mnuttThongKe.Text = "Thống Kê";
             this.mnuttThongKe.Click += new System.EventHandler(this.mnuttThongKe_Click);
             // 
@@ -331,7 +331,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             // 
             this.mnuttThoatChuongTrinh.Image = global::_452_417_CDTH19E_SHOESSHOP.Properties.Resources.icons8_shutdown_16;
             this.mnuttThoatChuongTrinh.Name = "mnuttThoatChuongTrinh";
-            this.mnuttThoatChuongTrinh.Size = new System.Drawing.Size(192, 42);
+            this.mnuttThoatChuongTrinh.Size = new System.Drawing.Size(190, 42);
             this.mnuttThoatChuongTrinh.Text = "Thoát Chương Trình";
             this.mnuttThoatChuongTrinh.Click += new System.EventHandler(this.mnuttThoatChuongTrinh_Click);
             // 
@@ -340,7 +340,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.lblSoDTHD.AutoSize = true;
             this.lblSoDTHD.Location = new System.Drawing.Point(535, 133);
             this.lblSoDTHD.Name = "lblSoDTHD";
-            this.lblSoDTHD.Size = new System.Drawing.Size(107, 20);
+            this.lblSoDTHD.Size = new System.Drawing.Size(106, 20);
             this.lblSoDTHD.TabIndex = 3;
             this.lblSoDTHD.Text = "Số điện thoại";
             // 
@@ -349,7 +349,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.lblDiaChiKH.AutoSize = true;
             this.lblDiaChiKH.Location = new System.Drawing.Point(583, 64);
             this.lblDiaChiKH.Name = "lblDiaChiKH";
-            this.lblDiaChiKH.Size = new System.Drawing.Size(59, 20);
+            this.lblDiaChiKH.Size = new System.Drawing.Size(61, 20);
             this.lblDiaChiKH.TabIndex = 3;
             this.lblDiaChiKH.Text = "Địa chỉ";
             // 
@@ -371,7 +371,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.groupBox1.Controls.Add(this.lblTenKhachHang);
             this.groupBox1.Controls.Add(this.lblIDKhachHangKH);
             this.groupBox1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.groupBox1.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(22, 20);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(1352, 258);
@@ -388,7 +388,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.dtpNgaySinhKH.Cursor = System.Windows.Forms.Cursors.Hand;
             this.dtpNgaySinhKH.CustomFormat = "dd/MM/yyyy";
             this.dtpNgaySinhKH.FillColor = System.Drawing.Color.Turquoise;
-            this.dtpNgaySinhKH.Font = new System.Drawing.Font("Roboto", 10.2F);
+            this.dtpNgaySinhKH.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F);
             this.dtpNgaySinhKH.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.dtpNgaySinhKH.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpNgaySinhKH.HoverState.Parent = this.dtpNgaySinhKH;
@@ -408,7 +408,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.btnXuatExcelKH.CheckedState.Parent = this.btnXuatExcelKH;
             this.btnXuatExcelKH.CustomImages.Parent = this.btnXuatExcelKH;
             this.btnXuatExcelKH.FillColor = System.Drawing.Color.Turquoise;
-            this.btnXuatExcelKH.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXuatExcelKH.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnXuatExcelKH.ForeColor = System.Drawing.Color.White;
             this.btnXuatExcelKH.HoverState.Parent = this.btnXuatExcelKH;
             this.btnXuatExcelKH.Location = new System.Drawing.Point(1160, 117);
@@ -428,7 +428,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.btnThoatKH.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnThoatKH.CustomImages.Parent = this.btnThoatKH;
             this.btnThoatKH.FillColor = System.Drawing.Color.Turquoise;
-            this.btnThoatKH.Font = new System.Drawing.Font("Roboto", 10.2F);
+            this.btnThoatKH.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F);
             this.btnThoatKH.ForeColor = System.Drawing.Color.White;
             this.btnThoatKH.HoverState.Parent = this.btnThoatKH;
             this.btnThoatKH.IndicateFocus = true;
@@ -450,7 +450,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.btnXoaKH.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnXoaKH.CustomImages.Parent = this.btnXoaKH;
             this.btnXoaKH.FillColor = System.Drawing.Color.Turquoise;
-            this.btnXoaKH.Font = new System.Drawing.Font("Roboto", 10.2F);
+            this.btnXoaKH.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F);
             this.btnXoaKH.ForeColor = System.Drawing.Color.White;
             this.btnXoaKH.HoverState.Parent = this.btnXoaKH;
             this.btnXoaKH.IndicateFocus = true;
@@ -472,7 +472,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.btnCapNhatKH.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCapNhatKH.CustomImages.Parent = this.btnCapNhatKH;
             this.btnCapNhatKH.FillColor = System.Drawing.Color.Turquoise;
-            this.btnCapNhatKH.Font = new System.Drawing.Font("Roboto", 10.2F);
+            this.btnCapNhatKH.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F);
             this.btnCapNhatKH.ForeColor = System.Drawing.Color.White;
             this.btnCapNhatKH.HoverState.Parent = this.btnCapNhatKH;
             this.btnCapNhatKH.IndicateFocus = true;
@@ -494,7 +494,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.btnThemKH.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnThemKH.CustomImages.Parent = this.btnThemKH;
             this.btnThemKH.FillColor = System.Drawing.Color.Turquoise;
-            this.btnThemKH.Font = new System.Drawing.Font("Roboto", 10.2F);
+            this.btnThemKH.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F);
             this.btnThemKH.ForeColor = System.Drawing.Color.White;
             this.btnThemKH.HoverState.Parent = this.btnThemKH;
             this.btnThemKH.IndicateFocus = true;
@@ -519,7 +519,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.txtSoDTKH.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtSoDTKH.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtSoDTKH.FocusedState.Parent = this.txtSoDTKH;
-            this.txtSoDTKH.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSoDTKH.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSoDTKH.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtSoDTKH.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtSoDTKH.HoverState.Parent = this.txtSoDTKH;
@@ -547,7 +547,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.txtDiaChiKH.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtDiaChiKH.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtDiaChiKH.FocusedState.Parent = this.txtDiaChiKH;
-            this.txtDiaChiKH.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDiaChiKH.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDiaChiKH.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtDiaChiKH.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtDiaChiKH.HoverState.Parent = this.txtDiaChiKH;
@@ -574,7 +574,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.txtTenKhachHang.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtTenKhachHang.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTenKhachHang.FocusedState.Parent = this.txtTenKhachHang;
-            this.txtTenKhachHang.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTenKhachHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTenKhachHang.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtTenKhachHang.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTenKhachHang.HoverState.Parent = this.txtTenKhachHang;
@@ -601,7 +601,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.txtIDKhachHang.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtIDKhachHang.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtIDKhachHang.FocusedState.Parent = this.txtIDKhachHang;
-            this.txtIDKhachHang.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtIDKhachHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtIDKhachHang.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtIDKhachHang.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtIDKhachHang.HoverState.Parent = this.txtIDKhachHang;
@@ -631,7 +631,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.lblTenKhachHang.AutoSize = true;
             this.lblTenKhachHang.Location = new System.Drawing.Point(49, 133);
             this.lblTenKhachHang.Name = "lblTenKhachHang";
-            this.lblTenKhachHang.Size = new System.Drawing.Size(126, 20);
+            this.lblTenKhachHang.Size = new System.Drawing.Size(127, 20);
             this.lblTenKhachHang.TabIndex = 0;
             this.lblTenKhachHang.Text = "Tên khách hàng";
             // 
@@ -640,7 +640,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.lblIDKhachHangKH.AutoSize = true;
             this.lblIDKhachHangKH.Location = new System.Drawing.Point(58, 64);
             this.lblIDKhachHangKH.Name = "lblIDKhachHangKH";
-            this.lblIDKhachHangKH.Size = new System.Drawing.Size(117, 20);
+            this.lblIDKhachHangKH.Size = new System.Drawing.Size(119, 20);
             this.lblIDKhachHangKH.TabIndex = 0;
             this.lblIDKhachHangKH.Text = "ID Khách hàng";
             // 
@@ -724,7 +724,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.grpKhachHang.BorderRadius = 3;
             this.grpKhachHang.Controls.Add(this.dgvKhachHang);
             this.grpKhachHang.CustomBorderColor = System.Drawing.SystemColors.ButtonFace;
-            this.grpKhachHang.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grpKhachHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpKhachHang.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.grpKhachHang.Location = new System.Drawing.Point(22, 295);
             this.grpKhachHang.Name = "grpKhachHang";
@@ -747,7 +747,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.lblTongTien.AutoSize = true;
             this.lblTongTien.Location = new System.Drawing.Point(58, 195);
             this.lblTongTien.Name = "lblTongTien";
-            this.lblTongTien.Size = new System.Drawing.Size(79, 20);
+            this.lblTongTien.Size = new System.Drawing.Size(78, 20);
             this.lblTongTien.TabIndex = 3;
             this.lblTongTien.Text = "Tổng tiền";
             // 
@@ -831,7 +831,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.grpNhaCungCap.BorderRadius = 3;
             this.grpNhaCungCap.Controls.Add(this.dgvNhaCungCap);
             this.grpNhaCungCap.CustomBorderColor = System.Drawing.SystemColors.ButtonFace;
-            this.grpNhaCungCap.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grpNhaCungCap.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpNhaCungCap.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.grpNhaCungCap.Location = new System.Drawing.Point(26, 311);
             this.grpNhaCungCap.Name = "grpNhaCungCap";
@@ -858,7 +858,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.groupBox5.Controls.Add(this.lblTenNCC);
             this.groupBox5.Controls.Add(this.lblNCC);
             this.groupBox5.Cursor = System.Windows.Forms.Cursors.Default;
-            this.groupBox5.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox5.Location = new System.Drawing.Point(26, 26);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Size = new System.Drawing.Size(1343, 268);
@@ -872,7 +872,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.btnXuatExcelNCC.CheckedState.Parent = this.btnXuatExcelNCC;
             this.btnXuatExcelNCC.CustomImages.Parent = this.btnXuatExcelNCC;
             this.btnXuatExcelNCC.FillColor = System.Drawing.Color.Turquoise;
-            this.btnXuatExcelNCC.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXuatExcelNCC.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnXuatExcelNCC.ForeColor = System.Drawing.Color.White;
             this.btnXuatExcelNCC.HoverState.Parent = this.btnXuatExcelNCC;
             this.btnXuatExcelNCC.Location = new System.Drawing.Point(1122, 115);
@@ -892,7 +892,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.btnThoatNCC.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnThoatNCC.CustomImages.Parent = this.btnThoatNCC;
             this.btnThoatNCC.FillColor = System.Drawing.Color.Turquoise;
-            this.btnThoatNCC.Font = new System.Drawing.Font("Roboto", 10.2F);
+            this.btnThoatNCC.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F);
             this.btnThoatNCC.ForeColor = System.Drawing.Color.White;
             this.btnThoatNCC.HoverState.Parent = this.btnThoatNCC;
             this.btnThoatNCC.IndicateFocus = true;
@@ -914,7 +914,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.btnXoaNCC.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnXoaNCC.CustomImages.Parent = this.btnXoaNCC;
             this.btnXoaNCC.FillColor = System.Drawing.Color.Turquoise;
-            this.btnXoaNCC.Font = new System.Drawing.Font("Roboto", 10.2F);
+            this.btnXoaNCC.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F);
             this.btnXoaNCC.ForeColor = System.Drawing.Color.White;
             this.btnXoaNCC.HoverState.Parent = this.btnXoaNCC;
             this.btnXoaNCC.IndicateFocus = true;
@@ -936,7 +936,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.btnCapNhatNCC.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCapNhatNCC.CustomImages.Parent = this.btnCapNhatNCC;
             this.btnCapNhatNCC.FillColor = System.Drawing.Color.Turquoise;
-            this.btnCapNhatNCC.Font = new System.Drawing.Font("Roboto", 10.2F);
+            this.btnCapNhatNCC.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F);
             this.btnCapNhatNCC.ForeColor = System.Drawing.Color.White;
             this.btnCapNhatNCC.HoverState.Parent = this.btnCapNhatNCC;
             this.btnCapNhatNCC.IndicateFocus = true;
@@ -958,7 +958,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.btnThemNCC.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnThemNCC.CustomImages.Parent = this.btnThemNCC;
             this.btnThemNCC.FillColor = System.Drawing.Color.Turquoise;
-            this.btnThemNCC.Font = new System.Drawing.Font("Roboto", 10.2F);
+            this.btnThemNCC.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F);
             this.btnThemNCC.ForeColor = System.Drawing.Color.White;
             this.btnThemNCC.HoverState.Parent = this.btnThemNCC;
             this.btnThemNCC.IndicateFocus = true;
@@ -984,7 +984,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.numTrangThaiNCC.DisabledState.UpDownButtonForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(203)))), ((int)(((byte)(203)))));
             this.numTrangThaiNCC.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.numTrangThaiNCC.FocusedState.Parent = this.numTrangThaiNCC;
-            this.numTrangThaiNCC.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numTrangThaiNCC.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.numTrangThaiNCC.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.numTrangThaiNCC.Location = new System.Drawing.Point(626, 122);
             this.numTrangThaiNCC.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -1017,7 +1017,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.txtSoDTNCC.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtSoDTNCC.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtSoDTNCC.FocusedState.Parent = this.txtSoDTNCC;
-            this.txtSoDTNCC.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSoDTNCC.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSoDTNCC.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtSoDTNCC.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtSoDTNCC.HoverState.Parent = this.txtSoDTNCC;
@@ -1045,7 +1045,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.txtTenNCC.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtTenNCC.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTenNCC.FocusedState.Parent = this.txtTenNCC;
-            this.txtTenNCC.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTenNCC.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTenNCC.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtTenNCC.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTenNCC.HoverState.Parent = this.txtTenNCC;
@@ -1072,7 +1072,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.txtDiaChiNCC.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtDiaChiNCC.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtDiaChiNCC.FocusedState.Parent = this.txtDiaChiNCC;
-            this.txtDiaChiNCC.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDiaChiNCC.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDiaChiNCC.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtDiaChiNCC.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtDiaChiNCC.HoverState.Parent = this.txtDiaChiNCC;
@@ -1099,7 +1099,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.txtIDNCC.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtIDNCC.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtIDNCC.FocusedState.Parent = this.txtIDNCC;
-            this.txtIDNCC.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtIDNCC.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtIDNCC.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtIDNCC.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtIDNCC.HoverState.Parent = this.txtIDNCC;
@@ -1129,7 +1129,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.lblSDTNCC.AutoSize = true;
             this.lblSDTNCC.Location = new System.Drawing.Point(81, 210);
             this.lblSDTNCC.Name = "lblSDTNCC";
-            this.lblSDTNCC.Size = new System.Drawing.Size(107, 20);
+            this.lblSDTNCC.Size = new System.Drawing.Size(106, 20);
             this.lblSDTNCC.TabIndex = 3;
             this.lblSDTNCC.Text = "Số điện thoại";
             // 
@@ -1138,7 +1138,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.lblDiachiNCC.AutoSize = true;
             this.lblDiachiNCC.Location = new System.Drawing.Point(543, 66);
             this.lblDiachiNCC.Name = "lblDiachiNCC";
-            this.lblDiachiNCC.Size = new System.Drawing.Size(59, 20);
+            this.lblDiachiNCC.Size = new System.Drawing.Size(61, 20);
             this.lblDiachiNCC.TabIndex = 3;
             this.lblDiachiNCC.Text = "Địa chỉ";
             // 
@@ -1147,7 +1147,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.lblTenNCC.AutoSize = true;
             this.lblTenNCC.Location = new System.Drawing.Point(48, 138);
             this.lblTenNCC.Name = "lblTenNCC";
-            this.lblTenNCC.Size = new System.Drawing.Size(140, 20);
+            this.lblTenNCC.Size = new System.Drawing.Size(142, 20);
             this.lblTenNCC.TabIndex = 0;
             this.lblTenNCC.Text = "Tên nhà cung cấp";
             // 
@@ -1156,7 +1156,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.lblNCC.AutoSize = true;
             this.lblNCC.Location = new System.Drawing.Point(56, 66);
             this.lblNCC.Name = "lblNCC";
-            this.lblNCC.Size = new System.Drawing.Size(132, 20);
+            this.lblNCC.Size = new System.Drawing.Size(134, 20);
             this.lblNCC.TabIndex = 0;
             this.lblNCC.Text = "ID Nhà cung cấp";
             // 
@@ -1172,7 +1172,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.grpSanPham.Controls.Add(this.tabPage6);
             this.grpSanPham.Controls.Add(this.tabPage7);
             this.grpSanPham.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.grpSanPham.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grpSanPham.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpSanPham.Location = new System.Drawing.Point(0, 50);
             this.grpSanPham.Margin = new System.Windows.Forms.Padding(4);
             this.grpSanPham.Name = "grpSanPham";
@@ -1186,7 +1186,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.tabPage1.BackgroundImage = global::_452_417_CDTH19E_SHOESSHOP.Properties.Resources._1611116667_50_hinh_nen_mau_xanh_dep_danh_cho_may_tinh;
             this.tabPage1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tabPage1.Controls.Add(this.label9);
-            this.tabPage1.Font = new System.Drawing.Font("Roboto", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabPage1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabPage1.Location = new System.Drawing.Point(4, 29);
             this.tabPage1.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage1.Name = "tabPage1";
@@ -1201,11 +1201,11 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.label9.Font = new System.Drawing.Font("Roboto", 34.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 34.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.LightCyan;
-            this.label9.Location = new System.Drawing.Point(4, 588);
+            this.label9.Location = new System.Drawing.Point(4, 591);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(529, 70);
+            this.label9.Size = new System.Drawing.Size(572, 67);
             this.label9.TabIndex = 1;
             this.label9.Text = "QUẢN LÝ BÁN GIÀY";
             this.label9.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -1228,7 +1228,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.grpDanhSachSP.BorderRadius = 3;
             this.grpDanhSachSP.Controls.Add(this.dgvSanPham);
             this.grpDanhSachSP.CustomBorderColor = System.Drawing.SystemColors.ButtonFace;
-            this.grpDanhSachSP.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grpDanhSachSP.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpDanhSachSP.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.grpDanhSachSP.Location = new System.Drawing.Point(25, 314);
             this.grpDanhSachSP.Name = "grpDanhSachSP";
@@ -1317,7 +1317,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.grp1.Controls.Add(this.lblTenSP);
             this.grp1.Controls.Add(this.lblIDSP);
             this.grp1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.grp1.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grp1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grp1.Location = new System.Drawing.Point(25, 22);
             this.grp1.Name = "grp1";
             this.grp1.Size = new System.Drawing.Size(1347, 272);
@@ -1331,7 +1331,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.btnXuatExcelSP.CheckedState.Parent = this.btnXuatExcelSP;
             this.btnXuatExcelSP.CustomImages.Parent = this.btnXuatExcelSP;
             this.btnXuatExcelSP.FillColor = System.Drawing.Color.Turquoise;
-            this.btnXuatExcelSP.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXuatExcelSP.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnXuatExcelSP.ForeColor = System.Drawing.Color.White;
             this.btnXuatExcelSP.HoverState.Parent = this.btnXuatExcelSP;
             this.btnXuatExcelSP.Location = new System.Drawing.Point(1157, 132);
@@ -1351,7 +1351,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.btnThoatSP.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnThoatSP.CustomImages.Parent = this.btnThoatSP;
             this.btnThoatSP.FillColor = System.Drawing.Color.Turquoise;
-            this.btnThoatSP.Font = new System.Drawing.Font("Roboto", 10.2F);
+            this.btnThoatSP.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F);
             this.btnThoatSP.ForeColor = System.Drawing.Color.White;
             this.btnThoatSP.HoverState.Parent = this.btnThoatSP;
             this.btnThoatSP.IndicateFocus = true;
@@ -1373,7 +1373,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.btnXoaSP.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnXoaSP.CustomImages.Parent = this.btnXoaSP;
             this.btnXoaSP.FillColor = System.Drawing.Color.Turquoise;
-            this.btnXoaSP.Font = new System.Drawing.Font("Roboto", 10.2F);
+            this.btnXoaSP.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F);
             this.btnXoaSP.ForeColor = System.Drawing.Color.White;
             this.btnXoaSP.HoverState.Parent = this.btnXoaSP;
             this.btnXoaSP.IndicateFocus = true;
@@ -1395,7 +1395,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.btnCapNhatSP.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCapNhatSP.CustomImages.Parent = this.btnCapNhatSP;
             this.btnCapNhatSP.FillColor = System.Drawing.Color.Turquoise;
-            this.btnCapNhatSP.Font = new System.Drawing.Font("Roboto", 10.2F);
+            this.btnCapNhatSP.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F);
             this.btnCapNhatSP.ForeColor = System.Drawing.Color.White;
             this.btnCapNhatSP.HoverState.Parent = this.btnCapNhatSP;
             this.btnCapNhatSP.IndicateFocus = true;
@@ -1417,7 +1417,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.btnThemSP.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnThemSP.CustomImages.Parent = this.btnThemSP;
             this.btnThemSP.FillColor = System.Drawing.Color.Turquoise;
-            this.btnThemSP.Font = new System.Drawing.Font("Roboto", 10.2F);
+            this.btnThemSP.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F);
             this.btnThemSP.ForeColor = System.Drawing.Color.White;
             this.btnThemSP.HoverState.Parent = this.btnThemSP;
             this.btnThemSP.IndicateFocus = true;
@@ -1443,7 +1443,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.numTrangThaiSP.DisabledState.UpDownButtonForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(203)))), ((int)(((byte)(203)))));
             this.numTrangThaiSP.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.numTrangThaiSP.FocusedState.Parent = this.numTrangThaiSP;
-            this.numTrangThaiSP.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numTrangThaiSP.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.numTrangThaiSP.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.numTrangThaiSP.Location = new System.Drawing.Point(673, 132);
             this.numTrangThaiSP.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -1474,7 +1474,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.cboLoaiSanPham.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.cboLoaiSanPham.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.cboLoaiSanPham.FocusedState.Parent = this.cboLoaiSanPham;
-            this.cboLoaiSanPham.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboLoaiSanPham.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboLoaiSanPham.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.cboLoaiSanPham.HoverState.Parent = this.cboLoaiSanPham;
             this.cboLoaiSanPham.ItemHeight = 30;
@@ -1495,7 +1495,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.cboIDNCC.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.cboIDNCC.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.cboIDNCC.FocusedState.Parent = this.cboIDNCC;
-            this.cboIDNCC.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboIDNCC.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboIDNCC.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.cboIDNCC.HoverState.Parent = this.cboIDNCC;
             this.cboIDNCC.ItemHeight = 30;
@@ -1518,7 +1518,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.txtTenSanPham.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtTenSanPham.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTenSanPham.FocusedState.Parent = this.txtTenSanPham;
-            this.txtTenSanPham.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTenSanPham.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTenSanPham.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtTenSanPham.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTenSanPham.HoverState.Parent = this.txtTenSanPham;
@@ -1545,7 +1545,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.txtIDSanPham.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtIDSanPham.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtIDSanPham.FocusedState.Parent = this.txtIDSanPham;
-            this.txtIDSanPham.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtIDSanPham.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtIDSanPham.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtIDSanPham.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtIDSanPham.HoverState.Parent = this.txtIDSanPham;
@@ -1585,7 +1585,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(513, 80);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(132, 20);
+            this.label4.Size = new System.Drawing.Size(134, 20);
             this.label4.TabIndex = 0;
             this.label4.Text = "ID Nhà cung cấp";
             // 
@@ -1594,7 +1594,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.lblTenSP.AutoSize = true;
             this.lblTenSP.Location = new System.Drawing.Point(51, 148);
             this.lblTenSP.Name = "lblTenSP";
-            this.lblTenSP.Size = new System.Drawing.Size(114, 20);
+            this.lblTenSP.Size = new System.Drawing.Size(115, 20);
             this.lblTenSP.TabIndex = 0;
             this.lblTenSP.Text = "Tên sản phẩm";
             // 
@@ -1603,7 +1603,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.lblIDSP.AutoSize = true;
             this.lblIDSP.Location = new System.Drawing.Point(61, 80);
             this.lblIDSP.Name = "lblIDSP";
-            this.lblIDSP.Size = new System.Drawing.Size(104, 20);
+            this.lblIDSP.Size = new System.Drawing.Size(106, 20);
             this.lblIDSP.TabIndex = 0;
             this.lblIDSP.Text = "ID Sản phẩm";
             // 
@@ -1625,7 +1625,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.grpDanhSachHD.BorderRadius = 3;
             this.grpDanhSachHD.Controls.Add(this.dgvHoaDon);
             this.grpDanhSachHD.CustomBorderColor = System.Drawing.SystemColors.ButtonFace;
-            this.grpDanhSachHD.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grpDanhSachHD.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpDanhSachHD.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.grpDanhSachHD.Location = new System.Drawing.Point(19, 293);
             this.grpDanhSachHD.Name = "grpDanhSachHD";
@@ -1740,7 +1740,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.dtpNgayBan.Cursor = System.Windows.Forms.Cursors.Hand;
             this.dtpNgayBan.CustomFormat = "dd/MM/yyyy";
             this.dtpNgayBan.FillColor = System.Drawing.Color.Turquoise;
-            this.dtpNgayBan.Font = new System.Drawing.Font("Roboto", 10.2F);
+            this.dtpNgayBan.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F);
             this.dtpNgayBan.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.dtpNgayBan.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpNgayBan.HoverState.Parent = this.dtpNgayBan;
@@ -1763,7 +1763,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.btnThoatHD.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnThoatHD.CustomImages.Parent = this.btnThoatHD;
             this.btnThoatHD.FillColor = System.Drawing.Color.Turquoise;
-            this.btnThoatHD.Font = new System.Drawing.Font("Roboto", 10.2F);
+            this.btnThoatHD.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F);
             this.btnThoatHD.ForeColor = System.Drawing.Color.White;
             this.btnThoatHD.HoverState.Parent = this.btnThoatHD;
             this.btnThoatHD.IndicateFocus = true;
@@ -1785,7 +1785,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.btnXoaHD.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnXoaHD.CustomImages.Parent = this.btnXoaHD;
             this.btnXoaHD.FillColor = System.Drawing.Color.Turquoise;
-            this.btnXoaHD.Font = new System.Drawing.Font("Roboto", 10.2F);
+            this.btnXoaHD.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F);
             this.btnXoaHD.ForeColor = System.Drawing.Color.White;
             this.btnXoaHD.HoverState.Parent = this.btnXoaHD;
             this.btnXoaHD.IndicateFocus = true;
@@ -1807,7 +1807,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.btnCapNhatHD.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCapNhatHD.CustomImages.Parent = this.btnCapNhatHD;
             this.btnCapNhatHD.FillColor = System.Drawing.Color.Turquoise;
-            this.btnCapNhatHD.Font = new System.Drawing.Font("Roboto", 10.2F);
+            this.btnCapNhatHD.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F);
             this.btnCapNhatHD.ForeColor = System.Drawing.Color.White;
             this.btnCapNhatHD.HoverState.Parent = this.btnCapNhatHD;
             this.btnCapNhatHD.IndicateFocus = true;
@@ -1829,7 +1829,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.btnThemHD.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnThemHD.CustomImages.Parent = this.btnThemHD;
             this.btnThemHD.FillColor = System.Drawing.Color.Turquoise;
-            this.btnThemHD.Font = new System.Drawing.Font("Roboto", 10.2F);
+            this.btnThemHD.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F);
             this.btnThemHD.ForeColor = System.Drawing.Color.White;
             this.btnThemHD.HoverState.Parent = this.btnThemHD;
             this.btnThemHD.IndicateFocus = true;
@@ -1855,7 +1855,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.numTrangThaiHD.DisabledState.UpDownButtonForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(203)))), ((int)(((byte)(203)))));
             this.numTrangThaiHD.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.numTrangThaiHD.FocusedState.Parent = this.numTrangThaiHD;
-            this.numTrangThaiHD.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numTrangThaiHD.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.numTrangThaiHD.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.numTrangThaiHD.Location = new System.Drawing.Point(732, 179);
             this.numTrangThaiHD.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -1888,7 +1888,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.txtDiaChiHD.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtDiaChiHD.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtDiaChiHD.FocusedState.Parent = this.txtDiaChiHD;
-            this.txtDiaChiHD.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDiaChiHD.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDiaChiHD.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtDiaChiHD.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtDiaChiHD.HoverState.Parent = this.txtDiaChiHD;
@@ -1915,7 +1915,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.txtTongTienHD.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtTongTienHD.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTongTienHD.FocusedState.Parent = this.txtTongTienHD;
-            this.txtTongTienHD.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTongTienHD.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTongTienHD.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtTongTienHD.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTongTienHD.HoverState.Parent = this.txtTongTienHD;
@@ -1939,7 +1939,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.cboIDKhachHang.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.cboIDKhachHang.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.cboIDKhachHang.FocusedState.Parent = this.cboIDKhachHang;
-            this.cboIDKhachHang.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboIDKhachHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboIDKhachHang.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.cboIDKhachHang.HoverState.Parent = this.cboIDKhachHang;
             this.cboIDKhachHang.ItemHeight = 30;
@@ -1962,7 +1962,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.txtIDHoaDon.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtIDHoaDon.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtIDHoaDon.FocusedState.Parent = this.txtIDHoaDon;
-            this.txtIDHoaDon.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtIDHoaDon.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtIDHoaDon.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtIDHoaDon.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtIDHoaDon.HoverState.Parent = this.txtIDHoaDon;
@@ -1983,7 +1983,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.lblNgayBan.AutoSize = true;
             this.lblNgayBan.Location = new System.Drawing.Point(619, 136);
             this.lblNgayBan.Name = "lblNgayBan";
-            this.lblNgayBan.Size = new System.Drawing.Size(80, 20);
+            this.lblNgayBan.Size = new System.Drawing.Size(79, 20);
             this.lblNgayBan.TabIndex = 0;
             this.lblNgayBan.Text = "Ngày bán";
             // 
@@ -1992,7 +1992,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.lblDiaChi.AutoSize = true;
             this.lblDiaChi.Location = new System.Drawing.Point(640, 77);
             this.lblDiaChi.Name = "lblDiaChi";
-            this.lblDiaChi.Size = new System.Drawing.Size(59, 20);
+            this.lblDiaChi.Size = new System.Drawing.Size(61, 20);
             this.lblDiaChi.TabIndex = 0;
             this.lblDiaChi.Text = "Địa chỉ";
             // 
@@ -2001,7 +2001,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.lblIDKhachHang.AutoSize = true;
             this.lblIDKhachHang.Location = new System.Drawing.Point(20, 136);
             this.lblIDKhachHang.Name = "lblIDKhachHang";
-            this.lblIDKhachHang.Size = new System.Drawing.Size(117, 20);
+            this.lblIDKhachHang.Size = new System.Drawing.Size(119, 20);
             this.lblIDKhachHang.TabIndex = 0;
             this.lblIDKhachHang.Text = "ID Khách hàng";
             // 
@@ -2010,7 +2010,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.lblIDHoaDon.AutoSize = true;
             this.lblIDHoaDon.Location = new System.Drawing.Point(44, 77);
             this.lblIDHoaDon.Name = "lblIDHoaDon";
-            this.lblIDHoaDon.Size = new System.Drawing.Size(93, 20);
+            this.lblIDHoaDon.Size = new System.Drawing.Size(94, 20);
             this.lblIDHoaDon.TabIndex = 0;
             this.lblIDHoaDon.Text = "ID Hoá đơn";
             // 
@@ -2032,7 +2032,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.grpNhanVien.BorderRadius = 3;
             this.grpNhanVien.Controls.Add(this.dgvNhanVien);
             this.grpNhanVien.CustomBorderColor = System.Drawing.SystemColors.ButtonFace;
-            this.grpNhanVien.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grpNhanVien.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpNhanVien.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.grpNhanVien.Location = new System.Drawing.Point(22, 304);
             this.grpNhanVien.Name = "grpNhanVien";
@@ -2167,7 +2167,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.btnXuatExcelNV.CheckedState.Parent = this.btnXuatExcelNV;
             this.btnXuatExcelNV.CustomImages.Parent = this.btnXuatExcelNV;
             this.btnXuatExcelNV.FillColor = System.Drawing.Color.Turquoise;
-            this.btnXuatExcelNV.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXuatExcelNV.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnXuatExcelNV.ForeColor = System.Drawing.Color.White;
             this.btnXuatExcelNV.HoverState.Parent = this.btnXuatExcelNV;
             this.btnXuatExcelNV.Location = new System.Drawing.Point(1157, 104);
@@ -2187,7 +2187,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.dtpNgaySinhNV.Cursor = System.Windows.Forms.Cursors.Hand;
             this.dtpNgaySinhNV.CustomFormat = "dd/MM/yyyy";
             this.dtpNgaySinhNV.FillColor = System.Drawing.Color.Turquoise;
-            this.dtpNgaySinhNV.Font = new System.Drawing.Font("Roboto", 10.2F);
+            this.dtpNgaySinhNV.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F);
             this.dtpNgaySinhNV.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.dtpNgaySinhNV.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpNgaySinhNV.HoverState.Parent = this.dtpNgaySinhNV;
@@ -2210,7 +2210,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.btnThoatNV.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnThoatNV.CustomImages.Parent = this.btnThoatNV;
             this.btnThoatNV.FillColor = System.Drawing.Color.Turquoise;
-            this.btnThoatNV.Font = new System.Drawing.Font("Roboto", 10.2F);
+            this.btnThoatNV.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F);
             this.btnThoatNV.ForeColor = System.Drawing.Color.White;
             this.btnThoatNV.HoverState.Parent = this.btnThoatNV;
             this.btnThoatNV.IndicateFocus = true;
@@ -2232,7 +2232,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.btnXoaNV.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnXoaNV.CustomImages.Parent = this.btnXoaNV;
             this.btnXoaNV.FillColor = System.Drawing.Color.Turquoise;
-            this.btnXoaNV.Font = new System.Drawing.Font("Roboto", 10.2F);
+            this.btnXoaNV.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F);
             this.btnXoaNV.ForeColor = System.Drawing.Color.White;
             this.btnXoaNV.HoverState.Parent = this.btnXoaNV;
             this.btnXoaNV.IndicateFocus = true;
@@ -2254,7 +2254,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.btnCapNhatNV.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCapNhatNV.CustomImages.Parent = this.btnCapNhatNV;
             this.btnCapNhatNV.FillColor = System.Drawing.Color.Turquoise;
-            this.btnCapNhatNV.Font = new System.Drawing.Font("Roboto", 10.2F);
+            this.btnCapNhatNV.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F);
             this.btnCapNhatNV.ForeColor = System.Drawing.Color.White;
             this.btnCapNhatNV.HoverState.Parent = this.btnCapNhatNV;
             this.btnCapNhatNV.IndicateFocus = true;
@@ -2276,7 +2276,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.btnThemNV.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnThemNV.CustomImages.Parent = this.btnThemNV;
             this.btnThemNV.FillColor = System.Drawing.Color.Turquoise;
-            this.btnThemNV.Font = new System.Drawing.Font("Roboto", 10.2F);
+            this.btnThemNV.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F);
             this.btnThemNV.ForeColor = System.Drawing.Color.White;
             this.btnThemNV.HoverState.Parent = this.btnThemNV;
             this.btnThemNV.IndicateFocus = true;
@@ -2302,7 +2302,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.numTrangThaiNV.DisabledState.UpDownButtonForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(203)))), ((int)(((byte)(203)))));
             this.numTrangThaiNV.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.numTrangThaiNV.FocusedState.Parent = this.numTrangThaiNV;
-            this.numTrangThaiNV.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numTrangThaiNV.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.numTrangThaiNV.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.numTrangThaiNV.Location = new System.Drawing.Point(663, 202);
             this.numTrangThaiNV.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -2335,7 +2335,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.txtDiaChiNV.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtDiaChiNV.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtDiaChiNV.FocusedState.Parent = this.txtDiaChiNV;
-            this.txtDiaChiNV.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDiaChiNV.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDiaChiNV.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtDiaChiNV.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtDiaChiNV.HoverState.Parent = this.txtDiaChiNV;
@@ -2362,7 +2362,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.txtEmailNV.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtEmailNV.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtEmailNV.FocusedState.Parent = this.txtEmailNV;
-            this.txtEmailNV.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmailNV.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmailNV.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtEmailNV.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtEmailNV.HoverState.Parent = this.txtEmailNV;
@@ -2389,7 +2389,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.txtLuongNV.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtLuongNV.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtLuongNV.FocusedState.Parent = this.txtLuongNV;
-            this.txtLuongNV.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLuongNV.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLuongNV.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtLuongNV.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtLuongNV.HoverState.Parent = this.txtLuongNV;
@@ -2417,7 +2417,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.txtSoDTNV.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtSoDTNV.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtSoDTNV.FocusedState.Parent = this.txtSoDTNV;
-            this.txtSoDTNV.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSoDTNV.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSoDTNV.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtSoDTNV.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtSoDTNV.HoverState.Parent = this.txtSoDTNV;
@@ -2445,7 +2445,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.txtTenNhanVien.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtTenNhanVien.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTenNhanVien.FocusedState.Parent = this.txtTenNhanVien;
-            this.txtTenNhanVien.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTenNhanVien.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTenNhanVien.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtTenNhanVien.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTenNhanVien.HoverState.Parent = this.txtTenNhanVien;
@@ -2472,7 +2472,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.txtIDNhanVien.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtIDNhanVien.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtIDNhanVien.FocusedState.Parent = this.txtIDNhanVien;
-            this.txtIDNhanVien.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtIDNhanVien.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtIDNhanVien.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtIDNhanVien.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtIDNhanVien.HoverState.Parent = this.txtIDNhanVien;
@@ -2502,7 +2502,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.label14.AutoSize = true;
             this.label14.Location = new System.Drawing.Point(566, 159);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(59, 20);
+            this.label14.Size = new System.Drawing.Size(61, 20);
             this.label14.TabIndex = 3;
             this.label14.Text = "Địa chỉ";
             // 
@@ -2520,7 +2520,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(566, 44);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(58, 20);
+            this.label6.Size = new System.Drawing.Size(55, 20);
             this.label6.TabIndex = 3;
             this.label6.Text = "Lương";
             // 
@@ -2529,7 +2529,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(45, 217);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(107, 20);
+            this.label7.Size = new System.Drawing.Size(106, 20);
             this.label7.TabIndex = 3;
             this.label7.Text = "Số điện thoại";
             // 
@@ -2547,7 +2547,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(45, 104);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(110, 20);
+            this.label8.Size = new System.Drawing.Size(113, 20);
             this.label8.TabIndex = 0;
             this.label8.Text = "Tên nhân viên";
             // 
@@ -2556,7 +2556,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.label10.AutoSize = true;
             this.label10.Location = new System.Drawing.Point(53, 44);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(102, 20);
+            this.label10.Size = new System.Drawing.Size(105, 20);
             this.label10.TabIndex = 0;
             this.label10.Text = "ID Nhân viên";
             // 
@@ -2572,7 +2572,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.btnExitHome.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnExitHome.CustomImages.Parent = this.btnExitHome;
             this.btnExitHome.FillColor = System.Drawing.Color.Transparent;
-            this.btnExitHome.Font = new System.Drawing.Font("Roboto", 10.2F);
+            this.btnExitHome.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F);
             this.btnExitHome.ForeColor = System.Drawing.Color.White;
             this.btnExitHome.HoverState.Parent = this.btnExitHome;
             this.btnExitHome.Location = new System.Drawing.Point(1340, 15);
@@ -2591,7 +2591,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.Controls.Add(this.btnExitHome);
             this.Controls.Add(this.grpSanPham);
             this.Controls.Add(this.menuStrip1);
-            this.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);

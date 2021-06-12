@@ -58,6 +58,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.numSoLuongSP = new Guna.UI2.WinForms.Guna2NumericUpDown();
             this.grp2 = new System.Windows.Forms.GroupBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.dtpNgayBan = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.txtTongTienHD = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnXoaHD = new Guna.UI2.WinForms.Guna2Button();
@@ -83,6 +84,8 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.guna2GroupBox1 = new Guna.UI2.WinForms.Guna2GroupBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             this.grpChiTietHoaDon.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvChiTietHD)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numSoLuongSP)).BeginInit();
@@ -481,6 +484,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             // 
             // grp2
             // 
+            this.grp2.Controls.Add(this.label9);
             this.grp2.Controls.Add(this.dtpNgayBan);
             this.grp2.Controls.Add(this.txtTongTienHD);
             this.grp2.Controls.Add(this.btnXoaHD);
@@ -504,6 +508,16 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.grp2.TabIndex = 44;
             this.grp2.TabStop = false;
             this.grp2.Text = "Hoá đơn";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(552, 57);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(48, 20);
+            this.label9.TabIndex = 36;
+            this.label9.Text = "VND";
             // 
             // dtpNgayBan
             // 
@@ -818,7 +832,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.dataGridViewTextBoxColumn9,
             this.dataGridViewTextBoxColumn11,
             this.dataGridViewTextBoxColumn12});
-            this.dgvHoaDon.Location = new System.Drawing.Point(3, 42);
+            this.dgvHoaDon.Location = new System.Drawing.Point(3, 44);
             this.dgvHoaDon.Name = "dgvHoaDon";
             this.dgvHoaDon.ReadOnly = true;
             this.dgvHoaDon.RowHeadersVisible = false;
@@ -893,6 +907,8 @@ namespace _452_417_CDTH19E_SHOESSHOP
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.label11);
+            this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.txtIDHoaDon);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.btnThoatHD);
@@ -909,13 +925,33 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.groupBox1.Controls.Add(this.btnThemCTHD);
             this.groupBox1.Controls.Add(this.btnCapNhatCTHD);
             this.groupBox1.Controls.Add(this.btnXoaCTHD);
-            this.groupBox1.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(787, 67);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(746, 291);
             this.groupBox1.TabIndex = 45;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Chi tiết hoá đơn";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(517, 195);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(48, 20);
+            this.label11.TabIndex = 40;
+            this.label11.Text = "VND";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(518, 120);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(48, 20);
+            this.label10.TabIndex = 37;
+            this.label10.Text = "VND";
             // 
             // frmChiTietHoaDon
             // 
@@ -1003,5 +1039,8 @@ namespace _452_417_CDTH19E_SHOESSHOP
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn12;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label10;
     }
 }
