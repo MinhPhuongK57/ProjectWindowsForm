@@ -382,5 +382,10 @@ namespace _452_417_CDTH19E_SHOESSHOP
         {
 
         }
+
+        private void btnThoatHD_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

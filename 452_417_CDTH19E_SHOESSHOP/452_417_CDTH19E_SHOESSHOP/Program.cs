@@ -16,8 +16,8 @@ namespace _452_417_CDTH19E_SHOESSHOP
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new frmDangNhap());
-            Application.Run(new frmTrangChu());
+            Application.Run(new frmDangNhap());
+            //Application.Run(new frmTrangChu());
             //Application.Run(new frmTimKiemNhaCungCap());
             //Application.Run(new frmTimKiemKhachHang());
             //Application.Run(new frmTimKiemHoaDon());
