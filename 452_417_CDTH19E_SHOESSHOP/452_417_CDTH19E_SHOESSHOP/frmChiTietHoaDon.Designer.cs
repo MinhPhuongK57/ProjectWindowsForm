@@ -412,6 +412,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.dgvChiTietHD.RowHeadersVisible = false;
             this.dgvChiTietHD.RowHeadersWidth = 51;
             this.dgvChiTietHD.RowTemplate.Height = 24;
+            this.dgvChiTietHD.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvChiTietHD.Size = new System.Drawing.Size(746, 324);
             this.dgvChiTietHD.TabIndex = 0;
             this.dgvChiTietHD.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvChiTietHD_CellClick);
@@ -513,6 +514,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label9.Location = new System.Drawing.Point(549, 58);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(48, 20);
@@ -938,6 +940,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label11.Location = new System.Drawing.Point(512, 195);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(48, 20);
@@ -948,6 +951,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label10.Location = new System.Drawing.Point(512, 120);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(48, 20);

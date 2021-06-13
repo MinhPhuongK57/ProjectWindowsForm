@@ -21,21 +21,21 @@ namespace _452_417_CDTH19E_SHOESSHOP
         //Button đăng nhập
         private void btnDangNhapForm_Click_1(object sender, EventArgs e)
         {
-            this.Hide();
-            frmTrangChu form = new frmTrangChu();
-            form.ShowDialog();
-            this.Show();
-            //if ((txtTenDangNhap.Text == "tmp" || txtTenDangNhap.Text == "ptd") && (txtMatKhau.Text == "123456"))
-            //{
-            //    this.Hide();
-            //    frmTrangChu form = new frmTrangChu();
-            //    form.ShowDialog();
-            //    this.Show();
-            //}
-            //else
-            //{
-            //    MessageBox.Show("sai tên đăng nhập hoặc mật khẩu!!!!!", "thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            //}
+            //this.Hide();
+            //frmTrangChu form = new frmTrangChu();
+            //form.ShowDialog();
+            //this.Show();
+            if ((txtTenDangNhap.Text == "tmp" || txtTenDangNhap.Text == "ptd") && (txtMatKhau.Text == "123456"))
+            {
+                this.Hide();
+                frmTrangChu form = new frmTrangChu();
+                form.ShowDialog();
+                this.Show();
+            }
+            else
+            {
+                MessageBox.Show("sai tên đăng nhập hoặc mật khẩu!!!!!", "thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
 
         /*----------------Password----------*/
@@ -56,6 +56,10 @@ namespace _452_417_CDTH19E_SHOESSHOP
             {
                 picEye.Visible = false;
             }
+            //else
+            //{
+            //    picEye.Visible = true;
+            //}
         }
 
         private void txtMatKhau_KeyDown_1(object sender, KeyEventArgs e)

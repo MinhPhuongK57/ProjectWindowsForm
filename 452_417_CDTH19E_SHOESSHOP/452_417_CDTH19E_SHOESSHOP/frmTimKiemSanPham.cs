@@ -30,7 +30,6 @@ namespace _452_417_CDTH19E_SHOESSHOP
             }
             cboTimKiemSP.SelectedIndex = 0;
             XuLyDuLieu("select * from SANPHAM",dgvTimKiemSP);
-            pnlTimKiem.Visible = false;
         }
 
         //Xử lý dữ liệu kết nối bảng sản phẩm
@@ -48,7 +47,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             {
                 if (cboTimKiemSP.SelectedIndex == 0)
                 {
-                    query = "select * from SANPHAM where ID_SanPham like '%"+txtTimKiemSP.Text+"%'";
+                    query = "select * from SANPHAM where ID_SanPham like '%" + txtTimKiemSP.Text + "%'";
                 }
                 else if (cboTimKiemSP.SelectedIndex == 1)
                 {
@@ -56,31 +55,15 @@ namespace _452_417_CDTH19E_SHOESSHOP
                 }
                 else if (cboTimKiemSP.SelectedIndex == 2)
                 {
-                    query = "select * from SANPHAM where ID_ChiTietSanPham like '%" + txtTimKiemSP.Text + "%'";
+                    query = "select * from SANPHAM where TenSanPham like N'%" + txtTimKiemSP.Text + "%'";
                 }
                 else if (cboTimKiemSP.SelectedIndex == 3)
                 {
-                    query = "select * from SANPHAM where ID_NCC like '%" + txtTimKiemSP.Text + "%'";
-                }
-                else if (cboTimKiemSP.SelectedIndex == 4)
-                {
-                    query = "select * from SANPHAM where TenSanPham like '%" + txtTimKiemSP.Text + "%'";
-                }
-                else if (cboTimKiemSP.SelectedIndex == 5)
-                {
-                    query = "select * from SANPHAM where SoLuong between '" + txtFrom.Text + "' and '" + txtTo.Text + "'";
-                }
-                else if (cboTimKiemSP.SelectedIndex == 6)
-                {
-                    query = "select * from SANPHAM where GiaNhap between '" + txtFrom.Text + "' and '" + txtTo.Text + "'";
-                }
-                else if (cboTimKiemSP.SelectedIndex == 7)
-                {
-                    query = "select * from SANPHAM where GiaBan between '" + txtFrom.Text + "' and '" + txtTo.Text + "'";
-                }
-                else
-                {
                     query = "select * from SANPHAM where TrangThai like '%" + txtTimKiemSP.Text + "%'";
+                }
+                else 
+                {
+                    query = "select * from SANPHAM where ID_NCC like '%" + txtTimKiemSP.Text + "%'";
                 }
             }  
             XuLyDuLieu(query, dgvTimKiemSP);
@@ -88,20 +71,14 @@ namespace _452_417_CDTH19E_SHOESSHOP
         //ComboBox sự kiện SelectedIndexChanged tìm kiếm
         private void cboTimKiemSP_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if(cboTimKiemSP.SelectedIndex > 4 && cboTimKiemSP.SelectedIndex < 8)
-            {
-                pnlTimKiem.Visible = true;
-                txtFrom.Text = "";
-                txtTo.Text = "";
-                txtTimKiemSP.Text = "";
-                txtFrom.Focus();
-                txtTimKiemSP.Enabled = false;
-            }    
-            else
-            {
-                txtTimKiemSP.Enabled = true;
-                pnlTimKiem.Visible = false;
-            }    
+            //if(cboTimKiemSP.SelectedIndex > 4 && cboTimKiemSP.SelectedIndex < 8)
+            //{
+            //    txtTimKiemSP.Text = "";
+            //}    
+            //else
+            //{
+            //    txtTimKiemSP.Enabled = true;
+            //}    
         }
         //Bẫy lỗi ở sự kiện KeyPress From To
         private void txtFrom_KeyPress_1(object sender, KeyPressEventArgs e)

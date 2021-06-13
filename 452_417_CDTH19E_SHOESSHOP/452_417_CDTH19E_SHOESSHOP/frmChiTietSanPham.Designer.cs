@@ -73,6 +73,9 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.guna2GroupBox2 = new Guna.UI2.WinForms.Guna2GroupBox();
             this.label7 = new System.Windows.Forms.Label();
             this.cboIDSanPham = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.btnThoatCTSP = new Guna.UI2.WinForms.Guna2Button();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             this.dgvChiTietSanPham.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvChiTietSP)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numSoLuongSP)).BeginInit();
@@ -164,7 +167,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.dgvChiTietSanPham.Location = new System.Drawing.Point(12, 436);
             this.dgvChiTietSanPham.Name = "dgvChiTietSanPham";
             this.dgvChiTietSanPham.ShadowDecoration.Parent = this.dgvChiTietSanPham;
-            this.dgvChiTietSanPham.Size = new System.Drawing.Size(1431, 318);
+            this.dgvChiTietSanPham.Size = new System.Drawing.Size(1433, 318);
             this.dgvChiTietSanPham.TabIndex = 26;
             this.dgvChiTietSanPham.Text = "Danh Sách Chi Tiết Sản Phẩm";
             // 
@@ -188,7 +191,8 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.dgvChiTietSP.RowHeadersVisible = false;
             this.dgvChiTietSP.RowHeadersWidth = 51;
             this.dgvChiTietSP.RowTemplate.Height = 24;
-            this.dgvChiTietSP.Size = new System.Drawing.Size(1431, 275);
+            this.dgvChiTietSP.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvChiTietSP.Size = new System.Drawing.Size(1433, 275);
             this.dgvChiTietSP.TabIndex = 0;
             this.dgvChiTietSP.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvChiTietSP_CellClick);
             // 
@@ -318,7 +322,6 @@ namespace _452_417_CDTH19E_SHOESSHOP
             0,
             0,
             0});
-            this.numSoLuongSP.KeyUp += new System.Windows.Forms.KeyEventHandler(this.numSoLuongSP_KeyUp);
             // 
             // label5
             // 
@@ -400,7 +403,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.btnXoaCTSP.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnXoaCTSP.ForeColor = System.Drawing.Color.White;
             this.btnXoaCTSP.HoverState.Parent = this.btnXoaCTSP;
-            this.btnXoaCTSP.Location = new System.Drawing.Point(1286, 230);
+            this.btnXoaCTSP.Location = new System.Drawing.Point(1286, 209);
             this.btnXoaCTSP.Name = "btnXoaCTSP";
             this.btnXoaCTSP.ShadowDecoration.Parent = this.btnXoaCTSP;
             this.btnXoaCTSP.Size = new System.Drawing.Size(112, 39);
@@ -418,7 +421,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.btnCapNhatCTSP.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCapNhatCTSP.ForeColor = System.Drawing.Color.White;
             this.btnCapNhatCTSP.HoverState.Parent = this.btnCapNhatCTSP;
-            this.btnCapNhatCTSP.Location = new System.Drawing.Point(1286, 167);
+            this.btnCapNhatCTSP.Location = new System.Drawing.Point(1286, 148);
             this.btnCapNhatCTSP.Name = "btnCapNhatCTSP";
             this.btnCapNhatCTSP.ShadowDecoration.Parent = this.btnCapNhatCTSP;
             this.btnCapNhatCTSP.Size = new System.Drawing.Size(112, 39);
@@ -436,7 +439,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.btnThemCTSP.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThemCTSP.ForeColor = System.Drawing.Color.White;
             this.btnThemCTSP.HoverState.Parent = this.btnThemCTSP;
-            this.btnThemCTSP.Location = new System.Drawing.Point(1286, 104);
+            this.btnThemCTSP.Location = new System.Drawing.Point(1285, 86);
             this.btnThemCTSP.Name = "btnThemCTSP";
             this.btnThemCTSP.ShadowDecoration.Parent = this.btnThemCTSP;
             this.btnThemCTSP.Size = new System.Drawing.Size(112, 39);
@@ -501,7 +504,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.picExitHome.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.picExitHome.ForeColor = System.Drawing.Color.White;
             this.picExitHome.HoverState.Parent = this.picExitHome;
-            this.picExitHome.Location = new System.Drawing.Point(1409, 1);
+            this.picExitHome.Location = new System.Drawing.Point(1412, 1);
             this.picExitHome.Margin = new System.Windows.Forms.Padding(4);
             this.picExitHome.Name = "picExitHome";
             this.picExitHome.ShadowDecoration.Parent = this.picExitHome;
@@ -689,12 +692,59 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.cboIDSanPham.Size = new System.Drawing.Size(259, 36);
             this.cboIDSanPham.TabIndex = 45;
             // 
+            // btnThoatCTSP
+            // 
+            this.btnThoatCTSP.Animated = true;
+            this.btnThoatCTSP.BorderColor = System.Drawing.Color.Transparent;
+            this.btnThoatCTSP.BorderRadius = 20;
+            this.btnThoatCTSP.CheckedState.Parent = this.btnThoatCTSP;
+            this.btnThoatCTSP.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnThoatCTSP.CustomImages.Parent = this.btnThoatCTSP;
+            this.btnThoatCTSP.FillColor = System.Drawing.Color.Turquoise;
+            this.btnThoatCTSP.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F);
+            this.btnThoatCTSP.ForeColor = System.Drawing.Color.White;
+            this.btnThoatCTSP.HoverState.Parent = this.btnThoatCTSP;
+            this.btnThoatCTSP.IndicateFocus = true;
+            this.btnThoatCTSP.Location = new System.Drawing.Point(1284, 279);
+            this.btnThoatCTSP.Name = "btnThoatCTSP";
+            this.btnThoatCTSP.ShadowDecoration.Parent = this.btnThoatCTSP;
+            this.btnThoatCTSP.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(3);
+            this.btnThoatCTSP.Size = new System.Drawing.Size(113, 40);
+            this.btnThoatCTSP.TabIndex = 46;
+            this.btnThoatCTSP.Text = "Thoát";
+            this.btnThoatCTSP.Click += new System.EventHandler(this.btnThoatCTSP_Click);
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label10.Location = new System.Drawing.Point(427, 324);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(46, 20);
+            this.label10.TabIndex = 47;
+            this.label10.Text = "VND";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label9.Location = new System.Drawing.Point(427, 262);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(46, 20);
+            this.label9.TabIndex = 48;
+            this.label9.Text = "VND";
+            // 
             // frmChiTietSanPham
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(1457, 764);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.btnThoatCTSP);
             this.Controls.Add(this.cboIDSanPham);
             this.Controls.Add(this.guna2GroupBox2);
             this.Controls.Add(this.guna2GroupBox1);
@@ -787,5 +837,8 @@ namespace _452_417_CDTH19E_SHOESSHOP
         private Guna.UI2.WinForms.Guna2GroupBox guna2GroupBox2;
         private System.Windows.Forms.Label label7;
         private Guna.UI2.WinForms.Guna2ComboBox cboIDSanPham;
+        private Guna.UI2.WinForms.Guna2Button btnThoatCTSP;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
     }
 }

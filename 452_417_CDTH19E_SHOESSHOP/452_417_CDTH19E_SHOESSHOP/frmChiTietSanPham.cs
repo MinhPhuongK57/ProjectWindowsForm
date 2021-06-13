@@ -46,17 +46,17 @@ namespace _452_417_CDTH19E_SHOESSHOP
             //Sản Phẩm
             ChiTietSanPham = iiKetNoi.ExcuteQuery("select * from CHITIETSANPHAM");
             txtIDChiTietSanPham.Text = ChiTietSanPham.Rows[vitri][0].ToString();
-            txtMau.Text = ChiTietSanPham.Rows[vitri][1].ToString();
-            txtKichThuoc.Text = ChiTietSanPham.Rows[vitri][2].ToString();
-            numSoLuongSP.Value = Convert.ToInt32(ChiTietSanPham.Rows[vitri][3]);
-            txtGiaNhap.Text = ChiTietSanPham.Rows[vitri][4].ToString();
-            txtGiaBan.Text = ChiTietSanPham.Rows[vitri][5].ToString();
-            txtTenAnh.Text = ChiTietSanPham.Rows[vitri][6].ToString();
+            cboIDSanPham.Text = ChiTietSanPham.Rows[vitri][1].ToString();
+            txtMau.Text = ChiTietSanPham.Rows[vitri][2].ToString();
+            txtKichThuoc.Text = ChiTietSanPham.Rows[vitri][3].ToString();
+            numSoLuongSP.Value = Convert.ToInt32(ChiTietSanPham.Rows[vitri][4]);
+            txtGiaNhap.Text = string.Format("{0:n0}", ChiTietSanPham.Rows[vitri][5]);
+            txtGiaBan.Text = string.Format("{0:n0}", ChiTietSanPham.Rows[vitri][6]);
+            txtTenAnh.Text = ChiTietSanPham.Rows[vitri][7].ToString();
             string filename = Path.GetFullPath("Image") + @"\";
-            filename += txtTenAnh.Text;
-            Bitmap img = new Bitmap(filename);
-            picAnh.Image = img;
-            cboIDSanPham.Text = ChiTietSanPham.Rows[vitri][7].ToString();
+            //filename += txtTenAnh.Text;
+            //Bitmap img = new Bitmap(filename);
+            //picAnh.Image = img;
         }
         //Kiểm tra dữ liệu ID bảng chi tiết sản phẩm
         bool KiemTraIDCTSP()
@@ -80,14 +80,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.Close();
         }
 
-        //Key_Up SoLuongSP
-        private void numSoLuongSP_KeyUp(object sender, KeyEventArgs e)
-        {
-            if (numSoLuongSP.Value > 1)
-                numSoLuongSP.Value = 1;
-            else if (numSoLuongSP.Value < 0)
-                numSoLuongSP.Value = 0;
-        }
+        //Key_ SoLuongSP
 
         //Closing Form
         private void frmChiTietSanPham_FormClosing(object sender, FormClosingEventArgs e)
@@ -108,7 +101,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             else
             {
                 DataTable ThemCTSP = new DataTable();
-                string query = "insert into CHITIETSANPHAM values('" + txtIDChiTietSanPham.Text + "', '" + txtMau.Text + "', '" + txtKichThuoc.Text + "','" + numSoLuongSP.Value +"','" + txtGiaNhap.Text+"', '" + txtGiaBan.Text+"','"+picAnh.Text+"','"+cboIDSanPham.SelectedItem+"')";
+                string query = "insert into CHITIETSANPHAM values('" + txtIDChiTietSanPham.Text + "','" + cboIDSanPham.SelectedItem + "', '" + txtMau.Text + "', '" + txtKichThuoc.Text + "','" + numSoLuongSP.Value +"','" + txtGiaNhap.Text+"', '" + txtGiaBan.Text+"','"+picAnh.Text+"')";
                 ThemCTSP = iiKetNoi.ExcuteQuery(query);
                 KetNoiCTSP();
             }
@@ -149,7 +142,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
         //Button Cập nhật chi tiết sản phẩm
         private void btnCapNhatCTSP_Click(object sender, EventArgs e)
         {
-            string query = "update CHITIETSANPHAM set[Mau] = N'" + txtMau.Text + "',[KichThuoc]= '" + txtKichThuoc.Text + "',[SoLuong] = '"+ numSoLuongSP.Value+"' , [GiaNhap] = '"+ txtGiaBan.Text+"', [GiaBan] = '"+txtGiaBan.Text+"', [HinhAnh] = '"+picAnh.Text+"', [ID_SanPham] = '"+cboIDSanPham.SelectedItem+"' where ID_ChiTietSanPham = '" + txtIDChiTietSanPham.Text + "'";
+            string query = "update CHITIETSANPHAM set[ID_SanPham] = '" + cboIDSanPham.SelectedItem + "' , [Mau] = N'" + txtMau.Text + "',[KichThuoc]= '" + txtKichThuoc.Text + "',[SoLuong] = '"+ numSoLuongSP.Value+"' , [GiaNhap] = '"+ txtGiaBan.Text+"', [GiaBan] = '"+txtGiaBan.Text+"', [HinhAnh] = '"+picAnh.Text+"' where ID_ChiTietSanPham = '" + txtIDChiTietSanPham.Text + "'";
             CapNhatDLCTSP(query);
         }
 
@@ -259,6 +252,11 @@ namespace _452_417_CDTH19E_SHOESSHOP
                 else
                     MessageBox.Show("Vui Lòng Chọn Ảnh", "Thông Báo");
             }
+        }
+
+        private void btnThoatCTSP_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

@@ -20,12 +20,14 @@ namespace _452_417_CDTH19E_SHOESSHOP
         //Biến dữ liệu sản phẩm
         KetNoiDuLieu iiKetNoi = new KetNoiDuLieu();
         DataTable LoaiSanPham = new DataTable();
+        //Hàm kết nối
         void KetNoiLSP()
         {
             KetNoiDuLieu iKetNoiLSP = new KetNoiDuLieu();
             dgvLoaiSanPham.DataSource = iKetNoiLSP.ExcuteQuery("select * from LOAISANPHAM");
         }
 
+        //FormLoad
         private void frmLoaiSanPham_Load(object sender, EventArgs e)
         {
             btnThemLoaiSP.Enabled = false;
@@ -62,6 +64,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             }
             return false;
         }
+        //FormClosing 
         private void frmLoaiSanPham_FormClosing(object sender, FormClosingEventArgs e)
         {
             DialogResult ThoatHoi;
@@ -163,6 +166,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             }
         }
 
+        //Datagridview LoaiSanPham
         private void dgvLoaiSanPham_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             int vitri = e.RowIndex;
@@ -171,6 +175,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
                 HienThiTextbox(vitri);
         }
 
+        //Sự kiện TextChange IDLoaiSanPham
         private void txtIDLoaiSanPham_TextChanged_1(object sender, EventArgs e)
         {
             if (txtIDLoaiSanPham.Text != "")
@@ -181,6 +186,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
                 btnThemLoaiSP.Enabled = false;
         }
 
+        //Sự kiện KeyUp TrangThaiLSP
         private void numTrangThaiLSP_KeyUp(object sender, KeyEventArgs e)
         {
             if (numTrangThaiLSP.Value > 1)

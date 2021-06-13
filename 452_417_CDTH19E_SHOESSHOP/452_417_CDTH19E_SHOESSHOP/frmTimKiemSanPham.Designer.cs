@@ -33,17 +33,6 @@ namespace _452_417_CDTH19E_SHOESSHOP
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmTimKiem));
             this.label1 = new System.Windows.Forms.Label();
             this.dgvTimKiemSP = new System.Windows.Forms.DataGridView();
-            this.ID_SanPham = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ID_ChiTietSanPham = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ID_NCC = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ID_LoaiSanPham = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TenSanPham = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TrangThai = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pnlTimKiem = new System.Windows.Forms.Panel();
-            this.txtTo = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtFrom = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.btnDatLaiSP = new Guna.UI2.WinForms.Guna2Button();
             this.btnTimKiemSP = new Guna.UI2.WinForms.Guna2Button();
             this.cboTimKiemSP = new Guna.UI2.WinForms.Guna2ComboBox();
@@ -52,8 +41,12 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.btnThoatTimKiemSP = new Guna.UI2.WinForms.Guna2Button();
             this.guna2ShadowForm1 = new Guna.UI2.WinForms.Guna2ShadowForm(this.components);
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
+            this.ID_SanPham = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ID_LoaiSanPham = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenSanPham = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TrangThai = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ID_NCC = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTimKiemSP)).BeginInit();
-            this.pnlTimKiem.SuspendLayout();
             this.grpDanhSachSP.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -76,11 +69,10 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.dgvTimKiemSP.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvTimKiemSP.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ID_SanPham,
-            this.ID_ChiTietSanPham,
-            this.ID_NCC,
             this.ID_LoaiSanPham,
             this.TenSanPham,
-            this.TrangThai});
+            this.TrangThai,
+            this.ID_NCC});
             this.dgvTimKiemSP.Location = new System.Drawing.Point(0, 40);
             this.dgvTimKiemSP.Name = "dgvTimKiemSP";
             this.dgvTimKiemSP.ReadOnly = true;
@@ -90,137 +82,6 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.dgvTimKiemSP.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvTimKiemSP.Size = new System.Drawing.Size(1056, 334);
             this.dgvTimKiemSP.TabIndex = 0;
-            // 
-            // ID_SanPham
-            // 
-            this.ID_SanPham.DataPropertyName = "ID_SanPham";
-            this.ID_SanPham.HeaderText = "ID Sản Phẩm";
-            this.ID_SanPham.MinimumWidth = 6;
-            this.ID_SanPham.Name = "ID_SanPham";
-            this.ID_SanPham.ReadOnly = true;
-            // 
-            // ID_ChiTietSanPham
-            // 
-            this.ID_ChiTietSanPham.DataPropertyName = "ID_ChiTietSanPham";
-            this.ID_ChiTietSanPham.HeaderText = "ID Chi Tiết Sản Phẩm";
-            this.ID_ChiTietSanPham.MinimumWidth = 6;
-            this.ID_ChiTietSanPham.Name = "ID_ChiTietSanPham";
-            this.ID_ChiTietSanPham.ReadOnly = true;
-            // 
-            // ID_NCC
-            // 
-            this.ID_NCC.DataPropertyName = "ID_NCC";
-            this.ID_NCC.HeaderText = "ID Nhà Cung Cấp";
-            this.ID_NCC.MinimumWidth = 6;
-            this.ID_NCC.Name = "ID_NCC";
-            this.ID_NCC.ReadOnly = true;
-            // 
-            // ID_LoaiSanPham
-            // 
-            this.ID_LoaiSanPham.DataPropertyName = "ID_LoaiSanPham";
-            this.ID_LoaiSanPham.HeaderText = "ID Loại Sản Phẩm";
-            this.ID_LoaiSanPham.MinimumWidth = 6;
-            this.ID_LoaiSanPham.Name = "ID_LoaiSanPham";
-            this.ID_LoaiSanPham.ReadOnly = true;
-            // 
-            // TenSanPham
-            // 
-            this.TenSanPham.DataPropertyName = "TenSanPham";
-            this.TenSanPham.HeaderText = "Tên sản phẩm";
-            this.TenSanPham.MinimumWidth = 6;
-            this.TenSanPham.Name = "TenSanPham";
-            this.TenSanPham.ReadOnly = true;
-            // 
-            // TrangThai
-            // 
-            this.TrangThai.DataPropertyName = "TrangThai";
-            this.TrangThai.HeaderText = "Trạng thái";
-            this.TrangThai.MinimumWidth = 6;
-            this.TrangThai.Name = "TrangThai";
-            this.TrangThai.ReadOnly = true;
-            // 
-            // pnlTimKiem
-            // 
-            this.pnlTimKiem.Controls.Add(this.txtTo);
-            this.pnlTimKiem.Controls.Add(this.txtFrom);
-            this.pnlTimKiem.Controls.Add(this.label3);
-            this.pnlTimKiem.Controls.Add(this.label2);
-            this.pnlTimKiem.Location = new System.Drawing.Point(80, 130);
-            this.pnlTimKiem.Name = "pnlTimKiem";
-            this.pnlTimKiem.Size = new System.Drawing.Size(586, 76);
-            this.pnlTimKiem.TabIndex = 2;
-            // 
-            // txtTo
-            // 
-            this.txtTo.BorderRadius = 5;
-            this.txtTo.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtTo.DefaultText = "";
-            this.txtTo.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtTo.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtTo.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtTo.DisabledState.Parent = this.txtTo;
-            this.txtTo.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtTo.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTo.FocusedState.Parent = this.txtTo;
-            this.txtTo.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTo.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.txtTo.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTo.HoverState.Parent = this.txtTo;
-            this.txtTo.Location = new System.Drawing.Point(357, 20);
-            this.txtTo.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.txtTo.Name = "txtTo";
-            this.txtTo.PasswordChar = '\0';
-            this.txtTo.PlaceholderText = "";
-            this.txtTo.SelectedText = "";
-            this.txtTo.ShadowDecoration.Parent = this.txtTo;
-            this.txtTo.Size = new System.Drawing.Size(200, 36);
-            this.txtTo.TabIndex = 7;
-            this.txtTo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTo_KeyPress);
-            // 
-            // txtFrom
-            // 
-            this.txtFrom.BorderRadius = 5;
-            this.txtFrom.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtFrom.DefaultText = "";
-            this.txtFrom.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtFrom.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtFrom.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtFrom.DisabledState.Parent = this.txtFrom;
-            this.txtFrom.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtFrom.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtFrom.FocusedState.Parent = this.txtFrom;
-            this.txtFrom.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFrom.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.txtFrom.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtFrom.HoverState.Parent = this.txtFrom;
-            this.txtFrom.Location = new System.Drawing.Point(75, 20);
-            this.txtFrom.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.txtFrom.Name = "txtFrom";
-            this.txtFrom.PasswordChar = '\0';
-            this.txtFrom.PlaceholderText = "";
-            this.txtFrom.SelectedText = "";
-            this.txtFrom.ShadowDecoration.Parent = this.txtFrom;
-            this.txtFrom.Size = new System.Drawing.Size(200, 36);
-            this.txtFrom.TabIndex = 7;
-            this.txtFrom.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtFrom_KeyPress_1);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(301, 27);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(38, 20);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "&Đến";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(20, 27);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(29, 20);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "&Từ";
             // 
             // btnDatLaiSP
             // 
@@ -232,7 +93,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.btnDatLaiSP.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDatLaiSP.ForeColor = System.Drawing.Color.White;
             this.btnDatLaiSP.HoverState.Parent = this.btnDatLaiSP;
-            this.btnDatLaiSP.Location = new System.Drawing.Point(906, 121);
+            this.btnDatLaiSP.Location = new System.Drawing.Point(905, 87);
             this.btnDatLaiSP.Name = "btnDatLaiSP";
             this.btnDatLaiSP.ShadowDecoration.Parent = this.btnDatLaiSP;
             this.btnDatLaiSP.Size = new System.Drawing.Size(108, 38);
@@ -250,7 +111,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.btnTimKiemSP.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTimKiemSP.ForeColor = System.Drawing.Color.White;
             this.btnTimKiemSP.HoverState.Parent = this.btnTimKiemSP;
-            this.btnTimKiemSP.Location = new System.Drawing.Point(777, 121);
+            this.btnTimKiemSP.Location = new System.Drawing.Point(770, 87);
             this.btnTimKiemSP.Name = "btnTimKiemSP";
             this.btnTimKiemSP.ShadowDecoration.Parent = this.btnTimKiemSP;
             this.btnTimKiemSP.Size = new System.Drawing.Size(108, 38);
@@ -273,7 +134,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.cboTimKiemSP.HoverState.Parent = this.cboTimKiemSP;
             this.cboTimKiemSP.ItemHeight = 30;
             this.cboTimKiemSP.ItemsAppearance.Parent = this.cboTimKiemSP;
-            this.cboTimKiemSP.Location = new System.Drawing.Point(80, 73);
+            this.cboTimKiemSP.Location = new System.Drawing.Point(69, 87);
             this.cboTimKiemSP.Name = "cboTimKiemSP";
             this.cboTimKiemSP.ShadowDecoration.Parent = this.cboTimKiemSP;
             this.cboTimKiemSP.Size = new System.Drawing.Size(213, 36);
@@ -296,7 +157,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.txtTimKiemSP.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtTimKiemSP.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTimKiemSP.HoverState.Parent = this.txtTimKiemSP;
-            this.txtTimKiemSP.Location = new System.Drawing.Point(343, 73);
+            this.txtTimKiemSP.Location = new System.Drawing.Point(339, 87);
             this.txtTimKiemSP.Name = "txtTimKiemSP";
             this.txtTimKiemSP.PasswordChar = '\0';
             this.txtTimKiemSP.PlaceholderText = "";
@@ -313,7 +174,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.grpDanhSachSP.CustomBorderColor = System.Drawing.SystemColors.ButtonFace;
             this.grpDanhSachSP.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpDanhSachSP.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.grpDanhSachSP.Location = new System.Drawing.Point(12, 235);
+            this.grpDanhSachSP.Location = new System.Drawing.Point(12, 151);
             this.grpDanhSachSP.Name = "grpDanhSachSP";
             this.grpDanhSachSP.ShadowDecoration.Parent = this.grpDanhSachSP;
             this.grpDanhSachSP.Size = new System.Drawing.Size(1058, 374);
@@ -345,19 +206,58 @@ namespace _452_417_CDTH19E_SHOESSHOP
             // 
             this.guna2BorderlessForm1.ContainerControl = this;
             // 
+            // ID_SanPham
+            // 
+            this.ID_SanPham.DataPropertyName = "ID_SanPham";
+            this.ID_SanPham.HeaderText = "ID Sản Phẩm";
+            this.ID_SanPham.MinimumWidth = 6;
+            this.ID_SanPham.Name = "ID_SanPham";
+            this.ID_SanPham.ReadOnly = true;
+            // 
+            // ID_LoaiSanPham
+            // 
+            this.ID_LoaiSanPham.DataPropertyName = "ID_LoaiSanPham";
+            this.ID_LoaiSanPham.HeaderText = "ID Loại Sản Phẩm";
+            this.ID_LoaiSanPham.MinimumWidth = 6;
+            this.ID_LoaiSanPham.Name = "ID_LoaiSanPham";
+            this.ID_LoaiSanPham.ReadOnly = true;
+            // 
+            // TenSanPham
+            // 
+            this.TenSanPham.DataPropertyName = "TenSanPham";
+            this.TenSanPham.HeaderText = "Tên sản phẩm";
+            this.TenSanPham.MinimumWidth = 6;
+            this.TenSanPham.Name = "TenSanPham";
+            this.TenSanPham.ReadOnly = true;
+            // 
+            // TrangThai
+            // 
+            this.TrangThai.DataPropertyName = "TrangThai";
+            this.TrangThai.HeaderText = "Trạng thái";
+            this.TrangThai.MinimumWidth = 6;
+            this.TrangThai.Name = "TrangThai";
+            this.TrangThai.ReadOnly = true;
+            // 
+            // ID_NCC
+            // 
+            this.ID_NCC.DataPropertyName = "ID_NCC";
+            this.ID_NCC.HeaderText = "ID Nhà Cung Cấp";
+            this.ID_NCC.MinimumWidth = 6;
+            this.ID_NCC.Name = "ID_NCC";
+            this.ID_NCC.ReadOnly = true;
+            // 
             // frmTimKiem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(1080, 621);
+            this.ClientSize = new System.Drawing.Size(1080, 539);
             this.Controls.Add(this.btnThoatTimKiemSP);
             this.Controls.Add(this.grpDanhSachSP);
             this.Controls.Add(this.txtTimKiemSP);
             this.Controls.Add(this.cboTimKiemSP);
             this.Controls.Add(this.btnDatLaiSP);
             this.Controls.Add(this.btnTimKiemSP);
-            this.Controls.Add(this.pnlTimKiem);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -369,8 +269,6 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmTimKiem_FormClosing);
             this.Load += new System.EventHandler(this.frmTimKiem_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvTimKiemSP)).EndInit();
-            this.pnlTimKiem.ResumeLayout(false);
-            this.pnlTimKiem.PerformLayout();
             this.grpDanhSachSP.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -381,24 +279,18 @@ namespace _452_417_CDTH19E_SHOESSHOP
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dgvTimKiemSP;
-        private System.Windows.Forms.Panel pnlTimKiem;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
         private Guna.UI2.WinForms.Guna2Button btnDatLaiSP;
         private Guna.UI2.WinForms.Guna2Button btnTimKiemSP;
         private Guna.UI2.WinForms.Guna2ComboBox cboTimKiemSP;
         private Guna.UI2.WinForms.Guna2TextBox txtTimKiemSP;
         private Guna.UI2.WinForms.Guna2GroupBox grpDanhSachSP;
-        private Guna.UI2.WinForms.Guna2TextBox txtTo;
-        private Guna.UI2.WinForms.Guna2TextBox txtFrom;
         private Guna.UI2.WinForms.Guna2Button btnThoatTimKiemSP;
         private Guna.UI2.WinForms.Guna2ShadowForm guna2ShadowForm1;
         private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
         private System.Windows.Forms.DataGridViewTextBoxColumn ID_SanPham;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ID_ChiTietSanPham;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ID_NCC;
         private System.Windows.Forms.DataGridViewTextBoxColumn ID_LoaiSanPham;
         private System.Windows.Forms.DataGridViewTextBoxColumn TenSanPham;
         private System.Windows.Forms.DataGridViewTextBoxColumn TrangThai;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ID_NCC;
     }
 }
