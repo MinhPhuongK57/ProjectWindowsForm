@@ -23,8 +23,8 @@ namespace _452_417_CDTH19E_SHOESSHOP
             //Application.Run(new frmTimKiemHoaDon());
             //Application.Run(new frmTimKiemNhanVien());
             //Application.Run(new frmTimKiem());
-            //Application.Run(new frmChiTietSanPham());
-            Application.Run(new frmChiTietHoaDon());
+            Application.Run(new frmChiTietSanPham());
+            //Application.Run(new frmChiTietHoaDon());
             //Application.Run(new frmLoaiSanPham());
 
         }

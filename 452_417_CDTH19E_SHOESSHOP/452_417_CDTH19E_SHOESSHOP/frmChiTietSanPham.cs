@@ -50,13 +50,14 @@ namespace _452_417_CDTH19E_SHOESSHOP
             txtMau.Text = ChiTietSanPham.Rows[vitri][2].ToString();
             txtKichThuoc.Text = ChiTietSanPham.Rows[vitri][3].ToString();
             numSoLuongSP.Value = Convert.ToInt32(ChiTietSanPham.Rows[vitri][4]);
+
             txtGiaNhap.Text = string.Format("{0:n0}", ChiTietSanPham.Rows[vitri][5]);
             txtGiaBan.Text = string.Format("{0:n0}", ChiTietSanPham.Rows[vitri][6]);
             txtTenAnh.Text = ChiTietSanPham.Rows[vitri][7].ToString();
             string filename = Path.GetFullPath("Image") + @"\";
-            //filename += txtTenAnh.Text;
-            //Bitmap img = new Bitmap(filename);
-            //picAnh.Image = img;
+            filename += txtTenAnh.Text;
+            Bitmap img = new Bitmap(filename);
+            picAnh.Image = img;
         }
         //Kiểm tra dữ liệu ID bảng chi tiết sản phẩm
         bool KiemTraIDCTSP()
@@ -80,7 +81,14 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.Close();
         }
 
-        //Key_ SoLuongSP
+        //Key_Up SoLuongSP
+        private void numSoLuongSP_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (numSoLuongSP.Value > 1)
+                numSoLuongSP.Value = 1;
+            else if (numSoLuongSP.Value < 0)
+                numSoLuongSP.Value = 0;
+        }
 
         //Closing Form
         private void frmChiTietSanPham_FormClosing(object sender, FormClosingEventArgs e)
@@ -101,7 +109,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             else
             {
                 DataTable ThemCTSP = new DataTable();
-                string query = "insert into CHITIETSANPHAM values('" + txtIDChiTietSanPham.Text + "','" + cboIDSanPham.SelectedItem + "', '" + txtMau.Text + "', '" + txtKichThuoc.Text + "','" + numSoLuongSP.Value +"','" + txtGiaNhap.Text+"', '" + txtGiaBan.Text+"','"+picAnh.Text+"')";
+                string query = "insert into CHITIETSANPHAM values('" + txtIDChiTietSanPham.Text + "','" + cboIDSanPham.SelectedItem + "', '" + txtMau.Text + "', '" + txtKichThuoc.Text + "','" + numSoLuongSP.Value +"','" + txtGiaNhap.Text+"', '" + txtGiaBan.Text+"','"+txtTenAnh.Text+"')";
                 ThemCTSP = iiKetNoi.ExcuteQuery(query);
                 KetNoiCTSP();
             }
@@ -109,8 +117,15 @@ namespace _452_417_CDTH19E_SHOESSHOP
         //Button Thêm chi tiết sản phẩm
         private void btnThemCTSP_Click(object sender, EventArgs e)
         {
-            ThemDLCTSP();
-            KetNoiCTSP();
+            try
+            {
+                ThemDLCTSP();
+                KetNoiCTSP();
+            }
+            catch
+            {
+                MessageBox.Show("Vui lòng kiểm tra lại!!!", "Thông báo");
+            }
         }
 
         //Button Màu
@@ -142,8 +157,15 @@ namespace _452_417_CDTH19E_SHOESSHOP
         //Button Cập nhật chi tiết sản phẩm
         private void btnCapNhatCTSP_Click(object sender, EventArgs e)
         {
-            string query = "update CHITIETSANPHAM set[ID_SanPham] = '" + cboIDSanPham.SelectedItem + "' , [Mau] = N'" + txtMau.Text + "',[KichThuoc]= '" + txtKichThuoc.Text + "',[SoLuong] = '"+ numSoLuongSP.Value+"' , [GiaNhap] = '"+ txtGiaBan.Text+"', [GiaBan] = '"+txtGiaBan.Text+"', [HinhAnh] = '"+picAnh.Text+"' where ID_ChiTietSanPham = '" + txtIDChiTietSanPham.Text + "'";
-            CapNhatDLCTSP(query);
+            try
+            {
+                string query = "update CHITIETSANPHAM set[ID_SanPham] = '" + cboIDSanPham.SelectedItem + "',[Mau] = N'" + txtMau.Text + "',[KichThuoc]= '" + txtKichThuoc.Text + "',[SoLuong] = '"+ numSoLuongSP.Value+"' , [GiaNhap] = '"+ txtGiaBan.Text+"', [GiaBan] = '"+txtGiaBan.Text+"', [HinhAnh] = '"+txtTenAnh.Text+"' where ID_ChiTietSanPham = '" + txtIDChiTietSanPham.Text + "'";
+                CapNhatDLCTSP(query);
+            }
+            catch
+            {
+                MessageBox.Show("Vui lòng kiểm tra lại!!!", "Thông báo");
+            }
         }
 
         //Hàm xoá SL Loại Sản Phẩm
@@ -166,15 +188,8 @@ namespace _452_417_CDTH19E_SHOESSHOP
         //Button Xoá chi tiết sản phẩm
         private void btnXoaCTSP_Click(object sender, EventArgs e)
         {
-            if (KiemTraIDCTSP())
-            {
-                MessageBox.Show("Còn sản phẩm loại này", "Thông báo");
-            }
-            else
-            {
-                string query = "Delete from CHITIETSANPHAM where ID_ChiTietSanPham = '" + txtIDChiTietSanPham.Text + "'";
-                XoaDLCTSP(query);
-            }
+            string query = "Delete from CHITIETSANPHAM where ID_ChiTietSanPham = '" + txtIDChiTietSanPham.Text + "'";
+            XoaDLCTSP(query);
         }
 
         //CellClick
@@ -256,7 +271,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
 
         private void btnThoatCTSP_Click(object sender, EventArgs e)
         {
-            this.Close();
+
         }
     }
 }

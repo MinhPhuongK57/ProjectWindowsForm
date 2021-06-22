@@ -58,6 +58,10 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.numSoLuongSP = new Guna.UI2.WinForms.Guna2NumericUpDown();
             this.grp2 = new System.Windows.Forms.GroupBox();
+            this.txtIDKhachhang = new Guna.UI2.WinForms.Guna2TextBox();
+            this.btnsearchKH = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.txtSDTKhachhang = new Guna.UI2.WinForms.Guna2TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.dtpNgayBan = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.txtTongTienHD = new Guna.UI2.WinForms.Guna2TextBox();
@@ -66,7 +70,6 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.btnThemHD = new Guna.UI2.WinForms.Guna2Button();
             this.numTrangThaiHD = new Guna.UI2.WinForms.Guna2NumericUpDown();
             this.txtDiaChiHD = new Guna.UI2.WinForms.Guna2TextBox();
-            this.cboIDKhachHang = new Guna.UI2.WinForms.Guna2ComboBox();
             this.txtIDHoaDonn = new Guna.UI2.WinForms.Guna2TextBox();
             this.lblTrangThaiHD = new System.Windows.Forms.Label();
             this.lblTongTien = new System.Windows.Forms.Label();
@@ -412,7 +415,6 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.dgvChiTietHD.RowHeadersVisible = false;
             this.dgvChiTietHD.RowHeadersWidth = 51;
             this.dgvChiTietHD.RowTemplate.Height = 24;
-            this.dgvChiTietHD.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvChiTietHD.Size = new System.Drawing.Size(746, 324);
             this.dgvChiTietHD.TabIndex = 0;
             this.dgvChiTietHD.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvChiTietHD_CellClick);
@@ -485,6 +487,10 @@ namespace _452_417_CDTH19E_SHOESSHOP
             // 
             // grp2
             // 
+            this.grp2.Controls.Add(this.txtIDKhachhang);
+            this.grp2.Controls.Add(this.btnsearchKH);
+            this.grp2.Controls.Add(this.guna2HtmlLabel2);
+            this.grp2.Controls.Add(this.txtSDTKhachhang);
             this.grp2.Controls.Add(this.label9);
             this.grp2.Controls.Add(this.dtpNgayBan);
             this.grp2.Controls.Add(this.txtTongTienHD);
@@ -493,7 +499,6 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.grp2.Controls.Add(this.btnThemHD);
             this.grp2.Controls.Add(this.numTrangThaiHD);
             this.grp2.Controls.Add(this.txtDiaChiHD);
-            this.grp2.Controls.Add(this.cboIDKhachHang);
             this.grp2.Controls.Add(this.txtIDHoaDonn);
             this.grp2.Controls.Add(this.lblTrangThaiHD);
             this.grp2.Controls.Add(this.lblTongTien);
@@ -510,14 +515,94 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.grp2.TabStop = false;
             this.grp2.Text = "Hoá đơn";
             // 
+            // txtIDKhachhang
+            // 
+            this.txtIDKhachhang.BorderRadius = 3;
+            this.txtIDKhachhang.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtIDKhachhang.DefaultText = "";
+            this.txtIDKhachhang.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtIDKhachhang.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtIDKhachhang.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtIDKhachhang.DisabledState.Parent = this.txtIDKhachhang;
+            this.txtIDKhachhang.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtIDKhachhang.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtIDKhachhang.FocusedState.Parent = this.txtIDKhachhang;
+            this.txtIDKhachhang.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtIDKhachhang.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.txtIDKhachhang.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtIDKhachhang.HoverState.Parent = this.txtIDKhachhang;
+            this.txtIDKhachhang.Location = new System.Drawing.Point(148, 110);
+            this.txtIDKhachhang.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtIDKhachhang.Name = "txtIDKhachhang";
+            this.txtIDKhachhang.PasswordChar = '\0';
+            this.txtIDKhachhang.PlaceholderText = "";
+            this.txtIDKhachhang.ReadOnly = true;
+            this.txtIDKhachhang.SelectedText = "";
+            this.txtIDKhachhang.ShadowDecoration.Parent = this.txtIDKhachhang;
+            this.txtIDKhachhang.Size = new System.Drawing.Size(166, 36);
+            this.txtIDKhachhang.TabIndex = 41;
+            // 
+            // btnsearchKH
+            // 
+            this.btnsearchKH.BorderRadius = 20;
+            this.btnsearchKH.CheckedState.Parent = this.btnsearchKH;
+            this.btnsearchKH.CustomImages.Parent = this.btnsearchKH;
+            this.btnsearchKH.FillColor = System.Drawing.Color.Turquoise;
+            this.btnsearchKH.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnsearchKH.ForeColor = System.Drawing.Color.White;
+            this.btnsearchKH.HoverState.Parent = this.btnsearchKH;
+            this.btnsearchKH.Location = new System.Drawing.Point(345, 231);
+            this.btnsearchKH.Name = "btnsearchKH";
+            this.btnsearchKH.ShadowDecoration.Parent = this.btnsearchKH;
+            this.btnsearchKH.Size = new System.Drawing.Size(191, 34);
+            this.btnsearchKH.TabIndex = 39;
+            this.btnsearchKH.Text = "Tìm kiếm khách hàng";
+            this.btnsearchKH.Click += new System.EventHandler(this.btnsearchKH_Click);
+            // 
+            // guna2HtmlLabel2
+            // 
+            this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Roboto", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(26, 245);
+            this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(107, 20);
+            this.guna2HtmlLabel2.TabIndex = 38;
+            this.guna2HtmlLabel2.Text = "Sđt Khách hàng";
+            // 
+            // txtSDTKhachhang
+            // 
+            this.txtSDTKhachhang.BorderRadius = 3;
+            this.txtSDTKhachhang.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtSDTKhachhang.DefaultText = "";
+            this.txtSDTKhachhang.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtSDTKhachhang.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtSDTKhachhang.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtSDTKhachhang.DisabledState.Parent = this.txtSDTKhachhang;
+            this.txtSDTKhachhang.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtSDTKhachhang.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtSDTKhachhang.FocusedState.Parent = this.txtSDTKhachhang;
+            this.txtSDTKhachhang.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSDTKhachhang.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.txtSDTKhachhang.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtSDTKhachhang.HoverState.Parent = this.txtSDTKhachhang;
+            this.txtSDTKhachhang.Location = new System.Drawing.Point(148, 236);
+            this.txtSDTKhachhang.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtSDTKhachhang.Name = "txtSDTKhachhang";
+            this.txtSDTKhachhang.PasswordChar = '\0';
+            this.txtSDTKhachhang.PlaceholderText = "";
+            this.txtSDTKhachhang.SelectedText = "";
+            this.txtSDTKhachhang.ShadowDecoration.Parent = this.txtSDTKhachhang;
+            this.txtSDTKhachhang.Size = new System.Drawing.Size(166, 29);
+            this.txtSDTKhachhang.TabIndex = 37;
+            // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label9.Location = new System.Drawing.Point(549, 58);
+            this.label9.Location = new System.Drawing.Point(552, 57);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(48, 20);
+            this.label9.Size = new System.Drawing.Size(46, 20);
             this.label9.TabIndex = 36;
             this.label9.Text = "VND";
             // 
@@ -532,7 +617,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.dtpNgayBan.FillColor = System.Drawing.Color.Turquoise;
             this.dtpNgayBan.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F);
             this.dtpNgayBan.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.dtpNgayBan.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpNgayBan.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpNgayBan.HoverState.Parent = this.dtpNgayBan;
             this.dtpNgayBan.IndicateFocus = true;
             this.dtpNgayBan.Location = new System.Drawing.Point(432, 107);
@@ -652,7 +737,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.numTrangThaiHD.FocusedState.Parent = this.numTrangThaiHD;
             this.numTrangThaiHD.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.numTrangThaiHD.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.numTrangThaiHD.Location = new System.Drawing.Point(433, 175);
+            this.numTrangThaiHD.Location = new System.Drawing.Point(433, 172);
             this.numTrangThaiHD.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.numTrangThaiHD.Maximum = new decimal(new int[] {
             1,
@@ -661,7 +746,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             0});
             this.numTrangThaiHD.Name = "numTrangThaiHD";
             this.numTrangThaiHD.ShadowDecoration.Parent = this.numTrangThaiHD;
-            this.numTrangThaiHD.Size = new System.Drawing.Size(165, 36);
+            this.numTrangThaiHD.Size = new System.Drawing.Size(165, 39);
             this.numTrangThaiHD.TabIndex = 13;
             this.numTrangThaiHD.UpDownButtonFillColor = System.Drawing.Color.Turquoise;
             this.numTrangThaiHD.UpDownButtonForeColor = System.Drawing.SystemColors.ControlLightLight;
@@ -698,26 +783,6 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.txtDiaChiHD.ShadowDecoration.Parent = this.txtDiaChiHD;
             this.txtDiaChiHD.Size = new System.Drawing.Size(166, 36);
             this.txtDiaChiHD.TabIndex = 12;
-            // 
-            // cboIDKhachHang
-            // 
-            this.cboIDKhachHang.BackColor = System.Drawing.Color.Transparent;
-            this.cboIDKhachHang.BorderRadius = 5;
-            this.cboIDKhachHang.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cboIDKhachHang.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboIDKhachHang.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cboIDKhachHang.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cboIDKhachHang.FocusedState.Parent = this.cboIDKhachHang;
-            this.cboIDKhachHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cboIDKhachHang.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.cboIDKhachHang.HoverState.Parent = this.cboIDKhachHang;
-            this.cboIDKhachHang.ItemHeight = 30;
-            this.cboIDKhachHang.ItemsAppearance.Parent = this.cboIDKhachHang;
-            this.cboIDKhachHang.Location = new System.Drawing.Point(148, 110);
-            this.cboIDKhachHang.Name = "cboIDKhachHang";
-            this.cboIDKhachHang.ShadowDecoration.Parent = this.cboIDKhachHang;
-            this.cboIDKhachHang.Size = new System.Drawing.Size(166, 36);
-            this.cboIDKhachHang.TabIndex = 10;
             // 
             // txtIDHoaDonn
             // 
@@ -821,7 +886,6 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.btnThoatHD.Size = new System.Drawing.Size(113, 40);
             this.btnThoatHD.TabIndex = 18;
             this.btnThoatHD.Text = "Thoát";
-            this.btnThoatHD.Click += new System.EventHandler(this.btnThoatHD_Click);
             // 
             // dgvHoaDon
             // 
@@ -939,22 +1003,22 @@ namespace _452_417_CDTH19E_SHOESSHOP
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label11.Location = new System.Drawing.Point(512, 195);
+            this.label11.Location = new System.Drawing.Point(517, 195);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(48, 20);
+            this.label11.Size = new System.Drawing.Size(46, 20);
             this.label11.TabIndex = 40;
             this.label11.Text = "VND";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label10.Location = new System.Drawing.Point(512, 120);
+            this.label10.Location = new System.Drawing.Point(518, 120);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(48, 20);
+            this.label10.Size = new System.Drawing.Size(46, 20);
             this.label10.TabIndex = 37;
             this.label10.Text = "VND";
             // 
@@ -1027,7 +1091,6 @@ namespace _452_417_CDTH19E_SHOESSHOP
         private Guna.UI2.WinForms.Guna2NumericUpDown numTrangThaiHD;
         private Guna.UI2.WinForms.Guna2TextBox txtDiaChiHD;
         private Guna.UI2.WinForms.Guna2TextBox txtTongTienHD;
-        private Guna.UI2.WinForms.Guna2ComboBox cboIDKhachHang;
         private Guna.UI2.WinForms.Guna2TextBox txtIDHoaDonn;
         private System.Windows.Forms.Label lblTrangThaiHD;
         private System.Windows.Forms.Label lblTongTien;
@@ -1047,5 +1110,9 @@ namespace _452_417_CDTH19E_SHOESSHOP
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
+        private Guna.UI2.WinForms.Guna2TextBox txtSDTKhachhang;
+        private Guna.UI2.WinForms.Guna2Button btnsearchKH;
+        private Guna.UI2.WinForms.Guna2TextBox txtIDKhachhang;
     }
 }

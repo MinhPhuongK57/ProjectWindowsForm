@@ -1926,7 +1926,6 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.numTrangThaiSP.Size = new System.Drawing.Size(134, 36);
             this.numTrangThaiSP.TabIndex = 16;
             this.numTrangThaiSP.UpDownButtonFillColor = System.Drawing.Color.Turquoise;
-            this.numTrangThaiSP.UpDownButtonForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.numTrangThaiSP.Value = new decimal(new int[] {
             1,
             0,
