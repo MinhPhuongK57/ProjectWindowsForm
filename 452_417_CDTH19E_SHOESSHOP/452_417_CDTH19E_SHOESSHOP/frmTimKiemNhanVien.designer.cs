@@ -59,10 +59,12 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.btnThoatTimKiemNV = new Guna.UI2.WinForms.Guna2Button();
             this.guna2ShadowForm1 = new Guna.UI2.WinForms.Guna2ShadowForm(this.components);
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.pnlTimKiemTheoLuong.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTimKiemNV)).BeginInit();
             this.pnlTimKiemTheoNgaySinh.SuspendLayout();
             this.grpDanhSachNV.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -317,7 +319,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.btnDatLaiNV.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDatLaiNV.ForeColor = System.Drawing.Color.White;
             this.btnDatLaiNV.HoverState.Parent = this.btnDatLaiNV;
-            this.btnDatLaiNV.Location = new System.Drawing.Point(983, 159);
+            this.btnDatLaiNV.Location = new System.Drawing.Point(973, 88);
             this.btnDatLaiNV.Name = "btnDatLaiNV";
             this.btnDatLaiNV.ShadowDecoration.Parent = this.btnDatLaiNV;
             this.btnDatLaiNV.Size = new System.Drawing.Size(108, 38);
@@ -335,7 +337,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.btnTimKiemNV.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTimKiemNV.ForeColor = System.Drawing.Color.White;
             this.btnTimKiemNV.HoverState.Parent = this.btnTimKiemNV;
-            this.btnTimKiemNV.Location = new System.Drawing.Point(983, 88);
+            this.btnTimKiemNV.Location = new System.Drawing.Point(973, 159);
             this.btnTimKiemNV.Name = "btnTimKiemNV";
             this.btnTimKiemNV.ShadowDecoration.Parent = this.btnTimKiemNV;
             this.btnTimKiemNV.Size = new System.Drawing.Size(108, 38);
@@ -433,12 +435,25 @@ namespace _452_417_CDTH19E_SHOESSHOP
             // 
             this.guna2BorderlessForm1.ContainerControl = this;
             // 
+            // guna2PictureBox1
+            // 
+            this.guna2PictureBox1.BorderRadius = 5;
+            this.guna2PictureBox1.Image = global::_452_417_CDTH19E_SHOESSHOP.Properties.Resources.icon_vesinhgiay_2x6;
+            this.guna2PictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
+            this.guna2PictureBox1.Size = new System.Drawing.Size(45, 35);
+            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBox1.TabIndex = 54;
+            this.guna2PictureBox1.TabStop = false;
+            // 
             // frmTimKiemNhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(1301, 654);
+            this.Controls.Add(this.guna2PictureBox1);
             this.Controls.Add(this.btnThoatTimKiemNV);
             this.Controls.Add(this.grpDanhSachNV);
             this.Controls.Add(this.txtTimKiemNV);
@@ -463,6 +478,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.pnlTimKiemTheoNgaySinh.ResumeLayout(false);
             this.pnlTimKiemTheoNgaySinh.PerformLayout();
             this.grpDanhSachNV.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -497,5 +513,6 @@ namespace _452_417_CDTH19E_SHOESSHOP
         private Guna.UI2.WinForms.Guna2Button btnThoatTimKiemNV;
         private Guna.UI2.WinForms.Guna2ShadowForm guna2ShadowForm1;
         private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
     }
 }

@@ -223,6 +223,16 @@ namespace _452_417_CDTH19E_SHOESSHOP.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icon_vesinhgiay_2x6 {
+            get {
+                object obj = ResourceManager.GetObject("icon-vesinhgiay@2x6", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_close_window_48 {
             get {
                 object obj = ResourceManager.GetObject("icons8-close-window-48", resourceCulture);

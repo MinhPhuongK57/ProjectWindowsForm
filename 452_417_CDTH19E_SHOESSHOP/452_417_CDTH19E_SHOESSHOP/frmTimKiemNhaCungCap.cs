@@ -75,17 +75,16 @@ namespace _452_417_CDTH19E_SHOESSHOP
             txtTimKiemNCC.Focus();
         }
 
-        //Button Tìm kiếm nhà cung cấp
-        private void btnTimKiemNCC_Click_1(object sender, EventArgs e)
-        {
-            TimKiemNCC();
-        }
-
         //Button Thoát Tìm Kiếm nhà cung cấp
 
         private void btnThoatTimKIemNCC_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void txtTimKiemNCC_TextChanged(object sender, EventArgs e)
+        {
+            TimKiemNCC();
         }
     }
 }

@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Windows.Forms;
+using System.Text.RegularExpressions;
 
 //using WMPLib; //Xuất Excel
 
@@ -35,10 +36,17 @@ namespace _452_417_CDTH19E_SHOESSHOP
         DataTable NhaCungCap = new DataTable();
         DataTable NhanVien = new DataTable();
 
+        public string HTChiTiet;
         //Sự kiện form Load
         private void frmTrangChu_Load(object sender, EventArgs e)
         {
-            foreach(DataGridViewColumn column in dgvNhanVien.Columns)
+            cboTrangThaiSP.Items.Add("Không hoạt động");
+            cboTrangThaiSP.Items.Add("Hoạt động");
+            cboTrangThaiNCC.Items.Add("Không hoạt động");
+            cboTrangThaiNCC.Items.Add("Hoạt động");
+            cboTrangThaiNV.Items.Add("Không hoạt động");
+            cboTrangThaiNV.Items.Add("Hoạt động");
+            foreach (DataGridViewColumn column in dgvNhanVien.Columns)
             {
                 column.SortMode = DataGridViewColumnSortMode.NotSortable;
             }    
@@ -167,29 +175,6 @@ namespace _452_417_CDTH19E_SHOESSHOP
         
         /*Hàm ẩn hiện button khi nhập text*/
 
-        //Cài đặt trạng thái
-        private void numTrangThaiNCC_KeyUp(object sender, KeyEventArgs e)
-        {
-            if (numTrangThaiNCC.Value > 1)
-                numTrangThaiNCC.Value = 1;
-            else if (numTrangThaiNCC.Value < 0)
-                numTrangThaiNCC.Value = 0;
-        }
-        private void numTrangThaiNV_KeyUp(object sender, KeyEventArgs e)
-        {
-            if (numTrangThaiNV.Value > 1)
-                numTrangThaiNV.Value = 1;
-            else if (numTrangThaiNV.Value < 0)
-                numTrangThaiNV.Value = 0;
-        }
-        private void numTrangThaiSP_KeyUp(object sender, KeyEventArgs e)
-        {
-            if (numTrangThaiSP.Value > 1)
-                numTrangThaiSP.Value = 1;
-            else if (numTrangThaiSP.Value < 0)
-                numTrangThaiSP.Value = 0;
-        }
-
         //Bẫy lỗi kiểm tra nhập vào
         private void txtIDSanPham_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -228,7 +213,15 @@ namespace _452_417_CDTH19E_SHOESSHOP
             //numSoSP.Value = Convert.ToInt32(SanPham.Rows[vitri][3]);
             //txtGiaNhapSP.Text = SanPham.Rows[vitri][4].ToString();
             //txtGiaBanSP.Text = SanPham.Rows[vitri][5].ToString();
-            numTrangThaiSP.Value = Convert.ToInt32(SanPham.Rows[vitri][3]);
+            cboTrangThaiSP.Text = SanPham.Rows[vitri][3].ToString();
+            if (Convert.ToInt32(SanPham.Rows[vitri][3]) == 0)
+            {
+                cboTrangThaiSP.SelectedIndex = 0;
+            }
+            else
+            {
+                cboTrangThaiSP.SelectedIndex = 1;
+            }
             cboIDNCC.Text = SanPham.Rows[vitri][4].ToString();
         }
         void HienThiKH(int vitri)
@@ -249,7 +242,16 @@ namespace _452_417_CDTH19E_SHOESSHOP
             txtTenNCC.Text = NhaCungCap.Rows[vitri][1].ToString();
             txtDiaChiNCC.Text = NhaCungCap.Rows[vitri][2].ToString();
             txtSoDTNCC.Text = NhaCungCap.Rows[vitri][3].ToString();
-            numTrangThaiNCC.Value = Convert.ToInt32(NhaCungCap.Rows[vitri][4]);
+            cboTrangThaiNCC.Text = NhaCungCap.Rows[vitri][4].ToString();
+            if (Convert.ToInt32(NhaCungCap.Rows[vitri][4]) == 0)
+            {
+                cboTrangThaiNCC.SelectedIndex = 0;
+            }
+            else
+            {
+                cboTrangThaiNCC.SelectedIndex = 1;
+            }
+
         }
         void HienThiNV(int vitri)
         {
@@ -258,9 +260,18 @@ namespace _452_417_CDTH19E_SHOESSHOP
             txtTenNhanVien.Text = NhanVien.Rows[vitri][1].ToString();
             dtpNgaySinhNV.Text = NhanVien.Rows[vitri][2].ToString();
             txtSoDTNV.Text = NhanVien.Rows[vitri][3].ToString();
-            txtLuongNV.Text = NhanVien.Rows[vitri][4].ToString();
+            txtLuongNV.Text = string.Format("{0:n0}", NhanVien.Rows[vitri][4]);
+            //txtLuongNV.Text = NhanVien.Rows[vitri][4].ToString();
             txtEmailNV.Text = NhanVien.Rows[vitri][5].ToString();
-            numTrangThaiNV.Value = Convert.ToInt32(NhanVien.Rows[vitri][6]);
+            cboTrangThaiNV.Text = NhanVien.Rows[vitri][6].ToString();
+            if (Convert.ToInt32(NhanVien.Rows[vitri][6]) == 0)
+            {
+                cboTrangThaiNV.SelectedIndex = 0;
+            }
+            else
+            {
+                cboTrangThaiNV.SelectedIndex = 1;
+            }
             txtDiaChiNV.Text = NhanVien.Rows[vitri][7].ToString();
         }
 
@@ -320,7 +331,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             }
             else
             {
-                string query = "insert into SANPHAM values('" + txtIDSanPham.Text + "', '" + cboLoaiSanPham.Text + "', N'" + txtTenSanPham.Text + "', '" + numTrangThaiSP.Value + "', '" + cboIDNCC.Text + "')";
+                string query = "insert into SANPHAM values('" + txtIDSanPham.Text + "', '" + cboLoaiSanPham.Text + "', N'" + txtTenSanPham.Text + "', '" + cboTrangThaiSP.SelectedIndex + "', '" + cboIDNCC.Text + "')";
                 iiKetNoi.ExcuteQuery(query);
                 KetNoiSP();
             }
@@ -380,7 +391,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
         //Button cập nhậtSản Phẩm
         private void btnCapNhatSP_Click(object sender, EventArgs e)
         {
-            string query = "update SANPHAM set[ID_LoaiSanPham] = '" + cboLoaiSanPham.Text + "',[TenSanPham] = N'" + txtTenSanPham.Text + "',[TrangThai] ='" + numTrangThaiSP.Value + "',[ID_NCC] ='" + cboIDNCC.Text + "' where ID_SanPham = '" + txtIDSanPham.Text + "'";
+            string query = "update SANPHAM set[ID_LoaiSanPham] = '" + cboLoaiSanPham.Text + "',[TenSanPham] = N'" + txtTenSanPham.Text + "',[TrangThai] ='" + cboTrangThaiSP.SelectedIndex + "',[ID_NCC] ='" + cboIDNCC.Text + "' where ID_SanPham = '" + txtIDSanPham.Text + "'";
             CapNhatDLSP(query);
         }
 
@@ -481,7 +492,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
         //Hàm cập nhật dữ liệu Khách hàng
         void CapNhatDLKH()
         {
-            string query = "update KHACHHANG set ID_KhachHang = '" + txtIDKhachHang.Text + "',TenKhachHang= N'"+txtTenKhachHang.Text+"',NgaySinh = '"+dtpNgaySinhKH.Value+"', DiaChi = N'" + txtDiaChiKH.Text + "',SoDT = '"+txtSoDTKH.Text+"' where ID_KhachHang = '" + txtIDKhachHang.Text + "'";
+            string query = "update KHACHHANG set ID_KhachHang = '" + txtIDKhachHang.Text + "',TenKhachHang= N'"+txtTenKhachHang.Text+"',NgaySinh = '"+ dtpNgaySinhKH.Value +"', DiaChi = N'" + txtDiaChiKH.Text + "',SoDT = '"+txtSoDTKH.Text+"' where ID_KhachHang = '" + txtIDKhachHang.Text + "'";
             KhachHang = iiKetNoi.ExcuteQuery(query);
             KetNoiKH();
             HienThiKH(0);
@@ -537,7 +548,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             }
             else
             {
-                string query = "insert into NHACUNGCAP values('" + txtIDNCC.Text + "', N'" + txtTenNCC.Text + "',N'" + txtDiaChiNCC.Text + "', '" + txtSoDTNCC.Text + "','" + numTrangThaiNCC.Value + "')";
+                string query = "insert into NHACUNGCAP values('" + txtIDNCC.Text + "', N'" + txtTenNCC.Text + "',N'" + txtDiaChiNCC.Text + "', '" + txtSoDTNCC.Text + "','" + cboTrangThaiNCC.SelectedIndex + "')";
                 iiKetNoi.ExcuteQuery(query);
                 KetNoiNCC();
             }
@@ -551,7 +562,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
         //Hàm cập nhật dữ liệu Nhà cung cấp
         void CapNhatDLNCC()
         {
-            string query = "update NHACUNGCAP set ID_NCC = '" + txtIDNCC.Text + "',TenNCC= N'" + txtTenNCC.Text + "', DiaChi = N'" + txtDiaChiNCC.Text + "',SoDT = '" + txtSoDTNCC.Text + "',TrangThai = '" + numTrangThaiNCC.Value +  "' where ID_NCC = '" + txtIDNCC.Text + "'";
+            string query = "update NHACUNGCAP set ID_NCC = '" + txtIDNCC.Text + "',TenNCC= N'" + txtTenNCC.Text + "', DiaChi = N'" + txtDiaChiNCC.Text + "',SoDT = '" + txtSoDTNCC.Text + "',TrangThai = '" + cboTrangThaiNCC.SelectedIndex +  "' where ID_NCC = '" + txtIDNCC.Text + "'";
             NhaCungCap = iiKetNoi.ExcuteQuery(query);
             KetNoiNCC();
             HienThiNCC(0);
@@ -616,6 +627,19 @@ namespace _452_417_CDTH19E_SHOESSHOP
             return false;
         }
 
+        public static bool isEmail(string inputEmail)
+        {
+            inputEmail = inputEmail ?? string.Empty;
+            string strRegex = @"^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}" +
+                  @"\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\" +
+                  @".)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$";
+            Regex re = new Regex(strRegex);
+            if (re.IsMatch(inputEmail))
+                return (true);
+            else
+                return (false);
+        }
+
         //CellClick DataGridView Nhân viên
         private void dgvNhanVien_CellClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -627,13 +651,17 @@ namespace _452_417_CDTH19E_SHOESSHOP
         //Hàm thêm dữ liệu Nhân viên
         void ThemDLNV()
         {
-            if (KiemTraIDNV())
+            if (KiemTraIDNV()) 
             {
                 MessageBox.Show("ID đã tồn tại", "Thông báo");
             }
+            else if (isEmail(txtEmailNV.Text) == false)
+            {
+                MessageBox.Show("Vui lòng kiểm tra lại Email...!", "Thông báo");
+            }
             else
             {
-                string query = "insert into NHANVIEN values('" + txtIDNhanVien.Text + "', N'" + txtTenNhanVien.Text + "',N'" + dtpNgaySinhNV.Value + "', '" + txtSoDTNV.Text + "','" + txtLuongNV.Text + "','" + txtEmailNV.Text + "','" + numTrangThaiNV.Value + "',N'" + txtDiaChiNV.Text + "')";
+                string query = "insert into NHANVIEN values('" + txtIDNhanVien.Text + "', N'" + txtTenNhanVien.Text + "','" + dtpNgaySinhNV.Value + "', '" + txtSoDTNV.Text + "','" + txtLuongNV.Text + "','" + txtEmailNV.Text + "','" + cboTrangThaiNV.SelectedIndex + "',N'" + txtDiaChiNV.Text + "')";
                 iiKetNoi.ExcuteQuery(query);
                 KetNoiNV();
             }
@@ -676,7 +704,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
                 }
                 else
                 {
-                    string query = "update NHANVIEN set ID_NhanVien = '" + txtIDNhanVien.Text + "',TenNhanVien= N'" + txtTenNhanVien.Text + "', NgaySinh = '" + dtpNgaySinhNV.Value + "',SoDT = '" + txtSoDTNV.Text + "',Luong = '" + txtLuongNV.Text + "',Email = '" + txtEmailNV.Text + "',TrangThai = '" + numTrangThaiNV.Value + "',DiaChi = N'" + txtDiaChiNV.Text + "' where ID_NhanVien = '" + txtIDNhanVien.Text + "'";
+                    string query = "update NHANVIEN set ID_NhanVien = '" + txtIDNhanVien.Text + "',TenNhanVien= N'" + txtTenNhanVien.Text + "', NgaySinh = '" + dtpNgaySinhNV.Value + "',SoDT = '" + txtSoDTNV.Text + "',Luong = '" + txtLuongNV.Text + "',Email = '" + txtEmailNV.Text + "',TrangThai = '" + cboTrangThaiNV.SelectedIndex + "',DiaChi = N'" + txtDiaChiNV.Text + "' where ID_NhanVien = '" + txtIDNhanVien.Text + "'";
                     NhaCungCap = iiKetNoi.ExcuteQuery(query);
                     KetNoiNV();
                     HienThiNV(0);
@@ -740,18 +768,6 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.Close();
         }
 
-        private void chiTiếtSảnPhẩmToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frmChiTietSanPham form = new frmChiTietSanPham();
-            form.ShowDialog();
-        }
-
-        private void chiTiếtHoáĐơnToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frmChiTietHoaDon form = new frmChiTietHoaDon();
-            form.ShowDialog();
-        }
-
         //Code xuất dữ liệu vào excel
         private void ToExcel(DataGridView dataGridView1, string fileName, DataTable ds)
         {
@@ -807,19 +823,17 @@ namespace _452_417_CDTH19E_SHOESSHOP
         private void btnXuatExcelSP_Click(object sender, EventArgs e)
         {
             SaveFile.InitialDirectory = @"C:\Lập trình windows\ĐỒ ÁN\Excel";
-            //SaveFileSanPham.Title = "Lưu file ảnh";
             SaveFile.DefaultExt = "xlsx";
             //SaveFileSanPham.Filter = "(.jpg);(.png)|.jpg;.png";
             if (SaveFile.ShowDialog() == DialogResult.OK)
             {
-            ToExcel(dgvSanPham, SaveFile.FileName, SanPham);
+                ToExcel(dgvSanPham, SaveFile.FileName, SanPham);
             }
         }
 
         private void btnXuatExcelKH_Click(object sender, EventArgs e)
         {
             SaveFile.InitialDirectory = @"C:\Lập trình windows\ĐỒ ÁN\Excel";
-            //SaveFileSanPham.Title = "Lưu file ảnh";
             SaveFile.DefaultExt = "xlsx";
             //SaveFileSanPham.Filter = "(.jpg);(.png)|.jpg;.png";
             if (SaveFile.ShowDialog() == DialogResult.OK)
@@ -831,7 +845,6 @@ namespace _452_417_CDTH19E_SHOESSHOP
         private void btnXuatExcelNCC_Click(object sender, EventArgs e)
         {
             SaveFile.InitialDirectory = @"C:\Lập trình windows\ĐỒ ÁN\Excel";
-            //SaveFileSanPham.Title = "Lưu file ảnh";
             SaveFile.DefaultExt = "xlsx";
             //SaveFileSanPham.Filter = "(.jpg);(.png)|.jpg;.png";
             if (SaveFile.ShowDialog() == DialogResult.OK)
@@ -843,7 +856,6 @@ namespace _452_417_CDTH19E_SHOESSHOP
         private void btnXuatExcelNV_Click(object sender, EventArgs e)
         {
             SaveFile.InitialDirectory = @"C:\Lập trình windows\ĐỒ ÁN\Excel";
-            //SaveFileSanPham.Title = "Lưu file ảnh";
             SaveFile.DefaultExt = "xlsx";
             //SaveFileSanPham.Filter = "(.jpg);(.png)|.jpg;.png";
             if (SaveFile.ShowDialog() == DialogResult.OK)
@@ -852,15 +864,15 @@ namespace _452_417_CDTH19E_SHOESSHOP
             }
         }
 
-        private void mnuttThongKe_Click(object sender, EventArgs e)
-        {
-            frmThongKeDoanhThu form = new frmThongKeDoanhThu();
-            form.ShowDialog();
-        }
-
         private void mnuttQuanLyHoaDon_Click(object sender, EventArgs e)
         {
             frmChiTietHoaDon form = new frmChiTietHoaDon();
+            form.ShowDialog();
+        }
+        public void dgvSanPham_DoubleClick(object sender, EventArgs e)
+        {
+            frmChiTietSanPham form = new frmChiTietSanPham();
+            form.S = txtIDSanPham.Text;
             form.ShowDialog();
         }
     }

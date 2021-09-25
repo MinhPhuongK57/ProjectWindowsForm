@@ -85,16 +85,15 @@ namespace _452_417_CDTH19E_SHOESSHOP
             txtTimKiemHD.Text = "";
             txtTimKiemHD.Focus();
         }
-
-        //Button Tìm kiếm hoá đơn
-        private void btnTimKiemHD_Click(object sender, EventArgs e)
-        {
-            TimKiemHD();
-        }
         //Button thoát tìm kiếm hoá đơn 
         private void btnThoatTimKiemHD_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void txtTimKiemHD_TextChanged(object sender, EventArgs e)
+        {
+            TimKiemHD();
         }
     }
 }

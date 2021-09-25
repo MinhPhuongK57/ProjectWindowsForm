@@ -80,18 +80,6 @@ namespace _452_417_CDTH19E_SHOESSHOP
             //    txtTimKiemSP.Enabled = true;
             //}    
         }
-        //Bẫy lỗi ở sự kiện KeyPress From To
-        private void txtFrom_KeyPress_1(object sender, KeyPressEventArgs e)
-        {
-            if (char.IsDigit(e.KeyChar) == false && char.IsControl(e.KeyChar) == false)
-                e.Handled = true;
-
-        }
-        private void txtTo_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (char.IsDigit(e.KeyChar) == false && char.IsControl(e.KeyChar) == false)
-                e.Handled = true;
-        }
 
         private void frmTimKiem_FormClosing(object sender, FormClosingEventArgs e)
         {
@@ -99,12 +87,6 @@ namespace _452_417_CDTH19E_SHOESSHOP
             ThoatHoi = MessageBox.Show("Bạn có muốn thoát không ?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1);
             if (ThoatHoi == DialogResult.No)
                 e.Cancel = true;
-        }
-
-        //Button tìm kiếm sản phẩm
-        private void btnTimKiemSP_Click_1(object sender, EventArgs e)
-        {
-            TimKiemSP();
         }
 
         //Button tải lại bảng tìm kiếm sản phẩm
@@ -119,6 +101,11 @@ namespace _452_417_CDTH19E_SHOESSHOP
         private void btnThoatTimKiemSP_Click_1(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void txtTimKiemSP_TextChanged(object sender, EventArgs e)
+        {
+            TimKiemSP();
         }
     }
 }

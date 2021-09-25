@@ -99,14 +99,16 @@ namespace _452_417_CDTH19E_SHOESSHOP
             if (cboKhachHang.SelectedIndex == 2)
             {
                 pnlTimKiemKH.Visible = true;
-
+                btnTimKiemKH.Visible = true;
                 txtTimKiemKH.Enabled = false;
             }
             else
             {
                 txtTimKiemKH.Enabled = true;
+                btnTimKiemKH.Visible = false;
                 pnlTimKiemKH.Visible = false;
             }
+
         }
 
 

@@ -21,43 +21,100 @@ namespace _452_417_CDTH19E_SHOESSHOP
         KetNoiDuLieu iiKetNoi = new KetNoiDuLieu();
         DataTable ChiTietSanPham = new DataTable();
         DataTable IDSanPham = new DataTable();
-
+        public string S;
         //Hàm Kết nối chi tiết sản phẩm
+        void HienThiChiTietSP()
+        {
+            ChiTietSanPham = iiKetNoi.ExcuteQuery("select * from CHITIETSANPHAM where ID_SanPham = '" + S + "'");
+        }
         void KetNoiCTSP()
         {
             KetNoiDuLieu iKetNoiCTSP = new KetNoiDuLieu();
-            dgvChiTietSP.DataSource = iKetNoiCTSP.ExcuteQuery("select * from CHITIETSANPHAM");
+            dgvChiTietSP.DataSource = iKetNoiCTSP.ExcuteQuery("select * from CHITIETSANPHAM where ID_SanPham = '" + S + "'");
         }
         //Form Load
         private void frmChiTietSanPham_Load(object sender, EventArgs e)
         {
-            IDSanPham = iiKetNoi.ExcuteQuery("Select ID_SanPham from SANPHAM");
-            for(int i= 0; i < IDSanPham.Rows.Count;i++)
-            {
-                cboIDSanPham.Items.Add(IDSanPham.Rows[i][0]);
-            }   
+            cboKichThuoc.Items.Add("35");
+            cboKichThuoc.Items.Add("36");
+            cboKichThuoc.Items.Add("37");
+            cboKichThuoc.Items.Add("38");
+            cboKichThuoc.Items.Add("39");
+            cboKichThuoc.Items.Add("40");
+            cboKichThuoc.Items.Add("41");
+            cboKichThuoc.Items.Add("42");
+            cboKichThuoc.Items.Add("43");
+            cboKichThuoc.Items.Add("44");
+            cboKichThuoc.Items.Add("45");
+            cboKichThuoc.SelectedIndex = 0;
+
+            frmTrangChu form = new frmTrangChu();
             btnThemCTSP.Enabled = false;
-            ChiTietSanPham = iiKetNoi.ExcuteQuery("Select ID_ChiTietSanPham from CHITIETSANPHAM");
+            txtIDSanPham.Text = S;
             KetNoiCTSP();
+            HienThiChiTietSP();
             HienThiTextbox(0);
         }
+        //Hàm hiển thị textbox
         void HienThiTextbox(int vitri)
         {
             //Sản Phẩm
-            ChiTietSanPham = iiKetNoi.ExcuteQuery("select * from CHITIETSANPHAM");
-            txtIDChiTietSanPham.Text = ChiTietSanPham.Rows[vitri][0].ToString();
-            cboIDSanPham.Text = ChiTietSanPham.Rows[vitri][1].ToString();
-            txtMau.Text = ChiTietSanPham.Rows[vitri][2].ToString();
-            txtKichThuoc.Text = ChiTietSanPham.Rows[vitri][3].ToString();
-            numSoLuongSP.Value = Convert.ToInt32(ChiTietSanPham.Rows[vitri][4]);
+            if (ChiTietSanPham.Rows.Count > 0)
+            {
+                txtIDChiTietSanPham.Text = ChiTietSanPham.Rows[vitri][0].ToString();
+                txtIDSanPham.Text = ChiTietSanPham.Rows[vitri][1].ToString();
+                txtMau.Text = ChiTietSanPham.Rows[vitri][2].ToString();
+                //txtKichThuoc.Text = ChiTietSanPham.Rows[vitri][3].ToString();
+                cboKichThuoc.Text = ChiTietSanPham.Rows[vitri][3].ToString();
+                numSoLuongSP.Value = Convert.ToInt32(ChiTietSanPham.Rows[vitri][4]);
+                txtGiaNhap.Text = string.Format("{0:n0}", ChiTietSanPham.Rows[vitri][5]);
+                txtGiaBan.Text = string.Format("{0:n0}", ChiTietSanPham.Rows[vitri][6]);
+                txtTenAnh.Text = ChiTietSanPham.Rows[vitri][7].ToString();
+                string filename = Path.GetFullPath("Image") + @"\";
+                filename += txtTenAnh.Text;
+                Bitmap img = new Bitmap(filename);
+                picAnh.Image = img;
 
-            txtGiaNhap.Text = string.Format("{0:n0}", ChiTietSanPham.Rows[vitri][5]);
-            txtGiaBan.Text = string.Format("{0:n0}", ChiTietSanPham.Rows[vitri][6]);
-            txtTenAnh.Text = ChiTietSanPham.Rows[vitri][7].ToString();
-            string filename = Path.GetFullPath("Image") + @"\";
-            filename += txtTenAnh.Text;
-            Bitmap img = new Bitmap(filename);
-            picAnh.Image = img;
+                //Xử lý nhiều ảnh
+
+                txtTenAnhCT.Text = ChiTietSanPham.Rows[vitri][8].ToString();
+                if(txtTenAnhCT.Text != "")
+                {
+                    string Images = txtTenAnhCT.Text = ChiTietSanPham.Rows[vitri][8].ToString();
+                    string[] filenames = Images.Split(';');
+                    flpAnhChiTiet.Controls.Clear();
+                    if (!string.IsNullOrEmpty(Images))
+                    {
+
+                        for (int i = 0; i < filenames.Count(); i++)
+                        {
+                            string a = @".\Image" + @"\";
+                            a += filenames[i];
+                            Bitmap b = new Bitmap(a);
+                            PictureBox pic = new PictureBox();
+                            pic.Image = b;
+                            pic.SizeMode = PictureBoxSizeMode.StretchImage;
+                            pic.Width = 125;
+                            pic.Height = 100;
+                            pic.BorderStyle = BorderStyle.FixedSingle;
+                            flpAnhChiTiet.Controls.Add(pic);
+                        }
+                    }
+                }    
+                
+            }
+            else
+            {
+                txtIDChiTietSanPham.Text = "";
+                txtMau.Text = "";
+                cboKichThuoc.Text = "";
+                numSoLuongSP.Value = 1;
+                txtGiaNhap.Text = "";
+                txtGiaBan.Text = "";
+                txtTenAnh.Text = "";
+                picAnh.Image = null;
+                flpAnhChiTiet.Controls.Clear();
+            }
         }
         //Kiểm tra dữ liệu ID bảng chi tiết sản phẩm
         bool KiemTraIDCTSP()
@@ -81,15 +138,6 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.Close();
         }
 
-        //Key_Up SoLuongSP
-        private void numSoLuongSP_KeyUp(object sender, KeyEventArgs e)
-        {
-            if (numSoLuongSP.Value > 1)
-                numSoLuongSP.Value = 1;
-            else if (numSoLuongSP.Value < 0)
-                numSoLuongSP.Value = 0;
-        }
-
         //Closing Form
         private void frmChiTietSanPham_FormClosing(object sender, FormClosingEventArgs e)
         {
@@ -109,7 +157,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             else
             {
                 DataTable ThemCTSP = new DataTable();
-                string query = "insert into CHITIETSANPHAM values('" + txtIDChiTietSanPham.Text + "','" + cboIDSanPham.SelectedItem + "', '" + txtMau.Text + "', '" + txtKichThuoc.Text + "','" + numSoLuongSP.Value +"','" + txtGiaNhap.Text+"', '" + txtGiaBan.Text+"','"+txtTenAnh.Text+"')";
+                string query = "insert into CHITIETSANPHAM values('" + txtIDChiTietSanPham.Text + "','" + txtIDSanPham.Text + "', '" + txtMau.Text + "', '" + cboKichThuoc.Text + "','" + numSoLuongSP.Value +"','" + txtGiaNhap.Text+"', '" + txtGiaBan.Text+"',N'"+txtTenAnh.Text+"',N'"+txtTenAnhCT.Text+"')";
                 ThemCTSP = iiKetNoi.ExcuteQuery(query);
                 KetNoiCTSP();
             }
@@ -159,7 +207,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
         {
             try
             {
-                string query = "update CHITIETSANPHAM set[ID_SanPham] = '" + cboIDSanPham.SelectedItem + "',[Mau] = N'" + txtMau.Text + "',[KichThuoc]= '" + txtKichThuoc.Text + "',[SoLuong] = '"+ numSoLuongSP.Value+"' , [GiaNhap] = '"+ txtGiaBan.Text+"', [GiaBan] = '"+txtGiaBan.Text+"', [HinhAnh] = '"+txtTenAnh.Text+"' where ID_ChiTietSanPham = '" + txtIDChiTietSanPham.Text + "'";
+                string query = "update CHITIETSANPHAM set[ID_SanPham] = '" + txtIDSanPham.Text + "',[Mau] = N'" + txtMau.Text + "',[KichThuoc]= '" + cboKichThuoc.Text + "',[SoLuong] = '"+ numSoLuongSP.Value+"' , [GiaNhap] = '"+ txtGiaNhap.Text+"', [GiaBan] = '"+txtGiaBan.Text+"', [HinhAnh] = N'"+txtTenAnh.Text+"',[HinhAnhChiTiet] = N'"+ txtTenAnhCT.Text + "' where ID_ChiTietSanPham = '" + txtIDChiTietSanPham.Text + "'";
                 CapNhatDLCTSP(query);
             }
             catch
@@ -199,6 +247,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             int size = ChiTietSanPham.Rows.Count;
             if (vitri >= 0 && vitri != size)
                 HienThiTextbox(vitri);
+            HienThiChiTietSP();
         }
 
         //Text changed
@@ -212,14 +261,14 @@ namespace _452_417_CDTH19E_SHOESSHOP
                 btnThemCTSP.Enabled = false;
         }
 
-        //Load ảnh
+        //button thêm ảnh
         private void btnThemAnh_Click(object sender, EventArgs e)
         {
             try
             {
                 OpenFileDialog Image = new OpenFileDialog();
                 //Image.Filter = "(.jpg);(.png)|.jpg;.png";
-                Image.InitialDirectory = Path.GetDirectoryName(@"C:\Lập trình windows\ĐỒ ÁN\452_417_CDTH19E_SHOESSHOP\452_417_CDTH19E_SHOESSHOP\bin\Debug\Image");
+                Image.InitialDirectory = Path.GetDirectoryName("Image") + @"\";
                 if (Image.ShowDialog() == DialogResult.Yes)
                 {
                     Image.ShowDialog();
@@ -240,9 +289,52 @@ namespace _452_417_CDTH19E_SHOESSHOP
             }
         }
 
-        private void txtTenAnh_TextChanged(object sender, EventArgs e)
+        //Button Thêm ảnh chi tiết
+        private void btnThemAnhChiTiet_Click(object sender, EventArgs e)
         {
-            
+            try
+            {
+                txtTenAnhCT.Text = "";
+                OpenFileDialog o = new OpenFileDialog();
+                o.InitialDirectory = Path.GetFullPath("Image") + @"";
+                o.Multiselect = true;
+                //if (o.ShowDialog() == DialogResult.Cancel)
+                //{
+                //    o.ShowDialog();
+                //}
+                if (o.ShowDialog() == DialogResult.OK)
+                {
+                    flpAnhChiTiet.Controls.Clear();
+                    flpAnhChiTiet.Text = null;
+                    int count = o.FileNames.Length;
+                    foreach (string f in o.FileNames)
+                    {
+                        Bitmap a = new Bitmap(f);
+                        PictureBox pic = new PictureBox();
+                        pic.Image = a;
+                        pic.SizeMode = PictureBoxSizeMode.StretchImage;
+                        pic.Width = 125;
+                        pic.Height = 100;
+                        pic.BorderStyle = BorderStyle.FixedSingle;
+                        flpAnhChiTiet.Controls.Add(pic);
+                        string[] tens = f.Split('\\');
+    
+                        count--;
+                        if (count >= 1)
+                        {
+                            txtTenAnhCT.Text += tens[tens.Count() - 1] + ";";
+                        }
+                        else
+                        {
+                            txtTenAnhCT.Text += tens[tens.Count() - 1];
+                        }
+                    }
+                }
+            }
+            catch
+            {
+                MessageBox.Show("Vui lòng chọn lại ảnh!", "Thông Báo");
+            }
         }
 
         //Button tạo mã vạch
@@ -252,7 +344,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             Zen.Barcode.Code128BarcodeDraw barcode = Zen.Barcode.BarcodeDrawFactory.Code128WithChecksum;
             picBarCode.Image = barcode.Draw(txtIDChiTietSanPham.Text, 50);
         }
-
+        //Button lưu mã vạch
         private void btnLuuMaVach_Click(object sender, EventArgs e)
         {
             SaveFileDialog saveFileDialog1 = new SaveFileDialog();
@@ -268,10 +360,73 @@ namespace _452_417_CDTH19E_SHOESSHOP
                     MessageBox.Show("Vui Lòng Chọn Ảnh", "Thông Báo");
             }
         }
-
+        //Button thoát
         private void btnThoatCTSP_Click(object sender, EventArgs e)
         {
+            this.Close();
+        }
+        //Hàm xử lý xuất excel
+        private void ToExcel(DataGridView dataGridView1, string fileName, DataTable ds)
+        {
+            Microsoft.Office.Interop.Excel.Application excel;
+            Microsoft.Office.Interop.Excel.Workbook workbook;
+            Microsoft.Office.Interop.Excel.Worksheet worksheet;
 
+            try
+            {
+
+                excel = new Microsoft.Office.Interop.Excel.Application();
+                excel.Visible = false;
+                excel.DisplayAlerts = false;
+
+                workbook = excel.Workbooks.Add(Type.Missing);
+
+                worksheet = (Microsoft.Office.Interop.Excel.Worksheet)workbook.Sheets["Sheet1"];
+                worksheet.Name = "Danh sách Chi Tiết Sản Phẩm";
+
+                // export header
+                for (int i = 0; i < dataGridView1.ColumnCount; i++)
+                {
+                    worksheet.Cells[1, i + 1] = dataGridView1.Columns[i].HeaderText;
+                }
+
+                // export content
+                for (int i = 0; i < ds.Rows.Count; i++)
+                {
+                    for (int j = 0; j < ds.Columns.Count; j++)
+                    {
+                        worksheet.Cells[i + 2, j + 1] = ds.Rows[i][j].ToString();
+                    }
+                }
+
+                // save workbook
+                workbook.SaveAs(fileName);
+                workbook.Close();
+                excel.Quit();
+                MessageBox.Show("Xuất dữ liệu thành công.!");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                workbook = null;
+                worksheet = null;
+            }
+        }
+        //Button xuất excel
+        private void btnXuatExcelCTSP_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog SaveFile = new SaveFileDialog();
+            SaveFile.InitialDirectory = @"C:\Lập trình windows\ĐỒ ÁN\Excel";
+            //SaveFileSanPham.Title = "Lưu file ảnh";
+            SaveFile.DefaultExt = "xlsx";
+            //SaveFileSanPham.Filter = "(.jpg);(.png)|.jpg;.png";
+            if (SaveFile.ShowDialog() == DialogResult.OK)
+            {
+                ToExcel(dgvChiTietSP, SaveFile.FileName, ChiTietSanPham);
+            }
         }
     }
 }

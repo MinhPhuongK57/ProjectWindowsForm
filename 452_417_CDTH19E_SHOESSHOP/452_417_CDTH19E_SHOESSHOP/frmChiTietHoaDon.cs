@@ -25,6 +25,8 @@ namespace _452_417_CDTH19E_SHOESSHOP
         //Form Load
         private void frmChiTietHoaDon_Load(object sender, EventArgs e)
         {
+            cboTrangThaiHD.Items.Add("Không hoạt động");
+            cboTrangThaiHD.Items.Add("Hoạt động");
             HoaDon = iiKetNoi.ExcuteQuery("Select ID_HoaDon from HOADON");
             ChiTietHoaDon = iiKetNoi.ExcuteQuery("Select ID_HoaDon from CHITIETHOADON");
             KetNoiHD();
@@ -237,14 +239,6 @@ namespace _452_417_CDTH19E_SHOESSHOP
             else
                 btnThemCTHD.Enabled = false;
         }
-        //Kiểm tra trạng thái
-        private void numTrangThaiHD_KeyUp(object sender, KeyEventArgs e)
-        {
-            if (numTrangThaiHD.Value > 1)
-                numTrangThaiHD.Value = 1;
-            else if (numTrangThaiHD.Value < 0)
-                numTrangThaiHD.Value = 0;
-        }
 
 
         //Hàm Hiển thị hoá đơn
@@ -257,7 +251,15 @@ namespace _452_417_CDTH19E_SHOESSHOP
             dtpNgayBan.Text = HoaDon.Rows[vitri][3].ToString();
             txtTongTienHD.Text = string.Format("{0:n0}",HoaDon.Rows[vitri][4]);
 
-            numTrangThaiHD.Value = Convert.ToInt32(HoaDon.Rows[vitri][5]);
+            cboTrangThaiHD.Text = HoaDon.Rows[vitri][5].ToString();
+            if (Convert.ToInt32(HoaDon.Rows[vitri][5]) == 0)
+            {
+                cboTrangThaiHD.SelectedIndex = 0;
+            }
+            else
+            {
+                cboTrangThaiHD.SelectedIndex = 1;
+            }
         }
         //Hàm kiểm tra ID hoá đơn
         bool KiemTraIDHD()
@@ -284,7 +286,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
                 }
                 else
                 {
-                    string query = "insert into HOADON values('" + txtIDHoaDonn.Text + "', '" + txtIDKhachhang.Text + "', N'" + txtDiaChiHD.Text + "', '" + dtpNgayBan.Value + "', '" + txtTongTienHD.Text + "', '" + numTrangThaiHD.Value + "')";
+                    string query = "insert into HOADON values('" + txtIDHoaDonn.Text + "', '" + txtIDKhachhang.Text + "', N'" + txtDiaChiHD.Text + "', '" + dtpNgayBan.Value + "', '" + txtTongTienHD.Text + "', '" + cboTrangThaiHD.SelectedIndex + "')";
                     iiKetNoi.ExcuteQuery(query);
                     KetNoiHD();
                 }
@@ -302,7 +304,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
         {
            
 
-            string query = "update HOADON set ID_KhachHang = '" + txtIDKhachhang.Text + "', DiaChi = N'" + txtDiaChiHD.Text + "' ,NgayBan = '" + dtpNgayBan.Value + "',TongTien = '" + txtTongTienHD.Text + "', TrangThai = '" + numTrangThaiHD.Value + "' where ID_HoaDon = '" + txtIDHoaDon.Text + "'";
+            string query = "update HOADON set ID_KhachHang = '" + txtIDKhachhang.Text + "', DiaChi = N'" + txtDiaChiHD.Text + "' ,NgayBan = '" + dtpNgayBan.Value + "',TongTien = '" + txtTongTienHD.Text + "', TrangThai = '" + cboTrangThaiHD.SelectedIndex + "' where ID_HoaDon = '" + txtIDHoaDon.Text + "'";
             HoaDon = iiKetNoi.ExcuteQuery(query);
             KetNoiHD();
             HienThiHD(0);
@@ -363,13 +365,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             if(sdt.Rows.Count>0)
             {
                 txtIDKhachhang.Text = sdt.Rows[0][0].ToString();
-            }    
-
-        }
-
-        private void grp2_Enter(object sender, EventArgs e)
-        {
-
+            }
         }
     }
 }

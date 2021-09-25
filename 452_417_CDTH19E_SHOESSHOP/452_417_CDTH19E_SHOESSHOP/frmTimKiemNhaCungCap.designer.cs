@@ -40,7 +40,6 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.grpDanhSachNCC = new Guna.UI2.WinForms.Guna2GroupBox();
             this.cboNhaCungCap = new Guna.UI2.WinForms.Guna2ComboBox();
             this.btnDatLaiNCC = new Guna.UI2.WinForms.Guna2Button();
-            this.btnTimKiemNCC = new Guna.UI2.WinForms.Guna2Button();
             this.txtTimKiemNCC = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnThoatTimKIemNCC = new Guna.UI2.WinForms.Guna2Button();
             this.guna2ShadowForm1 = new Guna.UI2.WinForms.Guna2ShadowForm(this.components);
@@ -161,31 +160,13 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.btnDatLaiNCC.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDatLaiNCC.ForeColor = System.Drawing.Color.White;
             this.btnDatLaiNCC.HoverState.Parent = this.btnDatLaiNCC;
-            this.btnDatLaiNCC.Location = new System.Drawing.Point(810, 96);
+            this.btnDatLaiNCC.Location = new System.Drawing.Point(737, 96);
             this.btnDatLaiNCC.Name = "btnDatLaiNCC";
             this.btnDatLaiNCC.ShadowDecoration.Parent = this.btnDatLaiNCC;
             this.btnDatLaiNCC.Size = new System.Drawing.Size(108, 38);
             this.btnDatLaiNCC.TabIndex = 24;
             this.btnDatLaiNCC.Text = "Tải lại";
             this.btnDatLaiNCC.Click += new System.EventHandler(this.btnDatLaiNCC_Click_1);
-            // 
-            // btnTimKiemNCC
-            // 
-            this.btnTimKiemNCC.BorderRadius = 20;
-            this.btnTimKiemNCC.CheckedState.Parent = this.btnTimKiemNCC;
-            this.btnTimKiemNCC.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnTimKiemNCC.CustomImages.Parent = this.btnTimKiemNCC;
-            this.btnTimKiemNCC.FillColor = System.Drawing.Color.Turquoise;
-            this.btnTimKiemNCC.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTimKiemNCC.ForeColor = System.Drawing.Color.White;
-            this.btnTimKiemNCC.HoverState.Parent = this.btnTimKiemNCC;
-            this.btnTimKiemNCC.Location = new System.Drawing.Point(685, 96);
-            this.btnTimKiemNCC.Name = "btnTimKiemNCC";
-            this.btnTimKiemNCC.ShadowDecoration.Parent = this.btnTimKiemNCC;
-            this.btnTimKiemNCC.Size = new System.Drawing.Size(108, 38);
-            this.btnTimKiemNCC.TabIndex = 25;
-            this.btnTimKiemNCC.Text = "Tìm kiếm";
-            this.btnTimKiemNCC.Click += new System.EventHandler(this.btnTimKiemNCC_Click_1);
             // 
             // txtTimKiemNCC
             // 
@@ -213,6 +194,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.txtTimKiemNCC.ShadowDecoration.Parent = this.txtTimKiemNCC;
             this.txtTimKiemNCC.Size = new System.Drawing.Size(339, 36);
             this.txtTimKiemNCC.TabIndex = 26;
+            this.txtTimKiemNCC.TextChanged += new System.EventHandler(this.txtTimKiemNCC_TextChanged);
             // 
             // btnThoatTimKIemNCC
             // 
@@ -248,7 +230,6 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.Controls.Add(this.btnThoatTimKIemNCC);
             this.Controls.Add(this.txtTimKiemNCC);
             this.Controls.Add(this.btnDatLaiNCC);
-            this.Controls.Add(this.btnTimKiemNCC);
             this.Controls.Add(this.cboNhaCungCap);
             this.Controls.Add(this.grpDanhSachNCC);
             this.Controls.Add(this.label1);
@@ -275,7 +256,6 @@ namespace _452_417_CDTH19E_SHOESSHOP
         private Guna.UI2.WinForms.Guna2GroupBox grpDanhSachNCC;
         private Guna.UI2.WinForms.Guna2ComboBox cboNhaCungCap;
         private Guna.UI2.WinForms.Guna2Button btnDatLaiNCC;
-        private Guna.UI2.WinForms.Guna2Button btnTimKiemNCC;
         private Guna.UI2.WinForms.Guna2TextBox txtTimKiemNCC;
         private Guna.UI2.WinForms.Guna2Button btnThoatTimKIemNCC;
         private System.Windows.Forms.DataGridViewTextBoxColumn ID_NCC;

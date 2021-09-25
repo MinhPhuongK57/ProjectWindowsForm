@@ -46,7 +46,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.cboKhachHang = new Guna.UI2.WinForms.Guna2ComboBox();
             this.txtTimKiemKH = new Guna.UI2.WinForms.Guna2TextBox();
             this.grpTimKiemKhachHang = new Guna.UI2.WinForms.Guna2GroupBox();
-            this.btnTimKIemKH = new Guna.UI2.WinForms.Guna2Button();
+            this.btnTimKiemKH = new Guna.UI2.WinForms.Guna2Button();
             this.btnDatLaiKH = new Guna.UI2.WinForms.Guna2Button();
             this.btnThoatTimKiemKH = new Guna.UI2.WinForms.Guna2Button();
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
@@ -246,23 +246,23 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.grpTimKiemKhachHang.TabIndex = 22;
             this.grpTimKiemKhachHang.Text = "Dach sách khách hàng";
             // 
-            // btnTimKIemKH
+            // btnTimKiemKH
             // 
-            this.btnTimKIemKH.BorderRadius = 20;
-            this.btnTimKIemKH.CheckedState.Parent = this.btnTimKIemKH;
-            this.btnTimKIemKH.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnTimKIemKH.CustomImages.Parent = this.btnTimKIemKH;
-            this.btnTimKIemKH.FillColor = System.Drawing.Color.Turquoise;
-            this.btnTimKIemKH.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTimKIemKH.ForeColor = System.Drawing.Color.White;
-            this.btnTimKIemKH.HoverState.Parent = this.btnTimKIemKH;
-            this.btnTimKIemKH.Location = new System.Drawing.Point(915, 89);
-            this.btnTimKIemKH.Name = "btnTimKIemKH";
-            this.btnTimKIemKH.ShadowDecoration.Parent = this.btnTimKIemKH;
-            this.btnTimKIemKH.Size = new System.Drawing.Size(108, 38);
-            this.btnTimKIemKH.TabIndex = 23;
-            this.btnTimKIemKH.Text = "Tìm kiếm";
-            this.btnTimKIemKH.Click += new System.EventHandler(this.btnTimKIemKH_Click);
+            this.btnTimKiemKH.BorderRadius = 20;
+            this.btnTimKiemKH.CheckedState.Parent = this.btnTimKiemKH;
+            this.btnTimKiemKH.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnTimKiemKH.CustomImages.Parent = this.btnTimKiemKH;
+            this.btnTimKiemKH.FillColor = System.Drawing.Color.Turquoise;
+            this.btnTimKiemKH.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTimKiemKH.ForeColor = System.Drawing.Color.White;
+            this.btnTimKiemKH.HoverState.Parent = this.btnTimKiemKH;
+            this.btnTimKiemKH.Location = new System.Drawing.Point(915, 89);
+            this.btnTimKiemKH.Name = "btnTimKiemKH";
+            this.btnTimKiemKH.ShadowDecoration.Parent = this.btnTimKiemKH;
+            this.btnTimKiemKH.Size = new System.Drawing.Size(108, 38);
+            this.btnTimKiemKH.TabIndex = 23;
+            this.btnTimKiemKH.Text = "Tìm kiếm";
+            this.btnTimKiemKH.Click += new System.EventHandler(this.btnTimKiemKH_Click);
             // 
             // btnDatLaiKH
             // 
@@ -315,7 +315,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.ClientSize = new System.Drawing.Size(1171, 573);
             this.Controls.Add(this.btnThoatTimKiemKH);
             this.Controls.Add(this.btnDatLaiKH);
-            this.Controls.Add(this.btnTimKIemKH);
+            this.Controls.Add(this.btnTimKiemKH);
             this.Controls.Add(this.grpTimKiemKhachHang);
             this.Controls.Add(this.txtTimKiemKH);
             this.Controls.Add(this.cboKhachHang);
@@ -355,7 +355,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
         private Guna.UI2.WinForms.Guna2ComboBox cboKhachHang;
         private Guna.UI2.WinForms.Guna2TextBox txtTimKiemKH;
         private Guna.UI2.WinForms.Guna2GroupBox grpTimKiemKhachHang;
-        private Guna.UI2.WinForms.Guna2Button btnTimKIemKH;
+        private Guna.UI2.WinForms.Guna2Button btnTimKiemKH;
         private Guna.UI2.WinForms.Guna2Button btnDatLaiKH;
         private Guna.UI2.WinForms.Guna2Button btnThoatTimKiemKH;
         private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;

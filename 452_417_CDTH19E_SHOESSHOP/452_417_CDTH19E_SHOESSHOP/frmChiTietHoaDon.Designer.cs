@@ -58,6 +58,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.numSoLuongSP = new Guna.UI2.WinForms.Guna2NumericUpDown();
             this.grp2 = new System.Windows.Forms.GroupBox();
+            this.cboTrangThaiHD = new Guna.UI2.WinForms.Guna2ComboBox();
             this.txtIDKhachhang = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnsearchKH = new Guna.UI2.WinForms.Guna2Button();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -68,7 +69,6 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.btnXoaHD = new Guna.UI2.WinForms.Guna2Button();
             this.btnCapNhatHD = new Guna.UI2.WinForms.Guna2Button();
             this.btnThemHD = new Guna.UI2.WinForms.Guna2Button();
-            this.numTrangThaiHD = new Guna.UI2.WinForms.Guna2NumericUpDown();
             this.txtDiaChiHD = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtIDHoaDonn = new Guna.UI2.WinForms.Guna2TextBox();
             this.lblTrangThaiHD = new System.Windows.Forms.Label();
@@ -93,7 +93,6 @@ namespace _452_417_CDTH19E_SHOESSHOP
             ((System.ComponentModel.ISupportInitialize)(this.dgvChiTietHD)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numSoLuongSP)).BeginInit();
             this.grp2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numTrangThaiHD)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHoaDon)).BeginInit();
             this.guna2GroupBox1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -412,6 +411,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.Column7});
             this.dgvChiTietHD.Location = new System.Drawing.Point(0, 44);
             this.dgvChiTietHD.Name = "dgvChiTietHD";
+            this.dgvChiTietHD.ReadOnly = true;
             this.dgvChiTietHD.RowHeadersVisible = false;
             this.dgvChiTietHD.RowHeadersWidth = 51;
             this.dgvChiTietHD.RowTemplate.Height = 24;
@@ -425,6 +425,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.Column1.HeaderText = "ID Hoá Đơn";
             this.Column1.MinimumWidth = 6;
             this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
             // 
             // Column3
             // 
@@ -432,6 +433,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.Column3.HeaderText = "ID Sản Phẩm";
             this.Column3.MinimumWidth = 6;
             this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
             // 
             // Column4
             // 
@@ -439,6 +441,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.Column4.HeaderText = "Đơn Giá";
             this.Column4.MinimumWidth = 6;
             this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
             // 
             // Column5
             // 
@@ -446,6 +449,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.Column5.HeaderText = "Số Lượng";
             this.Column5.MinimumWidth = 6;
             this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
             // 
             // Column6
             // 
@@ -453,6 +457,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.Column6.HeaderText = "Giảm Giá";
             this.Column6.MinimumWidth = 6;
             this.Column6.Name = "Column6";
+            this.Column6.ReadOnly = true;
             // 
             // Column7
             // 
@@ -460,6 +465,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.Column7.HeaderText = "Thành Tiền";
             this.Column7.MinimumWidth = 6;
             this.Column7.Name = "Column7";
+            this.Column7.ReadOnly = true;
             // 
             // numSoLuongSP
             // 
@@ -487,6 +493,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             // 
             // grp2
             // 
+            this.grp2.Controls.Add(this.cboTrangThaiHD);
             this.grp2.Controls.Add(this.txtIDKhachhang);
             this.grp2.Controls.Add(this.btnsearchKH);
             this.grp2.Controls.Add(this.guna2HtmlLabel2);
@@ -497,7 +504,6 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.grp2.Controls.Add(this.btnXoaHD);
             this.grp2.Controls.Add(this.btnCapNhatHD);
             this.grp2.Controls.Add(this.btnThemHD);
-            this.grp2.Controls.Add(this.numTrangThaiHD);
             this.grp2.Controls.Add(this.txtDiaChiHD);
             this.grp2.Controls.Add(this.txtIDHoaDonn);
             this.grp2.Controls.Add(this.lblTrangThaiHD);
@@ -514,6 +520,27 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.grp2.TabIndex = 44;
             this.grp2.TabStop = false;
             this.grp2.Text = "Hoá đơn";
+            // 
+            // cboTrangThaiHD
+            // 
+            this.cboTrangThaiHD.BackColor = System.Drawing.Color.Transparent;
+            this.cboTrangThaiHD.BorderRadius = 5;
+            this.cboTrangThaiHD.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cboTrangThaiHD.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cboTrangThaiHD.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboTrangThaiHD.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cboTrangThaiHD.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cboTrangThaiHD.FocusedState.Parent = this.cboTrangThaiHD;
+            this.cboTrangThaiHD.Font = new System.Drawing.Font("Roboto", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboTrangThaiHD.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.cboTrangThaiHD.HoverState.Parent = this.cboTrangThaiHD;
+            this.cboTrangThaiHD.ItemHeight = 30;
+            this.cboTrangThaiHD.ItemsAppearance.Parent = this.cboTrangThaiHD;
+            this.cboTrangThaiHD.Location = new System.Drawing.Point(432, 172);
+            this.cboTrangThaiHD.Name = "cboTrangThaiHD";
+            this.cboTrangThaiHD.ShadowDecoration.Parent = this.cboTrangThaiHD;
+            this.cboTrangThaiHD.Size = new System.Drawing.Size(180, 36);
+            this.cboTrangThaiHD.TabIndex = 42;
             // 
             // txtIDKhachhang
             // 
@@ -551,19 +578,19 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.btnsearchKH.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnsearchKH.ForeColor = System.Drawing.Color.White;
             this.btnsearchKH.HoverState.Parent = this.btnsearchKH;
-            this.btnsearchKH.Location = new System.Drawing.Point(345, 231);
+            this.btnsearchKH.Location = new System.Drawing.Point(345, 236);
             this.btnsearchKH.Name = "btnsearchKH";
             this.btnsearchKH.ShadowDecoration.Parent = this.btnsearchKH;
-            this.btnsearchKH.Size = new System.Drawing.Size(191, 34);
+            this.btnsearchKH.Size = new System.Drawing.Size(98, 35);
             this.btnsearchKH.TabIndex = 39;
-            this.btnsearchKH.Text = "Tìm kiếm khách hàng";
+            this.btnsearchKH.Text = "Tìm kiếm";
             this.btnsearchKH.Click += new System.EventHandler(this.btnsearchKH_Click);
             // 
             // guna2HtmlLabel2
             // 
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel2.Font = new System.Drawing.Font("Roboto", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(26, 245);
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(26, 251);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
             this.guna2HtmlLabel2.Size = new System.Drawing.Size(107, 20);
             this.guna2HtmlLabel2.TabIndex = 38;
@@ -592,7 +619,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.txtSDTKhachhang.PlaceholderText = "";
             this.txtSDTKhachhang.SelectedText = "";
             this.txtSDTKhachhang.ShadowDecoration.Parent = this.txtSDTKhachhang;
-            this.txtSDTKhachhang.Size = new System.Drawing.Size(166, 29);
+            this.txtSDTKhachhang.Size = new System.Drawing.Size(166, 35);
             this.txtSDTKhachhang.TabIndex = 37;
             // 
             // label9
@@ -721,41 +748,6 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.btnThemHD.TabIndex = 21;
             this.btnThemHD.Text = "Thêm";
             this.btnThemHD.Click += new System.EventHandler(this.btnThemHD_Click);
-            // 
-            // numTrangThaiHD
-            // 
-            this.numTrangThaiHD.BackColor = System.Drawing.Color.Transparent;
-            this.numTrangThaiHD.BorderRadius = 5;
-            this.numTrangThaiHD.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.numTrangThaiHD.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.numTrangThaiHD.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.numTrangThaiHD.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.numTrangThaiHD.DisabledState.Parent = this.numTrangThaiHD;
-            this.numTrangThaiHD.DisabledState.UpDownButtonFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(177)))), ((int)(((byte)(177)))));
-            this.numTrangThaiHD.DisabledState.UpDownButtonForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(203)))), ((int)(((byte)(203)))));
-            this.numTrangThaiHD.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.numTrangThaiHD.FocusedState.Parent = this.numTrangThaiHD;
-            this.numTrangThaiHD.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numTrangThaiHD.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.numTrangThaiHD.Location = new System.Drawing.Point(433, 172);
-            this.numTrangThaiHD.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.numTrangThaiHD.Maximum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numTrangThaiHD.Name = "numTrangThaiHD";
-            this.numTrangThaiHD.ShadowDecoration.Parent = this.numTrangThaiHD;
-            this.numTrangThaiHD.Size = new System.Drawing.Size(165, 39);
-            this.numTrangThaiHD.TabIndex = 13;
-            this.numTrangThaiHD.UpDownButtonFillColor = System.Drawing.Color.Turquoise;
-            this.numTrangThaiHD.UpDownButtonForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.numTrangThaiHD.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numTrangThaiHD.KeyUp += new System.Windows.Forms.KeyEventHandler(this.numTrangThaiHD_KeyUp);
             // 
             // txtDiaChiHD
             // 
@@ -1044,7 +1036,6 @@ namespace _452_417_CDTH19E_SHOESSHOP
             ((System.ComponentModel.ISupportInitialize)(this.numSoLuongSP)).EndInit();
             this.grp2.ResumeLayout(false);
             this.grp2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numTrangThaiHD)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHoaDon)).EndInit();
             this.guna2GroupBox1.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
@@ -1088,7 +1079,6 @@ namespace _452_417_CDTH19E_SHOESSHOP
         private Guna.UI2.WinForms.Guna2Button btnXoaHD;
         private Guna.UI2.WinForms.Guna2Button btnCapNhatHD;
         private Guna.UI2.WinForms.Guna2Button btnThemHD;
-        private Guna.UI2.WinForms.Guna2NumericUpDown numTrangThaiHD;
         private Guna.UI2.WinForms.Guna2TextBox txtDiaChiHD;
         private Guna.UI2.WinForms.Guna2TextBox txtTongTienHD;
         private Guna.UI2.WinForms.Guna2TextBox txtIDHoaDonn;
@@ -1114,5 +1104,6 @@ namespace _452_417_CDTH19E_SHOESSHOP
         private Guna.UI2.WinForms.Guna2TextBox txtSDTKhachhang;
         private Guna.UI2.WinForms.Guna2Button btnsearchKH;
         private Guna.UI2.WinForms.Guna2TextBox txtIDKhachhang;
+        private Guna.UI2.WinForms.Guna2ComboBox cboTrangThaiHD;
     }
 }

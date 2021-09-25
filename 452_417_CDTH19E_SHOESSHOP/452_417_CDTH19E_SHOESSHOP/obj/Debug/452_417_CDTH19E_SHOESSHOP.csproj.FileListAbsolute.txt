@@ -21,7 +21,6 @@ C:\Lập trình windows\ĐỒ ÁN\452_417_CDTH19E_SHOESSHOP\452_417_CDTH19E_SHOE
 C:\Lập trình windows\ĐỒ ÁN\452_417_CDTH19E_SHOESSHOP\452_417_CDTH19E_SHOESSHOP\bin\Debug\Guna.UI2.dll
 C:\Lập trình windows\ĐỒ ÁN\452_417_CDTH19E_SHOESSHOP\452_417_CDTH19E_SHOESSHOP\obj\Debug\_452_417_CDTH19E_SHOESSHOP.frmChiTietSanPham.resources
 C:\Lập trình windows\ĐỒ ÁN\452_417_CDTH19E_SHOESSHOP\452_417_CDTH19E_SHOESSHOP\obj\Debug\_452_417_CDTH19E_SHOESSHOP.frmChiTietHoaDon.resources
-C:\Lập trình windows\ĐỒ ÁN\452_417_CDTH19E_SHOESSHOP\452_417_CDTH19E_SHOESSHOP\obj\Debug\_452_417_CDTH19E_SHOESSHOP.frmThongKeDoanhThu.resources
 C:\Lập trình windows\ĐỒ ÁN\452_417_CDTH19E_SHOESSHOP\452_417_CDTH19E_SHOESSHOP\bin\Debug\Zen.Barcode.Core.dll
 C:\Users\asus\Downloads\WindowsForm-SourceCode\WindowsForm-SourceCode\452_417_CDTH19E_SHOESSHOP\452_417_CDTH19E_SHOESSHOP\bin\Debug\452_417_CDTH19E_SHOESSHOP.exe.config
 C:\Users\asus\Downloads\WindowsForm-SourceCode\WindowsForm-SourceCode\452_417_CDTH19E_SHOESSHOP\452_417_CDTH19E_SHOESSHOP\bin\Debug\452_417_CDTH19E_SHOESSHOP.exe

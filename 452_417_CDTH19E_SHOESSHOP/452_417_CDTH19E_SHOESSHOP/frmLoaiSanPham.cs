@@ -20,6 +20,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
         //Biến dữ liệu sản phẩm
         KetNoiDuLieu iiKetNoi = new KetNoiDuLieu();
         DataTable LoaiSanPham = new DataTable();
+        DataTable TrangThai = new DataTable();
         //Hàm kết nối
         void KetNoiLSP()
         {
@@ -30,6 +31,8 @@ namespace _452_417_CDTH19E_SHOESSHOP
         //FormLoad
         private void frmLoaiSanPham_Load(object sender, EventArgs e)
         {
+            cboTrangThaiLSP.Items.Add("Hoạt động");
+            cboTrangThaiLSP.Items.Add("Không hoạt động");
             btnThemLoaiSP.Enabled = false;
             LoaiSanPham = iiKetNoi.ExcuteQuery("Select ID_LoaiSanPham from LOAISANPHAM");
             HienThiTextbox(0);
@@ -40,7 +43,15 @@ namespace _452_417_CDTH19E_SHOESSHOP
             LoaiSanPham = iiKetNoi.ExcuteQuery("select * from LOAISANPHAM");
             txtIDLoaiSanPham.Text = LoaiSanPham.Rows[vitri][0].ToString();
             txtTenLoaiSP.Text = LoaiSanPham.Rows[vitri][1].ToString();
-            numTrangThaiLSP.Value = Convert.ToInt32(LoaiSanPham.Rows[vitri][2]);
+            cboTrangThaiLSP.Text = LoaiSanPham.Rows[vitri][2].ToString();
+            if (Convert.ToInt32(LoaiSanPham.Rows[vitri][2]) == 1)
+            {
+                cboTrangThaiLSP.SelectedIndex = 0;
+            }
+            else
+            {
+                cboTrangThaiLSP.SelectedIndex = 1;
+            }
         }
 
         //Button Thoát
@@ -82,7 +93,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             else
             {
                 DataTable ThemLSP = new DataTable();
-                string query = "insert into LOAISANPHAM values('" + txtIDLoaiSanPham.Text + "', N'" + txtTenLoaiSP.Text + "', '" + numTrangThaiLSP.Value + "')";
+                string query = "insert into LOAISANPHAM values('" + txtIDLoaiSanPham.Text + "', N'" + txtTenLoaiSP.Text + "', '" + cboTrangThaiLSP.SelectedIndex + "')";
                 ThemLSP = iiKetNoi.ExcuteQuery(query);
                 KetNoiLSP();
             }
@@ -120,7 +131,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
         {
             try
             {
-                string query = "update LOAISANPHAM set[ID_LoaiSanPham] = '" + txtIDLoaiSanPham.Text + "',[TenLoai] = N'" + txtTenLoaiSP.Text + "',[TrangThai]= '" + numTrangThaiLSP.Value + "' where ID_LoaiSanPham = '" + txtIDLoaiSanPham.Text + "'";
+                string query = "update LOAISANPHAM set[ID_LoaiSanPham] = '" + txtIDLoaiSanPham.Text + "',[TenLoai] = N'" + txtTenLoaiSP.Text + "',[TrangThai]= '" + cboTrangThaiLSP.SelectedIndex + "' where ID_LoaiSanPham = '" + txtIDLoaiSanPham.Text + "'";
                 CapNhatDLLSP(query);
             }
             catch
@@ -167,7 +178,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
         }
 
         //Datagridview LoaiSanPham
-        private void dgvLoaiSanPham_CellClick(object sender, DataGridViewCellEventArgs e)
+        private void dgvLoaiSanPham_CellClick_2(object sender, DataGridViewCellEventArgs e)
         {
             int vitri = e.RowIndex;
             int size = LoaiSanPham.Rows.Count;
@@ -186,14 +197,68 @@ namespace _452_417_CDTH19E_SHOESSHOP
                 btnThemLoaiSP.Enabled = false;
         }
 
-        //Sự kiện KeyUp TrangThaiLSP
-        private void numTrangThaiLSP_KeyUp(object sender, KeyEventArgs e)
+        //Hàm xuất Excel
+        private void ToExcel(DataGridView dataGridView1, string fileName, DataTable ds)
         {
-            if (numTrangThaiLSP.Value > 1)
-                numTrangThaiLSP.Value = 1;
-            else if (numTrangThaiLSP.Value < 0)
-                numTrangThaiLSP.Value = 0;
-        }
+            Microsoft.Office.Interop.Excel.Application excel;
+            Microsoft.Office.Interop.Excel.Workbook workbook;
+            Microsoft.Office.Interop.Excel.Worksheet worksheet;
 
+            try
+            {
+
+                excel = new Microsoft.Office.Interop.Excel.Application();
+                excel.Visible = false;
+                excel.DisplayAlerts = false;
+
+                workbook = excel.Workbooks.Add(Type.Missing);
+
+                worksheet = (Microsoft.Office.Interop.Excel.Worksheet)workbook.Sheets["Sheet1"];
+                worksheet.Name = "Danh sách Loại Sản Phẩm";
+
+                // export header
+                for (int i = 0; i < dataGridView1.ColumnCount; i++)
+                {
+                    worksheet.Cells[1, i + 1] = dataGridView1.Columns[i].HeaderText;
+                }
+
+                // export content
+                for (int i = 0; i < ds.Rows.Count; i++)
+                {
+                    for (int j = 0; j < ds.Columns.Count; j++)
+                    {
+                        worksheet.Cells[i + 2, j + 1] = ds.Rows[i][j].ToString();
+                    }
+                }
+
+                // save workbook
+                workbook.SaveAs(fileName);
+                workbook.Close();
+                excel.Quit();
+                MessageBox.Show("Xuất dữ liệu thành công.!");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                workbook = null;
+                worksheet = null;
+            }
+        }
+        //Button xuất Excel
+        private void btnXuatExcelCTSP_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog SaveFile = new SaveFileDialog();
+            SaveFile.InitialDirectory = @"C:\Lập trình windows\ĐỒ ÁN\Excel";
+            //SaveFileSanPham.Title = "Lưu file ảnh";
+            SaveFile.DefaultExt = "xlsx";
+            //SaveFileSanPham.Filter = "(.jpg);(.png)|.jpg;.png";
+            if (SaveFile.ShowDialog() == DialogResult.OK)
+            {
+                ToExcel(dgvLoaiSanPham, SaveFile.FileName, LoaiSanPham);
+            }
+        }
     }
 }

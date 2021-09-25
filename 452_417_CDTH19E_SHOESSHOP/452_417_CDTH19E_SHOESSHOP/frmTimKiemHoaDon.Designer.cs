@@ -32,7 +32,6 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmTimKiemHoaDon));
             this.label1 = new System.Windows.Forms.Label();
-            this.btnTimKiemHD = new Guna.UI2.WinForms.Guna2Button();
             this.btnDatLaiHD = new Guna.UI2.WinForms.Guna2Button();
             this.txtTimKiemHD = new Guna.UI2.WinForms.Guna2TextBox();
             this.cboTimKiemHD = new Guna.UI2.WinForms.Guna2ComboBox();
@@ -55,30 +54,12 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Roboto", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(606, 31);
+            this.label1.Location = new System.Drawing.Point(457, 13);
             this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(237, 30);
             this.label1.TabIndex = 1;
             this.label1.Text = "TÌM KIẾM HOÁ ĐƠN";
-            // 
-            // btnTimKiemHD
-            // 
-            this.btnTimKiemHD.BorderRadius = 20;
-            this.btnTimKiemHD.CheckedState.Parent = this.btnTimKiemHD;
-            this.btnTimKiemHD.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnTimKiemHD.CustomImages.Parent = this.btnTimKiemHD;
-            this.btnTimKiemHD.FillColor = System.Drawing.Color.Turquoise;
-            this.btnTimKiemHD.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTimKiemHD.ForeColor = System.Drawing.Color.White;
-            this.btnTimKiemHD.HoverState.Parent = this.btnTimKiemHD;
-            this.btnTimKiemHD.Location = new System.Drawing.Point(881, 107);
-            this.btnTimKiemHD.Name = "btnTimKiemHD";
-            this.btnTimKiemHD.ShadowDecoration.Parent = this.btnTimKiemHD;
-            this.btnTimKiemHD.Size = new System.Drawing.Size(113, 38);
-            this.btnTimKiemHD.TabIndex = 20;
-            this.btnTimKiemHD.Text = "Tìm kiếm";
-            this.btnTimKiemHD.Click += new System.EventHandler(this.btnTimKiemHD_Click);
             // 
             // btnDatLaiHD
             // 
@@ -90,7 +71,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.btnDatLaiHD.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDatLaiHD.ForeColor = System.Drawing.Color.White;
             this.btnDatLaiHD.HoverState.Parent = this.btnDatLaiHD;
-            this.btnDatLaiHD.Location = new System.Drawing.Point(1025, 107);
+            this.btnDatLaiHD.Location = new System.Drawing.Point(860, 107);
             this.btnDatLaiHD.Name = "btnDatLaiHD";
             this.btnDatLaiHD.ShadowDecoration.Parent = this.btnDatLaiHD;
             this.btnDatLaiHD.Size = new System.Drawing.Size(113, 38);
@@ -123,6 +104,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.txtTimKiemHD.ShadowDecoration.Parent = this.txtTimKiemHD;
             this.txtTimKiemHD.Size = new System.Drawing.Size(371, 36);
             this.txtTimKiemHD.TabIndex = 21;
+            this.txtTimKiemHD.TextChanged += new System.EventHandler(this.txtTimKiemHD_TextChanged);
             // 
             // cboTimKiemHD
             // 
@@ -165,7 +147,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.dgvTimKiemHD.RowHeadersWidth = 60;
             this.dgvTimKiemHD.RowTemplate.Height = 24;
             this.dgvTimKiemHD.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvTimKiemHD.Size = new System.Drawing.Size(1224, 285);
+            this.dgvTimKiemHD.Size = new System.Drawing.Size(1124, 285);
             this.dgvTimKiemHD.TabIndex = 1;
             // 
             // dataGridViewTextBoxColumn6
@@ -228,7 +210,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.grpDanhSachTimKiemHD.Location = new System.Drawing.Point(14, 174);
             this.grpDanhSachTimKiemHD.Name = "grpDanhSachTimKiemHD";
             this.grpDanhSachTimKiemHD.ShadowDecoration.Parent = this.grpDanhSachTimKiemHD;
-            this.grpDanhSachTimKiemHD.Size = new System.Drawing.Size(1225, 326);
+            this.grpDanhSachTimKiemHD.Size = new System.Drawing.Size(1123, 326);
             this.grpDanhSachTimKiemHD.TabIndex = 23;
             this.grpDanhSachTimKiemHD.Text = "Danh sách hoá đơn";
             // 
@@ -250,7 +232,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.btnThoatTimKiemHD.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThoatTimKiemHD.ForeColor = System.Drawing.Color.White;
             this.btnThoatTimKiemHD.HoverState.Parent = this.btnThoatTimKiemHD;
-            this.btnThoatTimKiemHD.Location = new System.Drawing.Point(1199, 12);
+            this.btnThoatTimKiemHD.Location = new System.Drawing.Point(1112, 3);
             this.btnThoatTimKiemHD.Name = "btnThoatTimKiemHD";
             this.btnThoatTimKiemHD.ShadowDecoration.Parent = this.btnThoatTimKiemHD;
             this.btnThoatTimKiemHD.Size = new System.Drawing.Size(40, 40);
@@ -262,13 +244,12 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(1251, 513);
+            this.ClientSize = new System.Drawing.Size(1154, 513);
             this.Controls.Add(this.btnThoatTimKiemHD);
             this.Controls.Add(this.grpDanhSachTimKiemHD);
             this.Controls.Add(this.cboTimKiemHD);
             this.Controls.Add(this.txtTimKiemHD);
             this.Controls.Add(this.btnDatLaiHD);
-            this.Controls.Add(this.btnTimKiemHD);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -289,7 +270,6 @@ namespace _452_417_CDTH19E_SHOESSHOP
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private Guna.UI2.WinForms.Guna2Button btnTimKiemHD;
         private Guna.UI2.WinForms.Guna2Button btnDatLaiHD;
         private Guna.UI2.WinForms.Guna2TextBox txtTimKiemHD;
         private Guna.UI2.WinForms.Guna2ComboBox cboTimKiemHD;

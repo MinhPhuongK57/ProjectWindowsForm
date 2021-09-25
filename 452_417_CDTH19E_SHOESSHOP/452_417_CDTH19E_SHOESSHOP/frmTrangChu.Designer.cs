@@ -36,7 +36,6 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.mnuttTrangChu = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuttQuanLySanPham = new System.Windows.Forms.ToolStripMenuItem();
             this.loạiSảnPhẩmToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.chiTiếtSảnPhẩmToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuttTimKiem = new System.Windows.Forms.ToolStripMenuItem();
             this.TimKiemTheoSP = new System.Windows.Forms.ToolStripMenuItem();
             this.TimKiemTheoHD = new System.Windows.Forms.ToolStripMenuItem();
@@ -47,7 +46,6 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.mnuttThongKe = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuttThoatChuongTrinh = new System.Windows.Forms.ToolStripMenuItem();
             this.SaveFile = new System.Windows.Forms.SaveFileDialog();
-            this.btnExitHome = new Guna.UI2.WinForms.Guna2Button();
             this.tabPage7 = new System.Windows.Forms.TabPage();
             this.grpNhanVien = new Guna.UI2.WinForms.Guna2GroupBox();
             this.dgvNhanVien = new System.Windows.Forms.DataGridView();
@@ -60,13 +58,14 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.Trang = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Dia = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.cboTrangThaiNV = new Guna.UI2.WinForms.Guna2ComboBox();
             this.btnXuatExcelNV = new Guna.UI2.WinForms.Guna2Button();
             this.dtpNgaySinhNV = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.btnThoatNV = new Guna.UI2.WinForms.Guna2Button();
             this.btnXoaNV = new Guna.UI2.WinForms.Guna2Button();
             this.btnCapNhatNV = new Guna.UI2.WinForms.Guna2Button();
             this.btnThemNV = new Guna.UI2.WinForms.Guna2Button();
-            this.numTrangThaiNV = new Guna.UI2.WinForms.Guna2NumericUpDown();
             this.txtDiaChiNV = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtEmailNV = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtLuongNV = new Guna.UI2.WinForms.Guna2TextBox();
@@ -90,12 +89,12 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.dataGridViewTextBoxColumn17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TrangThai1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.cboTrangThaiNCC = new Guna.UI2.WinForms.Guna2ComboBox();
             this.btnXuatExcelNCC = new Guna.UI2.WinForms.Guna2Button();
             this.btnThoatNCC = new Guna.UI2.WinForms.Guna2Button();
             this.btnXoaNCC = new Guna.UI2.WinForms.Guna2Button();
             this.btnCapNhatNCC = new Guna.UI2.WinForms.Guna2Button();
             this.btnThemNCC = new Guna.UI2.WinForms.Guna2Button();
-            this.numTrangThaiNCC = new Guna.UI2.WinForms.Guna2NumericUpDown();
             this.txtSoDTNCC = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtTenNCC = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtDiaChiNCC = new Guna.UI2.WinForms.Guna2TextBox();
@@ -138,12 +137,12 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.TenSanPham = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TrangThai = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grp1 = new System.Windows.Forms.GroupBox();
+            this.cboTrangThaiSP = new Guna.UI2.WinForms.Guna2ComboBox();
             this.btnXuatExcelSP = new Guna.UI2.WinForms.Guna2Button();
             this.btnThoatSP = new Guna.UI2.WinForms.Guna2Button();
             this.btnXoaSP = new Guna.UI2.WinForms.Guna2Button();
             this.btnCapNhatSP = new Guna.UI2.WinForms.Guna2Button();
             this.btnThemSP = new Guna.UI2.WinForms.Guna2Button();
-            this.numTrangThaiSP = new Guna.UI2.WinForms.Guna2NumericUpDown();
             this.cboLoaiSanPham = new Guna.UI2.WinForms.Guna2ComboBox();
             this.cboIDNCC = new Guna.UI2.WinForms.Guna2ComboBox();
             this.txtTenSanPham = new Guna.UI2.WinForms.Guna2TextBox();
@@ -153,20 +152,19 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.label4 = new System.Windows.Forms.Label();
             this.lblTenSP = new System.Windows.Forms.Label();
             this.lblIDSP = new System.Windows.Forms.Label();
+            this.grpSanPham = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.label9 = new System.Windows.Forms.Label();
-            this.grpSanPham = new System.Windows.Forms.TabControl();
+            this.btnExitHome = new Guna.UI2.WinForms.Guna2Button();
             this.menuStrip1.SuspendLayout();
             this.tabPage7.SuspendLayout();
             this.grpNhanVien.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNhanVien)).BeginInit();
             this.groupBox7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numTrangThaiNV)).BeginInit();
             this.tabPage6.SuspendLayout();
             this.grpNhaCungCap.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNhaCungCap)).BeginInit();
             this.groupBox5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numTrangThaiNCC)).BeginInit();
             this.tabPage4.SuspendLayout();
             this.grpKhachHang.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvKhachHang)).BeginInit();
@@ -175,9 +173,8 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.grpDanhSachSP.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSanPham)).BeginInit();
             this.grp1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numTrangThaiSP)).BeginInit();
-            this.tabPage1.SuspendLayout();
             this.grpSanPham.SuspendLayout();
+            this.tabPage1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -211,8 +208,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             // mnuttQuanLySanPham
             // 
             this.mnuttQuanLySanPham.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.loạiSảnPhẩmToolStripMenuItem,
-            this.chiTiếtSảnPhẩmToolStripMenuItem});
+            this.loạiSảnPhẩmToolStripMenuItem});
             this.mnuttQuanLySanPham.Image = global::_452_417_CDTH19E_SHOESSHOP.Properties.Resources.icons8_product_management_64;
             this.mnuttQuanLySanPham.Name = "mnuttQuanLySanPham";
             this.mnuttQuanLySanPham.Size = new System.Drawing.Size(188, 42);
@@ -221,16 +217,9 @@ namespace _452_417_CDTH19E_SHOESSHOP
             // loạiSảnPhẩmToolStripMenuItem
             // 
             this.loạiSảnPhẩmToolStripMenuItem.Name = "loạiSảnPhẩmToolStripMenuItem";
-            this.loạiSảnPhẩmToolStripMenuItem.Size = new System.Drawing.Size(232, 26);
+            this.loạiSảnPhẩmToolStripMenuItem.Size = new System.Drawing.Size(206, 26);
             this.loạiSảnPhẩmToolStripMenuItem.Text = "Loại Sản Phẩm";
             this.loạiSảnPhẩmToolStripMenuItem.Click += new System.EventHandler(this.loạiSảnPhẩmToolStripMenuItem_Click);
-            // 
-            // chiTiếtSảnPhẩmToolStripMenuItem
-            // 
-            this.chiTiếtSảnPhẩmToolStripMenuItem.Name = "chiTiếtSảnPhẩmToolStripMenuItem";
-            this.chiTiếtSảnPhẩmToolStripMenuItem.Size = new System.Drawing.Size(232, 26);
-            this.chiTiếtSảnPhẩmToolStripMenuItem.Text = "Chi Tiết Sản Phẩm";
-            this.chiTiếtSảnPhẩmToolStripMenuItem.Click += new System.EventHandler(this.chiTiếtSảnPhẩmToolStripMenuItem_Click);
             // 
             // mnuttTimKiem
             // 
@@ -294,7 +283,6 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.mnuttThongKe.Name = "mnuttThongKe";
             this.mnuttThongKe.Size = new System.Drawing.Size(114, 42);
             this.mnuttThongKe.Text = "Thống Kê";
-            this.mnuttThongKe.Click += new System.EventHandler(this.mnuttThongKe_Click);
             // 
             // mnuttThoatChuongTrinh
             // 
@@ -303,28 +291,6 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.mnuttThoatChuongTrinh.Size = new System.Drawing.Size(190, 42);
             this.mnuttThoatChuongTrinh.Text = "Thoát Chương Trình";
             this.mnuttThoatChuongTrinh.Click += new System.EventHandler(this.mnuttThoatChuongTrinh_Click);
-            // 
-            // btnExitHome
-            // 
-            this.btnExitHome.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnExitHome.Animated = true;
-            this.btnExitHome.BackgroundImage = global::_452_417_CDTH19E_SHOESSHOP.Properties.Resources.icons8_close_window_642;
-            this.btnExitHome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnExitHome.BorderColor = System.Drawing.Color.Transparent;
-            this.btnExitHome.BorderRadius = 5;
-            this.btnExitHome.CheckedState.Parent = this.btnExitHome;
-            this.btnExitHome.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnExitHome.CustomImages.Parent = this.btnExitHome;
-            this.btnExitHome.FillColor = System.Drawing.Color.Transparent;
-            this.btnExitHome.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F);
-            this.btnExitHome.ForeColor = System.Drawing.Color.White;
-            this.btnExitHome.HoverState.Parent = this.btnExitHome;
-            this.btnExitHome.Location = new System.Drawing.Point(1340, 15);
-            this.btnExitHome.Name = "btnExitHome";
-            this.btnExitHome.ShadowDecoration.Parent = this.btnExitHome;
-            this.btnExitHome.Size = new System.Drawing.Size(40, 40);
-            this.btnExitHome.TabIndex = 19;
-            this.btnExitHome.Click += new System.EventHandler(this.btnExitHome_Click);
             // 
             // tabPage7
             // 
@@ -444,13 +410,14 @@ namespace _452_417_CDTH19E_SHOESSHOP
             // 
             // groupBox7
             // 
+            this.groupBox7.Controls.Add(this.label2);
+            this.groupBox7.Controls.Add(this.cboTrangThaiNV);
             this.groupBox7.Controls.Add(this.btnXuatExcelNV);
             this.groupBox7.Controls.Add(this.dtpNgaySinhNV);
             this.groupBox7.Controls.Add(this.btnThoatNV);
             this.groupBox7.Controls.Add(this.btnXoaNV);
             this.groupBox7.Controls.Add(this.btnCapNhatNV);
             this.groupBox7.Controls.Add(this.btnThemNV);
-            this.groupBox7.Controls.Add(this.numTrangThaiNV);
             this.groupBox7.Controls.Add(this.txtDiaChiNV);
             this.groupBox7.Controls.Add(this.txtEmailNV);
             this.groupBox7.Controls.Add(this.txtLuongNV);
@@ -472,6 +439,38 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.groupBox7.TabIndex = 3;
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "Nhân viên";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label2.Location = new System.Drawing.Point(896, 38);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(46, 20);
+            this.label2.TabIndex = 49;
+            this.label2.Text = "VND";
+            // 
+            // cboTrangThaiNV
+            // 
+            this.cboTrangThaiNV.BackColor = System.Drawing.Color.Transparent;
+            this.cboTrangThaiNV.BorderRadius = 5;
+            this.cboTrangThaiNV.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cboTrangThaiNV.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cboTrangThaiNV.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboTrangThaiNV.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cboTrangThaiNV.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cboTrangThaiNV.FocusedState.Parent = this.cboTrangThaiNV;
+            this.cboTrangThaiNV.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboTrangThaiNV.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.cboTrangThaiNV.HoverState.Parent = this.cboTrangThaiNV;
+            this.cboTrangThaiNV.ItemHeight = 30;
+            this.cboTrangThaiNV.ItemsAppearance.Parent = this.cboTrangThaiNV;
+            this.cboTrangThaiNV.Location = new System.Drawing.Point(663, 201);
+            this.cboTrangThaiNV.Name = "cboTrangThaiNV";
+            this.cboTrangThaiNV.ShadowDecoration.Parent = this.cboTrangThaiNV;
+            this.cboTrangThaiNV.Size = new System.Drawing.Size(191, 36);
+            this.cboTrangThaiNV.TabIndex = 40;
             // 
             // btnXuatExcelNV
             // 
@@ -600,40 +599,6 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.btnThemNV.TabIndex = 33;
             this.btnThemNV.Text = "Thêm";
             this.btnThemNV.Click += new System.EventHandler(this.btnThemNV_Click);
-            // 
-            // numTrangThaiNV
-            // 
-            this.numTrangThaiNV.BackColor = System.Drawing.Color.Transparent;
-            this.numTrangThaiNV.BorderRadius = 5;
-            this.numTrangThaiNV.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.numTrangThaiNV.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.numTrangThaiNV.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.numTrangThaiNV.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.numTrangThaiNV.DisabledState.Parent = this.numTrangThaiNV;
-            this.numTrangThaiNV.DisabledState.UpDownButtonFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(177)))), ((int)(((byte)(177)))));
-            this.numTrangThaiNV.DisabledState.UpDownButtonForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(203)))), ((int)(((byte)(203)))));
-            this.numTrangThaiNV.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.numTrangThaiNV.FocusedState.Parent = this.numTrangThaiNV;
-            this.numTrangThaiNV.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numTrangThaiNV.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.numTrangThaiNV.Location = new System.Drawing.Point(663, 202);
-            this.numTrangThaiNV.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.numTrangThaiNV.Maximum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numTrangThaiNV.Name = "numTrangThaiNV";
-            this.numTrangThaiNV.ShadowDecoration.Parent = this.numTrangThaiNV;
-            this.numTrangThaiNV.Size = new System.Drawing.Size(139, 36);
-            this.numTrangThaiNV.TabIndex = 22;
-            this.numTrangThaiNV.UpDownButtonFillColor = System.Drawing.Color.Turquoise;
-            this.numTrangThaiNV.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numTrangThaiNV.KeyUp += new System.Windows.Forms.KeyEventHandler(this.numTrangThaiNV_KeyUp);
             // 
             // txtDiaChiNV
             // 
@@ -963,12 +928,12 @@ namespace _452_417_CDTH19E_SHOESSHOP
             // 
             // groupBox5
             // 
+            this.groupBox5.Controls.Add(this.cboTrangThaiNCC);
             this.groupBox5.Controls.Add(this.btnXuatExcelNCC);
             this.groupBox5.Controls.Add(this.btnThoatNCC);
             this.groupBox5.Controls.Add(this.btnXoaNCC);
             this.groupBox5.Controls.Add(this.btnCapNhatNCC);
             this.groupBox5.Controls.Add(this.btnThemNCC);
-            this.groupBox5.Controls.Add(this.numTrangThaiNCC);
             this.groupBox5.Controls.Add(this.txtSoDTNCC);
             this.groupBox5.Controls.Add(this.txtTenNCC);
             this.groupBox5.Controls.Add(this.txtDiaChiNCC);
@@ -986,6 +951,27 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.groupBox5.TabIndex = 2;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Nhà cung cấp";
+            // 
+            // cboTrangThaiNCC
+            // 
+            this.cboTrangThaiNCC.BackColor = System.Drawing.Color.Transparent;
+            this.cboTrangThaiNCC.BorderRadius = 5;
+            this.cboTrangThaiNCC.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cboTrangThaiNCC.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cboTrangThaiNCC.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboTrangThaiNCC.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cboTrangThaiNCC.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cboTrangThaiNCC.FocusedState.Parent = this.cboTrangThaiNCC;
+            this.cboTrangThaiNCC.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboTrangThaiNCC.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.cboTrangThaiNCC.HoverState.Parent = this.cboTrangThaiNCC;
+            this.cboTrangThaiNCC.ItemHeight = 30;
+            this.cboTrangThaiNCC.ItemsAppearance.Parent = this.cboTrangThaiNCC;
+            this.cboTrangThaiNCC.Location = new System.Drawing.Point(626, 116);
+            this.cboTrangThaiNCC.Name = "cboTrangThaiNCC";
+            this.cboTrangThaiNCC.ShadowDecoration.Parent = this.cboTrangThaiNCC;
+            this.cboTrangThaiNCC.Size = new System.Drawing.Size(191, 36);
+            this.cboTrangThaiNCC.TabIndex = 39;
             // 
             // btnXuatExcelNCC
             // 
@@ -1091,40 +1077,6 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.btnThemNCC.TabIndex = 29;
             this.btnThemNCC.Text = "Thêm";
             this.btnThemNCC.Click += new System.EventHandler(this.btnThemNCC_Click);
-            // 
-            // numTrangThaiNCC
-            // 
-            this.numTrangThaiNCC.BackColor = System.Drawing.Color.Transparent;
-            this.numTrangThaiNCC.BorderRadius = 5;
-            this.numTrangThaiNCC.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.numTrangThaiNCC.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.numTrangThaiNCC.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.numTrangThaiNCC.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.numTrangThaiNCC.DisabledState.Parent = this.numTrangThaiNCC;
-            this.numTrangThaiNCC.DisabledState.UpDownButtonFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(177)))), ((int)(((byte)(177)))));
-            this.numTrangThaiNCC.DisabledState.UpDownButtonForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(203)))), ((int)(((byte)(203)))));
-            this.numTrangThaiNCC.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.numTrangThaiNCC.FocusedState.Parent = this.numTrangThaiNCC;
-            this.numTrangThaiNCC.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numTrangThaiNCC.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.numTrangThaiNCC.Location = new System.Drawing.Point(626, 122);
-            this.numTrangThaiNCC.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.numTrangThaiNCC.Maximum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numTrangThaiNCC.Name = "numTrangThaiNCC";
-            this.numTrangThaiNCC.ShadowDecoration.Parent = this.numTrangThaiNCC;
-            this.numTrangThaiNCC.Size = new System.Drawing.Size(124, 36);
-            this.numTrangThaiNCC.TabIndex = 17;
-            this.numTrangThaiNCC.UpDownButtonFillColor = System.Drawing.Color.Turquoise;
-            this.numTrangThaiNCC.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numTrangThaiNCC.KeyUp += new System.Windows.Forms.KeyEventHandler(this.numTrangThaiNCC_KeyUp);
             // 
             // txtSoDTNCC
             // 
@@ -1410,7 +1362,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.dtpNgaySinhKH.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpNgaySinhKH.HoverState.Parent = this.dtpNgaySinhKH;
             this.dtpNgaySinhKH.IndicateFocus = true;
-            this.dtpNgaySinhKH.Location = new System.Drawing.Point(203, 181);
+            this.dtpNgaySinhKH.Location = new System.Drawing.Point(203, 188);
             this.dtpNgaySinhKH.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dtpNgaySinhKH.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dtpNgaySinhKH.Name = "dtpNgaySinhKH";
@@ -1717,16 +1669,17 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.ID_LoaiSanPham,
             this.TenSanPham,
             this.TrangThai});
-            this.dgvSanPham.Location = new System.Drawing.Point(0, 40);
+            this.dgvSanPham.Location = new System.Drawing.Point(0, 37);
             this.dgvSanPham.Name = "dgvSanPham";
             this.dgvSanPham.ReadOnly = true;
             this.dgvSanPham.RowHeadersVisible = false;
             this.dgvSanPham.RowHeadersWidth = 60;
             this.dgvSanPham.RowTemplate.Height = 24;
             this.dgvSanPham.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvSanPham.Size = new System.Drawing.Size(1347, 300);
+            this.dgvSanPham.Size = new System.Drawing.Size(1344, 300);
             this.dgvSanPham.TabIndex = 1;
             this.dgvSanPham.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvSanPham_CellClick);
+            this.dgvSanPham.DoubleClick += new System.EventHandler(this.dgvSanPham_DoubleClick);
             // 
             // ID_SanPham
             // 
@@ -1770,12 +1723,12 @@ namespace _452_417_CDTH19E_SHOESSHOP
             // 
             // grp1
             // 
+            this.grp1.Controls.Add(this.cboTrangThaiSP);
             this.grp1.Controls.Add(this.btnXuatExcelSP);
             this.grp1.Controls.Add(this.btnThoatSP);
             this.grp1.Controls.Add(this.btnXoaSP);
             this.grp1.Controls.Add(this.btnCapNhatSP);
             this.grp1.Controls.Add(this.btnThemSP);
-            this.grp1.Controls.Add(this.numTrangThaiSP);
             this.grp1.Controls.Add(this.cboLoaiSanPham);
             this.grp1.Controls.Add(this.cboIDNCC);
             this.grp1.Controls.Add(this.txtTenSanPham);
@@ -1793,6 +1746,27 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.grp1.TabIndex = 0;
             this.grp1.TabStop = false;
             this.grp1.Text = "Sản phẩm";
+            // 
+            // cboTrangThaiSP
+            // 
+            this.cboTrangThaiSP.BackColor = System.Drawing.Color.Transparent;
+            this.cboTrangThaiSP.BorderRadius = 5;
+            this.cboTrangThaiSP.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cboTrangThaiSP.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cboTrangThaiSP.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboTrangThaiSP.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cboTrangThaiSP.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cboTrangThaiSP.FocusedState.Parent = this.cboTrangThaiSP;
+            this.cboTrangThaiSP.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboTrangThaiSP.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.cboTrangThaiSP.HoverState.Parent = this.cboTrangThaiSP;
+            this.cboTrangThaiSP.ItemHeight = 30;
+            this.cboTrangThaiSP.ItemsAppearance.Parent = this.cboTrangThaiSP;
+            this.cboTrangThaiSP.Location = new System.Drawing.Point(673, 132);
+            this.cboTrangThaiSP.Name = "cboTrangThaiSP";
+            this.cboTrangThaiSP.ShadowDecoration.Parent = this.cboTrangThaiSP;
+            this.cboTrangThaiSP.Size = new System.Drawing.Size(191, 36);
+            this.cboTrangThaiSP.TabIndex = 19;
             // 
             // btnXuatExcelSP
             // 
@@ -1898,40 +1872,6 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.btnThemSP.TabIndex = 17;
             this.btnThemSP.Text = "Thêm";
             this.btnThemSP.Click += new System.EventHandler(this.btnThemSP_Click);
-            // 
-            // numTrangThaiSP
-            // 
-            this.numTrangThaiSP.BackColor = System.Drawing.Color.Transparent;
-            this.numTrangThaiSP.BorderRadius = 5;
-            this.numTrangThaiSP.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.numTrangThaiSP.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.numTrangThaiSP.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.numTrangThaiSP.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.numTrangThaiSP.DisabledState.Parent = this.numTrangThaiSP;
-            this.numTrangThaiSP.DisabledState.UpDownButtonFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(177)))), ((int)(((byte)(177)))));
-            this.numTrangThaiSP.DisabledState.UpDownButtonForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(203)))), ((int)(((byte)(203)))));
-            this.numTrangThaiSP.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.numTrangThaiSP.FocusedState.Parent = this.numTrangThaiSP;
-            this.numTrangThaiSP.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numTrangThaiSP.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.numTrangThaiSP.Location = new System.Drawing.Point(673, 132);
-            this.numTrangThaiSP.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.numTrangThaiSP.Maximum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numTrangThaiSP.Name = "numTrangThaiSP";
-            this.numTrangThaiSP.ShadowDecoration.Parent = this.numTrangThaiSP;
-            this.numTrangThaiSP.Size = new System.Drawing.Size(134, 36);
-            this.numTrangThaiSP.TabIndex = 16;
-            this.numTrangThaiSP.UpDownButtonFillColor = System.Drawing.Color.Turquoise;
-            this.numTrangThaiSP.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numTrangThaiSP.KeyUp += new System.Windows.Forms.KeyEventHandler(this.numTrangThaiSP_KeyUp);
             // 
             // cboLoaiSanPham
             // 
@@ -2076,6 +2016,26 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.lblIDSP.TabIndex = 0;
             this.lblIDSP.Text = "ID Sản phẩm";
             // 
+            // grpSanPham
+            // 
+            this.grpSanPham.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.grpSanPham.Controls.Add(this.tabPage1);
+            this.grpSanPham.Controls.Add(this.tabPage3);
+            this.grpSanPham.Controls.Add(this.tabPage4);
+            this.grpSanPham.Controls.Add(this.tabPage6);
+            this.grpSanPham.Controls.Add(this.tabPage7);
+            this.grpSanPham.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.grpSanPham.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grpSanPham.Location = new System.Drawing.Point(0, 50);
+            this.grpSanPham.Margin = new System.Windows.Forms.Padding(4);
+            this.grpSanPham.Name = "grpSanPham";
+            this.grpSanPham.SelectedIndex = 0;
+            this.grpSanPham.Size = new System.Drawing.Size(1403, 695);
+            this.grpSanPham.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
+            this.grpSanPham.TabIndex = 1;
+            // 
             // tabPage1
             // 
             this.tabPage1.BackgroundImage = global::_452_417_CDTH19E_SHOESSHOP.Properties.Resources._1611116667_50_hinh_nen_mau_xanh_dep_danh_cho_may_tinh;
@@ -2105,25 +2065,27 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.label9.Text = "QUẢN LÝ BÁN GIÀY";
             this.label9.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // grpSanPham
+            // btnExitHome
             // 
-            this.grpSanPham.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.grpSanPham.Controls.Add(this.tabPage1);
-            this.grpSanPham.Controls.Add(this.tabPage3);
-            this.grpSanPham.Controls.Add(this.tabPage4);
-            this.grpSanPham.Controls.Add(this.tabPage6);
-            this.grpSanPham.Controls.Add(this.tabPage7);
-            this.grpSanPham.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.grpSanPham.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grpSanPham.Location = new System.Drawing.Point(0, 50);
-            this.grpSanPham.Margin = new System.Windows.Forms.Padding(4);
-            this.grpSanPham.Name = "grpSanPham";
-            this.grpSanPham.SelectedIndex = 0;
-            this.grpSanPham.Size = new System.Drawing.Size(1403, 695);
-            this.grpSanPham.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
-            this.grpSanPham.TabIndex = 1;
+            this.btnExitHome.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnExitHome.Animated = true;
+            this.btnExitHome.BackgroundImage = global::_452_417_CDTH19E_SHOESSHOP.Properties.Resources.icons8_close_window_642;
+            this.btnExitHome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnExitHome.BorderColor = System.Drawing.Color.Transparent;
+            this.btnExitHome.BorderRadius = 5;
+            this.btnExitHome.CheckedState.Parent = this.btnExitHome;
+            this.btnExitHome.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnExitHome.CustomImages.Parent = this.btnExitHome;
+            this.btnExitHome.FillColor = System.Drawing.Color.Transparent;
+            this.btnExitHome.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F);
+            this.btnExitHome.ForeColor = System.Drawing.Color.White;
+            this.btnExitHome.HoverState.Parent = this.btnExitHome;
+            this.btnExitHome.Location = new System.Drawing.Point(1340, 15);
+            this.btnExitHome.Name = "btnExitHome";
+            this.btnExitHome.ShadowDecoration.Parent = this.btnExitHome;
+            this.btnExitHome.Size = new System.Drawing.Size(40, 40);
+            this.btnExitHome.TabIndex = 19;
+            this.btnExitHome.Click += new System.EventHandler(this.btnExitHome_Click);
             // 
             // frmTrangChu
             // 
@@ -2151,13 +2113,11 @@ namespace _452_417_CDTH19E_SHOESSHOP
             ((System.ComponentModel.ISupportInitialize)(this.dgvNhanVien)).EndInit();
             this.groupBox7.ResumeLayout(false);
             this.groupBox7.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numTrangThaiNV)).EndInit();
             this.tabPage6.ResumeLayout(false);
             this.grpNhaCungCap.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvNhaCungCap)).EndInit();
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numTrangThaiNCC)).EndInit();
             this.tabPage4.ResumeLayout(false);
             this.grpKhachHang.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvKhachHang)).EndInit();
@@ -2168,10 +2128,9 @@ namespace _452_417_CDTH19E_SHOESSHOP
             ((System.ComponentModel.ISupportInitialize)(this.dgvSanPham)).EndInit();
             this.grp1.ResumeLayout(false);
             this.grp1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numTrangThaiSP)).EndInit();
+            this.grpSanPham.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
-            this.grpSanPham.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -2188,7 +2147,6 @@ namespace _452_417_CDTH19E_SHOESSHOP
         private System.Windows.Forms.ToolStripMenuItem mnuttThongKe;
         private System.Windows.Forms.ToolStripMenuItem mnuttThoatChuongTrinh;
         private System.Windows.Forms.ToolStripMenuItem TimKiemTheoSP;
-        private System.Windows.Forms.ToolStripMenuItem chiTiếtSảnPhẩmToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem TimKiemTheoHD;
         private ToolStripMenuItem TimKiemTheoKH;
         private ToolStripMenuItem TimKiemTheoNCC;
@@ -2213,7 +2171,6 @@ namespace _452_417_CDTH19E_SHOESSHOP
         private Guna.UI2.WinForms.Guna2Button btnXoaNV;
         private Guna.UI2.WinForms.Guna2Button btnCapNhatNV;
         private Guna.UI2.WinForms.Guna2Button btnThemNV;
-        private Guna.UI2.WinForms.Guna2NumericUpDown numTrangThaiNV;
         private Guna.UI2.WinForms.Guna2TextBox txtDiaChiNV;
         private Guna.UI2.WinForms.Guna2TextBox txtEmailNV;
         private Guna.UI2.WinForms.Guna2TextBox txtLuongNV;
@@ -2242,7 +2199,6 @@ namespace _452_417_CDTH19E_SHOESSHOP
         private Guna.UI2.WinForms.Guna2Button btnXoaNCC;
         private Guna.UI2.WinForms.Guna2Button btnCapNhatNCC;
         private Guna.UI2.WinForms.Guna2Button btnThemNCC;
-        private Guna.UI2.WinForms.Guna2NumericUpDown numTrangThaiNCC;
         private Guna.UI2.WinForms.Guna2TextBox txtSoDTNCC;
         private Guna.UI2.WinForms.Guna2TextBox txtTenNCC;
         private Guna.UI2.WinForms.Guna2TextBox txtDiaChiNCC;
@@ -2261,7 +2217,6 @@ namespace _452_417_CDTH19E_SHOESSHOP
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private GroupBox groupBox1;
-        private Guna.UI2.WinForms.Guna2DateTimePicker dtpNgaySinhKH;
         private Guna.UI2.WinForms.Guna2Button btnXuatExcelKH;
         private Guna.UI2.WinForms.Guna2Button btnThoatKH;
         private Guna.UI2.WinForms.Guna2Button btnXoaKH;
@@ -2290,7 +2245,6 @@ namespace _452_417_CDTH19E_SHOESSHOP
         private Guna.UI2.WinForms.Guna2Button btnXoaSP;
         private Guna.UI2.WinForms.Guna2Button btnCapNhatSP;
         private Guna.UI2.WinForms.Guna2Button btnThemSP;
-        private Guna.UI2.WinForms.Guna2NumericUpDown numTrangThaiSP;
         private Guna.UI2.WinForms.Guna2ComboBox cboLoaiSanPham;
         private Guna.UI2.WinForms.Guna2ComboBox cboIDNCC;
         private Guna.UI2.WinForms.Guna2TextBox txtTenSanPham;
@@ -2303,5 +2257,10 @@ namespace _452_417_CDTH19E_SHOESSHOP
         private TabPage tabPage1;
         private Label label9;
         private TabControl grpSanPham;
+        private Guna.UI2.WinForms.Guna2ComboBox cboTrangThaiSP;
+        private Guna.UI2.WinForms.Guna2ComboBox cboTrangThaiNCC;
+        private Guna.UI2.WinForms.Guna2ComboBox cboTrangThaiNV;
+        private Guna.UI2.WinForms.Guna2DateTimePicker dtpNgaySinhKH;
+        private Label label2;
     }
 }

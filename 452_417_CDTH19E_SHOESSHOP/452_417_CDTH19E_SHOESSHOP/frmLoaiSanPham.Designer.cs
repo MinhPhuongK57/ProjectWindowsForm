@@ -32,26 +32,28 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLoaiSanPham));
             this.label1 = new System.Windows.Forms.Label();
-            this.dgvLoaiSanPham = new System.Windows.Forms.DataGridView();
-            this.ID_LoaiSanPham = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TenLoai = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TrangThai = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.grpLoaiSanPham = new Guna.UI2.WinForms.Guna2GroupBox();
+            this.dgvLoaiSanPham = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnThemLoaiSP = new Guna.UI2.WinForms.Guna2Button();
             this.btnCapNhatLoaiSP = new Guna.UI2.WinForms.Guna2Button();
             this.btnXoaLoaiLSP = new Guna.UI2.WinForms.Guna2Button();
             this.txtIDLoaiSanPham = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtTenLoaiSP = new Guna.UI2.WinForms.Guna2TextBox();
-            this.numTrangThaiLSP = new Guna.UI2.WinForms.Guna2NumericUpDown();
             this.btnThoatLoaiSP = new Guna.UI2.WinForms.Guna2Button();
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.guna2ShadowForm1 = new Guna.UI2.WinForms.Guna2ShadowForm(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvLoaiSanPham)).BeginInit();
+            this.btnXuatExcelCTSP = new Guna.UI2.WinForms.Guna2Button();
+            this.cboTrangThaiLSP = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.grpLoaiSanPham.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numTrangThaiLSP)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvLoaiSanPham)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -66,50 +68,6 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.label1.TabIndex = 0;
             this.label1.Text = "LOẠI SẢN PHẨM";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // dgvLoaiSanPham
-            // 
-            this.dgvLoaiSanPham.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvLoaiSanPham.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
-            this.dgvLoaiSanPham.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvLoaiSanPham.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ID_LoaiSanPham,
-            this.TenLoai,
-            this.TrangThai});
-            this.dgvLoaiSanPham.Location = new System.Drawing.Point(0, 39);
-            this.dgvLoaiSanPham.Name = "dgvLoaiSanPham";
-            this.dgvLoaiSanPham.ReadOnly = true;
-            this.dgvLoaiSanPham.RowHeadersVisible = false;
-            this.dgvLoaiSanPham.RowHeadersWidth = 51;
-            this.dgvLoaiSanPham.RowTemplate.Height = 24;
-            this.dgvLoaiSanPham.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvLoaiSanPham.Size = new System.Drawing.Size(724, 251);
-            this.dgvLoaiSanPham.TabIndex = 0;
-            this.dgvLoaiSanPham.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvLoaiSanPham_CellClick);
-            // 
-            // ID_LoaiSanPham
-            // 
-            this.ID_LoaiSanPham.DataPropertyName = "ID_LoaiSanPham";
-            this.ID_LoaiSanPham.HeaderText = "ID Loại Sản Phẩm";
-            this.ID_LoaiSanPham.MinimumWidth = 6;
-            this.ID_LoaiSanPham.Name = "ID_LoaiSanPham";
-            this.ID_LoaiSanPham.ReadOnly = true;
-            // 
-            // TenLoai
-            // 
-            this.TenLoai.DataPropertyName = "TenLoai";
-            this.TenLoai.HeaderText = "Tên Loại";
-            this.TenLoai.MinimumWidth = 6;
-            this.TenLoai.Name = "TenLoai";
-            this.TenLoai.ReadOnly = true;
-            // 
-            // TrangThai
-            // 
-            this.TrangThai.DataPropertyName = "TrangThai";
-            this.TrangThai.HeaderText = "Trạng Thái";
-            this.TrangThai.MinimumWidth = 6;
-            this.TrangThai.Name = "TrangThai";
-            this.TrangThai.ReadOnly = true;
             // 
             // label2
             // 
@@ -147,12 +105,58 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.grpLoaiSanPham.FillColor = System.Drawing.SystemColors.ControlLight;
             this.grpLoaiSanPham.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpLoaiSanPham.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.grpLoaiSanPham.Location = new System.Drawing.Point(5, 286);
+            this.grpLoaiSanPham.Location = new System.Drawing.Point(5, 267);
             this.grpLoaiSanPham.Name = "grpLoaiSanPham";
             this.grpLoaiSanPham.ShadowDecoration.Parent = this.grpLoaiSanPham;
             this.grpLoaiSanPham.Size = new System.Drawing.Size(724, 293);
             this.grpLoaiSanPham.TabIndex = 13;
             this.grpLoaiSanPham.Text = "Danh sách loại sản phẩm";
+            // 
+            // dgvLoaiSanPham
+            // 
+            this.dgvLoaiSanPham.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvLoaiSanPham.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
+            this.dgvLoaiSanPham.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvLoaiSanPham.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2,
+            this.Column3});
+            this.dgvLoaiSanPham.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.dgvLoaiSanPham.GridColor = System.Drawing.SystemColors.ButtonFace;
+            this.dgvLoaiSanPham.Location = new System.Drawing.Point(0, 41);
+            this.dgvLoaiSanPham.Name = "dgvLoaiSanPham";
+            this.dgvLoaiSanPham.ReadOnly = true;
+            this.dgvLoaiSanPham.RowHeadersVisible = false;
+            this.dgvLoaiSanPham.RowHeadersWidth = 51;
+            this.dgvLoaiSanPham.RowTemplate.Height = 24;
+            this.dgvLoaiSanPham.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvLoaiSanPham.Size = new System.Drawing.Size(724, 249);
+            this.dgvLoaiSanPham.TabIndex = 0;
+            this.dgvLoaiSanPham.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvLoaiSanPham_CellClick_2);
+            // 
+            // Column1
+            // 
+            this.Column1.DataPropertyName = "ID_LoaiSanPham";
+            this.Column1.HeaderText = "ID Loại Sản Phẩm";
+            this.Column1.MinimumWidth = 6;
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            // 
+            // Column2
+            // 
+            this.Column2.DataPropertyName = "TenLoai";
+            this.Column2.HeaderText = "Tên Loại";
+            this.Column2.MinimumWidth = 6;
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            // 
+            // Column3
+            // 
+            this.Column3.DataPropertyName = "TrangThai";
+            this.Column3.HeaderText = "Trạng Thái";
+            this.Column3.MinimumWidth = 6;
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
             // 
             // btnThemLoaiSP
             // 
@@ -199,7 +203,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.btnXoaLoaiLSP.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnXoaLoaiLSP.ForeColor = System.Drawing.Color.White;
             this.btnXoaLoaiLSP.HoverState.Parent = this.btnXoaLoaiLSP;
-            this.btnXoaLoaiLSP.Location = new System.Drawing.Point(560, 207);
+            this.btnXoaLoaiLSP.Location = new System.Drawing.Point(560, 202);
             this.btnXoaLoaiLSP.Name = "btnXoaLoaiLSP";
             this.btnXoaLoaiLSP.ShadowDecoration.Parent = this.btnXoaLoaiLSP;
             this.btnXoaLoaiLSP.Size = new System.Drawing.Size(115, 39);
@@ -247,7 +251,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.txtTenLoaiSP.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtTenLoaiSP.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTenLoaiSP.FocusedState.Parent = this.txtTenLoaiSP;
-            this.txtTenLoaiSP.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTenLoaiSP.Font = new System.Drawing.Font("Roboto", 10.2F);
             this.txtTenLoaiSP.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtTenLoaiSP.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTenLoaiSP.HoverState.Parent = this.txtTenLoaiSP;
@@ -261,41 +265,6 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.txtTenLoaiSP.ShadowDecoration.Parent = this.txtTenLoaiSP;
             this.txtTenLoaiSP.Size = new System.Drawing.Size(299, 33);
             this.txtTenLoaiSP.TabIndex = 16;
-            // 
-            // numTrangThaiLSP
-            // 
-            this.numTrangThaiLSP.BackColor = System.Drawing.Color.Transparent;
-            this.numTrangThaiLSP.BorderRadius = 5;
-            this.numTrangThaiLSP.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.numTrangThaiLSP.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.numTrangThaiLSP.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.numTrangThaiLSP.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.numTrangThaiLSP.DisabledState.Parent = this.numTrangThaiLSP;
-            this.numTrangThaiLSP.DisabledState.UpDownButtonFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(177)))), ((int)(((byte)(177)))));
-            this.numTrangThaiLSP.DisabledState.UpDownButtonForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(203)))), ((int)(((byte)(203)))));
-            this.numTrangThaiLSP.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.numTrangThaiLSP.FocusedState.Parent = this.numTrangThaiLSP;
-            this.numTrangThaiLSP.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numTrangThaiLSP.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.numTrangThaiLSP.Location = new System.Drawing.Point(215, 208);
-            this.numTrangThaiLSP.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.numTrangThaiLSP.Maximum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numTrangThaiLSP.Name = "numTrangThaiLSP";
-            this.numTrangThaiLSP.ShadowDecoration.Parent = this.numTrangThaiLSP;
-            this.numTrangThaiLSP.Size = new System.Drawing.Size(132, 33);
-            this.numTrangThaiLSP.TabIndex = 17;
-            this.numTrangThaiLSP.UpDownButtonFillColor = System.Drawing.Color.Turquoise;
-            this.numTrangThaiLSP.UpDownButtonForeColor = System.Drawing.Color.White;
-            this.numTrangThaiLSP.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numTrangThaiLSP.KeyUp += new System.Windows.Forms.KeyEventHandler(this.numTrangThaiLSP_KeyUp);
             // 
             // btnThoatLoaiSP
             // 
@@ -322,14 +291,66 @@ namespace _452_417_CDTH19E_SHOESSHOP
             // 
             this.guna2BorderlessForm1.ContainerControl = this;
             // 
+            // btnXuatExcelCTSP
+            // 
+            this.btnXuatExcelCTSP.BorderRadius = 20;
+            this.btnXuatExcelCTSP.CheckedState.Parent = this.btnXuatExcelCTSP;
+            this.btnXuatExcelCTSP.CustomImages.Parent = this.btnXuatExcelCTSP;
+            this.btnXuatExcelCTSP.FillColor = System.Drawing.Color.Turquoise;
+            this.btnXuatExcelCTSP.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXuatExcelCTSP.ForeColor = System.Drawing.Color.White;
+            this.btnXuatExcelCTSP.HoverState.Parent = this.btnXuatExcelCTSP;
+            this.btnXuatExcelCTSP.Location = new System.Drawing.Point(401, 202);
+            this.btnXuatExcelCTSP.Name = "btnXuatExcelCTSP";
+            this.btnXuatExcelCTSP.ShadowDecoration.Parent = this.btnXuatExcelCTSP;
+            this.btnXuatExcelCTSP.Size = new System.Drawing.Size(113, 39);
+            this.btnXuatExcelCTSP.TabIndex = 50;
+            this.btnXuatExcelCTSP.Text = "Xuất Excel";
+            this.btnXuatExcelCTSP.Click += new System.EventHandler(this.btnXuatExcelCTSP_Click);
+            // 
+            // cboTrangThaiLSP
+            // 
+            this.cboTrangThaiLSP.BackColor = System.Drawing.Color.Transparent;
+            this.cboTrangThaiLSP.BorderRadius = 5;
+            this.cboTrangThaiLSP.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cboTrangThaiLSP.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cboTrangThaiLSP.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboTrangThaiLSP.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cboTrangThaiLSP.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cboTrangThaiLSP.FocusedState.Parent = this.cboTrangThaiLSP;
+            this.cboTrangThaiLSP.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboTrangThaiLSP.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.cboTrangThaiLSP.HoverState.Parent = this.cboTrangThaiLSP;
+            this.cboTrangThaiLSP.ItemHeight = 30;
+            this.cboTrangThaiLSP.ItemsAppearance.Parent = this.cboTrangThaiLSP;
+            this.cboTrangThaiLSP.Location = new System.Drawing.Point(215, 205);
+            this.cboTrangThaiLSP.Name = "cboTrangThaiLSP";
+            this.cboTrangThaiLSP.ShadowDecoration.Parent = this.cboTrangThaiLSP;
+            this.cboTrangThaiLSP.Size = new System.Drawing.Size(180, 36);
+            this.cboTrangThaiLSP.TabIndex = 51;
+            // 
+            // guna2PictureBox1
+            // 
+            this.guna2PictureBox1.BorderRadius = 5;
+            this.guna2PictureBox1.Image = global::_452_417_CDTH19E_SHOESSHOP.Properties.Resources.icon_vesinhgiay_2x6;
+            this.guna2PictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
+            this.guna2PictureBox1.Size = new System.Drawing.Size(45, 35);
+            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBox1.TabIndex = 54;
+            this.guna2PictureBox1.TabStop = false;
+            // 
             // frmLoaiSanPham
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(734, 581);
+            this.ClientSize = new System.Drawing.Size(737, 565);
+            this.Controls.Add(this.guna2PictureBox1);
+            this.Controls.Add(this.cboTrangThaiLSP);
+            this.Controls.Add(this.btnXuatExcelCTSP);
             this.Controls.Add(this.btnThoatLoaiSP);
-            this.Controls.Add(this.numTrangThaiLSP);
             this.Controls.Add(this.txtTenLoaiSP);
             this.Controls.Add(this.txtIDLoaiSanPham);
             this.Controls.Add(this.btnXoaLoaiLSP);
@@ -350,9 +371,9 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.Text = "Loại Sản Phẩm";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmLoaiSanPham_FormClosing);
             this.Load += new System.EventHandler(this.frmLoaiSanPham_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvLoaiSanPham)).EndInit();
             this.grpLoaiSanPham.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.numTrangThaiLSP)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvLoaiSanPham)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -361,7 +382,6 @@ namespace _452_417_CDTH19E_SHOESSHOP
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dgvLoaiSanPham;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
@@ -371,12 +391,15 @@ namespace _452_417_CDTH19E_SHOESSHOP
         private Guna.UI2.WinForms.Guna2Button btnXoaLoaiLSP;
         private Guna.UI2.WinForms.Guna2TextBox txtIDLoaiSanPham;
         private Guna.UI2.WinForms.Guna2TextBox txtTenLoaiSP;
-        private Guna.UI2.WinForms.Guna2NumericUpDown numTrangThaiLSP;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ID_LoaiSanPham;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TenLoai;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TrangThai;
         private Guna.UI2.WinForms.Guna2Button btnThoatLoaiSP;
         private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
         private Guna.UI2.WinForms.Guna2ShadowForm guna2ShadowForm1;
+        private System.Windows.Forms.DataGridView dgvLoaiSanPham;
+        private Guna.UI2.WinForms.Guna2Button btnXuatExcelCTSP;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private Guna.UI2.WinForms.Guna2ComboBox cboTrangThaiLSP;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
     }
 }

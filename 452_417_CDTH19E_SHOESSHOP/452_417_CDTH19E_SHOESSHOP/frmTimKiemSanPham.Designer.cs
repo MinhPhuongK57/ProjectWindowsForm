@@ -33,21 +33,22 @@ namespace _452_417_CDTH19E_SHOESSHOP
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmTimKiem));
             this.label1 = new System.Windows.Forms.Label();
             this.dgvTimKiemSP = new System.Windows.Forms.DataGridView();
+            this.ID_SanPham = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ID_LoaiSanPham = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenSanPham = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TrangThai = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ID_NCC = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnDatLaiSP = new Guna.UI2.WinForms.Guna2Button();
-            this.btnTimKiemSP = new Guna.UI2.WinForms.Guna2Button();
             this.cboTimKiemSP = new Guna.UI2.WinForms.Guna2ComboBox();
             this.txtTimKiemSP = new Guna.UI2.WinForms.Guna2TextBox();
             this.grpDanhSachSP = new Guna.UI2.WinForms.Guna2GroupBox();
             this.btnThoatTimKiemSP = new Guna.UI2.WinForms.Guna2Button();
             this.guna2ShadowForm1 = new Guna.UI2.WinForms.Guna2ShadowForm(this.components);
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
-            this.ID_SanPham = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ID_LoaiSanPham = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TenSanPham = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TrangThai = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ID_NCC = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTimKiemSP)).BeginInit();
             this.grpDanhSachSP.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -80,8 +81,48 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.dgvTimKiemSP.RowHeadersWidth = 60;
             this.dgvTimKiemSP.RowTemplate.Height = 24;
             this.dgvTimKiemSP.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvTimKiemSP.Size = new System.Drawing.Size(1056, 334);
+            this.dgvTimKiemSP.Size = new System.Drawing.Size(1056, 224);
             this.dgvTimKiemSP.TabIndex = 0;
+            // 
+            // ID_SanPham
+            // 
+            this.ID_SanPham.DataPropertyName = "ID_SanPham";
+            this.ID_SanPham.HeaderText = "ID Sản Phẩm";
+            this.ID_SanPham.MinimumWidth = 6;
+            this.ID_SanPham.Name = "ID_SanPham";
+            this.ID_SanPham.ReadOnly = true;
+            // 
+            // ID_LoaiSanPham
+            // 
+            this.ID_LoaiSanPham.DataPropertyName = "ID_LoaiSanPham";
+            this.ID_LoaiSanPham.HeaderText = "ID Loại Sản Phẩm";
+            this.ID_LoaiSanPham.MinimumWidth = 6;
+            this.ID_LoaiSanPham.Name = "ID_LoaiSanPham";
+            this.ID_LoaiSanPham.ReadOnly = true;
+            // 
+            // TenSanPham
+            // 
+            this.TenSanPham.DataPropertyName = "TenSanPham";
+            this.TenSanPham.HeaderText = "Tên sản phẩm";
+            this.TenSanPham.MinimumWidth = 6;
+            this.TenSanPham.Name = "TenSanPham";
+            this.TenSanPham.ReadOnly = true;
+            // 
+            // TrangThai
+            // 
+            this.TrangThai.DataPropertyName = "TrangThai";
+            this.TrangThai.HeaderText = "Trạng thái";
+            this.TrangThai.MinimumWidth = 6;
+            this.TrangThai.Name = "TrangThai";
+            this.TrangThai.ReadOnly = true;
+            // 
+            // ID_NCC
+            // 
+            this.ID_NCC.DataPropertyName = "ID_NCC";
+            this.ID_NCC.HeaderText = "ID Nhà Cung Cấp";
+            this.ID_NCC.MinimumWidth = 6;
+            this.ID_NCC.Name = "ID_NCC";
+            this.ID_NCC.ReadOnly = true;
             // 
             // btnDatLaiSP
             // 
@@ -93,31 +134,13 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.btnDatLaiSP.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDatLaiSP.ForeColor = System.Drawing.Color.White;
             this.btnDatLaiSP.HoverState.Parent = this.btnDatLaiSP;
-            this.btnDatLaiSP.Location = new System.Drawing.Point(905, 87);
+            this.btnDatLaiSP.Location = new System.Drawing.Point(848, 85);
             this.btnDatLaiSP.Name = "btnDatLaiSP";
             this.btnDatLaiSP.ShadowDecoration.Parent = this.btnDatLaiSP;
             this.btnDatLaiSP.Size = new System.Drawing.Size(108, 38);
             this.btnDatLaiSP.TabIndex = 28;
             this.btnDatLaiSP.Text = "Tải lại";
             this.btnDatLaiSP.Click += new System.EventHandler(this.btnDatLaiSP_Click_1);
-            // 
-            // btnTimKiemSP
-            // 
-            this.btnTimKiemSP.BorderRadius = 20;
-            this.btnTimKiemSP.CheckedState.Parent = this.btnTimKiemSP;
-            this.btnTimKiemSP.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnTimKiemSP.CustomImages.Parent = this.btnTimKiemSP;
-            this.btnTimKiemSP.FillColor = System.Drawing.Color.Turquoise;
-            this.btnTimKiemSP.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTimKiemSP.ForeColor = System.Drawing.Color.White;
-            this.btnTimKiemSP.HoverState.Parent = this.btnTimKiemSP;
-            this.btnTimKiemSP.Location = new System.Drawing.Point(770, 87);
-            this.btnTimKiemSP.Name = "btnTimKiemSP";
-            this.btnTimKiemSP.ShadowDecoration.Parent = this.btnTimKiemSP;
-            this.btnTimKiemSP.Size = new System.Drawing.Size(108, 38);
-            this.btnTimKiemSP.TabIndex = 29;
-            this.btnTimKiemSP.Text = "Tìm kiếm";
-            this.btnTimKiemSP.Click += new System.EventHandler(this.btnTimKiemSP_Click_1);
             // 
             // cboTimKiemSP
             // 
@@ -165,6 +188,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.txtTimKiemSP.ShadowDecoration.Parent = this.txtTimKiemSP;
             this.txtTimKiemSP.Size = new System.Drawing.Size(323, 36);
             this.txtTimKiemSP.TabIndex = 31;
+            this.txtTimKiemSP.TextChanged += new System.EventHandler(this.txtTimKiemSP_TextChanged);
             // 
             // grpDanhSachSP
             // 
@@ -177,7 +201,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.grpDanhSachSP.Location = new System.Drawing.Point(12, 151);
             this.grpDanhSachSP.Name = "grpDanhSachSP";
             this.grpDanhSachSP.ShadowDecoration.Parent = this.grpDanhSachSP;
-            this.grpDanhSachSP.Size = new System.Drawing.Size(1058, 374);
+            this.grpDanhSachSP.Size = new System.Drawing.Size(1058, 264);
             this.grpDanhSachSP.TabIndex = 32;
             this.grpDanhSachSP.Text = "Danh sách sản phẩm";
             // 
@@ -206,58 +230,30 @@ namespace _452_417_CDTH19E_SHOESSHOP
             // 
             this.guna2BorderlessForm1.ContainerControl = this;
             // 
-            // ID_SanPham
+            // guna2PictureBox1
             // 
-            this.ID_SanPham.DataPropertyName = "ID_SanPham";
-            this.ID_SanPham.HeaderText = "ID Sản Phẩm";
-            this.ID_SanPham.MinimumWidth = 6;
-            this.ID_SanPham.Name = "ID_SanPham";
-            this.ID_SanPham.ReadOnly = true;
-            // 
-            // ID_LoaiSanPham
-            // 
-            this.ID_LoaiSanPham.DataPropertyName = "ID_LoaiSanPham";
-            this.ID_LoaiSanPham.HeaderText = "ID Loại Sản Phẩm";
-            this.ID_LoaiSanPham.MinimumWidth = 6;
-            this.ID_LoaiSanPham.Name = "ID_LoaiSanPham";
-            this.ID_LoaiSanPham.ReadOnly = true;
-            // 
-            // TenSanPham
-            // 
-            this.TenSanPham.DataPropertyName = "TenSanPham";
-            this.TenSanPham.HeaderText = "Tên sản phẩm";
-            this.TenSanPham.MinimumWidth = 6;
-            this.TenSanPham.Name = "TenSanPham";
-            this.TenSanPham.ReadOnly = true;
-            // 
-            // TrangThai
-            // 
-            this.TrangThai.DataPropertyName = "TrangThai";
-            this.TrangThai.HeaderText = "Trạng thái";
-            this.TrangThai.MinimumWidth = 6;
-            this.TrangThai.Name = "TrangThai";
-            this.TrangThai.ReadOnly = true;
-            // 
-            // ID_NCC
-            // 
-            this.ID_NCC.DataPropertyName = "ID_NCC";
-            this.ID_NCC.HeaderText = "ID Nhà Cung Cấp";
-            this.ID_NCC.MinimumWidth = 6;
-            this.ID_NCC.Name = "ID_NCC";
-            this.ID_NCC.ReadOnly = true;
+            this.guna2PictureBox1.BorderRadius = 5;
+            this.guna2PictureBox1.Image = global::_452_417_CDTH19E_SHOESSHOP.Properties.Resources.icon_vesinhgiay_2x6;
+            this.guna2PictureBox1.Location = new System.Drawing.Point(12, 9);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
+            this.guna2PictureBox1.Size = new System.Drawing.Size(45, 35);
+            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBox1.TabIndex = 54;
+            this.guna2PictureBox1.TabStop = false;
             // 
             // frmTimKiem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(1080, 539);
+            this.ClientSize = new System.Drawing.Size(1080, 427);
+            this.Controls.Add(this.guna2PictureBox1);
             this.Controls.Add(this.btnThoatTimKiemSP);
             this.Controls.Add(this.grpDanhSachSP);
             this.Controls.Add(this.txtTimKiemSP);
             this.Controls.Add(this.cboTimKiemSP);
             this.Controls.Add(this.btnDatLaiSP);
-            this.Controls.Add(this.btnTimKiemSP);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -270,6 +266,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
             this.Load += new System.EventHandler(this.frmTimKiem_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvTimKiemSP)).EndInit();
             this.grpDanhSachSP.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -280,7 +277,6 @@ namespace _452_417_CDTH19E_SHOESSHOP
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dgvTimKiemSP;
         private Guna.UI2.WinForms.Guna2Button btnDatLaiSP;
-        private Guna.UI2.WinForms.Guna2Button btnTimKiemSP;
         private Guna.UI2.WinForms.Guna2ComboBox cboTimKiemSP;
         private Guna.UI2.WinForms.Guna2TextBox txtTimKiemSP;
         private Guna.UI2.WinForms.Guna2GroupBox grpDanhSachSP;
@@ -292,5 +288,6 @@ namespace _452_417_CDTH19E_SHOESSHOP
         private System.Windows.Forms.DataGridViewTextBoxColumn TenSanPham;
         private System.Windows.Forms.DataGridViewTextBoxColumn TrangThai;
         private System.Windows.Forms.DataGridViewTextBoxColumn ID_NCC;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
     }
 }

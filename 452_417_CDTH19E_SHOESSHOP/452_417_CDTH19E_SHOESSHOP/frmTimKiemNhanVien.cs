@@ -104,15 +104,18 @@ namespace _452_417_CDTH19E_SHOESSHOP
                 pnlTimKiemTheoNgaySinh.Visible = true;
                 txtTimKiemNV.Enabled = false;
                 pnlTimKiemTheoLuong.Visible = false;
+                btnTimKiemNV.Visible = true;
             }
             else if(cboNhanVien.SelectedIndex==4)
             {
+                btnTimKiemNV.Visible = true;
                 pnlTimKiemTheoLuong.Visible = true;
                 txtTimKiemNV.Enabled = false;
                 pnlTimKiemTheoNgaySinh.Visible =false;
             }
             else
             {
+                btnTimKiemNV.Visible = false;
                 txtTimKiemNV.Enabled = true;
                 pnlTimKiemTheoLuong.Visible = false;
                 pnlTimKiemTheoNgaySinh.Visible = false;

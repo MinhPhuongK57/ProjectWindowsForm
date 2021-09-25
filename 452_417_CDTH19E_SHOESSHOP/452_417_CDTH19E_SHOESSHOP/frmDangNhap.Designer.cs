@@ -207,11 +207,11 @@ namespace _452_417_CDTH19E_SHOESSHOP
             // 
             this.picLogoShopDangNhap.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.picLogoShopDangNhap.Image = global::_452_417_CDTH19E_SHOESSHOP.Properties.Resources.icon_vesinhgiay_2x1;
-            this.picLogoShopDangNhap.Location = new System.Drawing.Point(56, 59);
+            this.picLogoShopDangNhap.Location = new System.Drawing.Point(65, 44);
             this.picLogoShopDangNhap.Name = "picLogoShopDangNhap";
             this.picLogoShopDangNhap.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.picLogoShopDangNhap.ShadowDecoration.Parent = this.picLogoShopDangNhap;
-            this.picLogoShopDangNhap.Size = new System.Drawing.Size(90, 90);
+            this.picLogoShopDangNhap.Size = new System.Drawing.Size(79, 73);
             this.picLogoShopDangNhap.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picLogoShopDangNhap.TabIndex = 13;
             this.picLogoShopDangNhap.TabStop = false;
