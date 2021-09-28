@@ -10,7 +10,7 @@ namespace _452_417_CDTH19E_SHOESSHOP
 {
     class KetNoiDuLieu
     {
-        private string QuanLyBanGiay = @"Data Source=LAPTOP-TQ2OSHSR;Initial Catalog=QuanLyBanGiay;Integrated Security=True";
+        private string QuanLyBanGiay = @"Data Source=TRAN-MINH-PHUON\SQLEXPRESS;Initial Catalog=QuanLyBanGiay;Integrated Security=True";
         public DataTable ExcuteQuery(string query)
         {
             SqlConnection iKetNoiDuLieu = new SqlConnection(QuanLyBanGiay);
